@@ -1,128 +1,284 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// src/pages/index.js
+import React from "react"
+import Layout from "../components/Layout"
+import Navbar from "../components/Navbar"
+// import Hero from "../components/Hero"
+import Feature from "../components/Feature"
+import AboutSection from "../components/AboutSection"
+import ServicesSection from "../components/ServicesSection"
+import TestimonialsSection from "../components/TestimonialsSection"
+import GallerySection from "../components/GallerySection"
+import BlogSection from "../components/BlogSection"
+import ContactForm from "../components/ContactForm"
+import Footer from "../components/Footer"
+import HeroVideoMp4 from "../videos/hero.mp4"
+import HeroVideoWebm from "../videos/hero.mp4"
+import HeroImage from "../images/hero.png"
+import SomeImage from "../images/some-image.png"
+import Vid1 from "../videos/vid1.mp4"
+import Vid2 from "../videos/vid2.mp4"
+import Vid3 from "../videos/vid3.mp4"
+import Vid4 from "../videos/vid4.mp4"
+import GradientText from "../components/GradientText"
+import SubscribeNewsletterSection from "../components/SubscribeNewsletterSection"
+import Button from "../components/Button"
+import KeyVisualImage from "../components/KeyVisualImage"
+import {
+  DREAMS_LIVE,
+} from "../text";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+const videos = [
+  {
+    src: "../videos/vid1.mp4",
+    title: 'First GIF',
+    description: 'Description of the first GIF'
+  },
+  {
+    src: '../videos/vid2.mp4',
+    title: 'Second GIF',
+    description: 'Description of the second GIF'
+  }
+  // Add more GIFs as needed
+];
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
+const IndexPage = () => {
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+  return (
+    <Layout className="text-like-cyan-vlight">
+      {/* Hero Section */}
+      <section>
+        <div className="relative flex justify-center">
+          <div className="aspect-w-15 aspect-h-8 relative w-full top-0 right-0 left-0 h-full h-screen overflow-hidden">
+            <video
+              autoPlay
+              playsInline
+              loop
+              muted
+              className="absolute inset-0 w-full h-full object-cover"
+              poster={HeroImage}
+              alt="Decorative image"
+              style={{ filter: 'brightness(0.9)' }}
+            >
+              <source src={HeroVideoWebm} type="video/webm" />
+              <source src={HeroVideoMp4} type="video/mp4" />
+            </video>
+          </div>
+          <div className="absolute hidden inset-x-0 bottom-0 h-[5%] md:flex justify-center">
+            <button className="mx-2 px-6 py-2 bg-primary hover:bg-blue-700 rounded text-white font-bold">
+              Learn More
+            </button>
+            <button className="mx-2 px-6 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </section>
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
-const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
+      {/* DreamComesLife Section */}
+      <section className="relative flex mt-[88px]">
+        <div className="relative flex justify-center flex-grow">
+          {/* <KeyVisualImage className="absolute right-0 max-w-[750px] mr-[-120px] opacity-60 md:mr-0 md:opacity-100" /> */}
+          <img
+            src={SomeImage}
+          />
+        </div>
+        <div className="relative flex flex-col justify-center flex-grow md:max-w-[66%] p-[24px]">
+          <GradientText tag="h2" className="text-[48px] text-center md:text-left">Hayallerİnİzİ Bİzİmle Gerçeğe Dönüştürün!</GradientText>
+          <p className="mt-[24px] text-like-cyan-vlight text-[20px]">{DREAMS_LIVE}</p>
+        </div>
+      </section>
+
+      {/* Gif Section */}
+      <section className="py-10">
+        <div key={0} className={`flex ${0 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
+          <div className="w-2/3">
+            <video
+              autoPlay
+              playsInline
+              loop
+              muted
+              controls
+              className="w-full h-auto"
+              poster={Vid1} // Assuming you have poster images for each video
+              // poster={HeroImage}
+              alt="Decorative image"
+              style={{ filter: 'brightness(0.9)' }}
+            >
+              <source src={Vid1} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div key={1} className={`flex ${1 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
+          <div className="w-2/3">
+            <video
+              autoPlay
+              playsInline
+              loop
+              muted
+              controls
+              className="w-full h-auto"
+              poster={Vid2} // Assuming you have poster images for each video
+            >
+              <source src={Vid2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div key={2} className={`flex ${2 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
+          <div className="w-2/3">
+            <video
+              autoPlay
+              playsInline
+              loop
+              muted
+              controls
+              className="w-full h-auto"
+              poster={Vid3} // Assuming you have poster images for each video
+            >
+              <source src={Vid3} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div key={3} className={`flex ${3 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
+          <div className="w-2/3">
+            <video
+              autoPlay
+              playsInline
+              loop
+              muted
+              controls
+              className="w-full h-auto"
+              poster={Vid4} // Assuming you have poster images for each video
+            >
+              <source src={Vid4} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        {/* <section className="py-10">
+          {videos.map((video, index) => (
+            <div key={index} className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
+              <div className="w-1/2">
+                <video
+                  controls
+                  className="w-full h-auto"
+                  poster={video.poster} // Assuming you have poster images for each video
+                >
+                  <source src={video.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="w-1/2 px-5">
+                <h3 className="text-lg font-bold">{video.title}</h3>
+                <p>{video.description}</p>
+              </div>
+            </div>
+          ))}
+        </section> */}
+
+
+        {/* <img src={Vid1} alt="Describe the content of the GIF" /> */}
+        {/* {gifs.map((gif, index) => (
+          <div key={index} className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
+            <div className="w-1/2">
+              <img src={gif.src} />
+            </div>
+            <div className="w-1/2 px-5">
+              <h3 className="text-lg font-bold">{gif.title}</h3>
+              <p>{gif.description}</p>
+            </div>
+          </div>
+        ))} */}
+      </section>
+
+      {/* Sub-Nav Section */}
+      <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
+        <Button
+          className="text-[22px]"
+          preset="filled"
+          href="https://liker.land"
+          target="_blank"
+          rel="noopener"
+        >Explore Writing NFT</Button>
+        <nav className="flex justify-center mt-[24px]">
+          <ul className="grid grid-cols-2 sm:flex flex-wrap gap-x-[8px] gap-y-[16px]">
+            <li>
+              <Button
+                preset="outlined"
+                href="https://app.like.co"
+                target="_blank"
+                rel="noopener"
+              >Register ISCN</Button>
+            </li>
+            <li>
+              <Button
+                preset="outlined"
+                href="https://docs.like.co/"
+                target="_blank"
+                rel="noopener"
+              >Docs</Button>
+            </li>
+            <li>
+              <Button
+                preset="outlined"
+                // href={blogUrl}
+                target="_blank"
+                rel="noopener"
+              >Blog</Button>
+            </li>
+            <li>
+              <Button
+                preset="outlined"
+                href="https://docs.like.co/faq"
+                target="_blank"
+                rel="noopener"
+              >FAQ</Button>
+            </li>
+          </ul>
+        </nav>
+        <p className="text-[16px] mt-[24px]">
+          Questions? Ask the <a className="underline" href="http://discord.gg/likecoin">community</a>.
+        </p>
+      </section>
+
+
+      {/* <Navbar /> */}
+      {/* <Feature
+        title="Transform Your Dreams"
+        description="Explore our services and see how we can make a difference."
+        imageName="feature-image.jpg"
+        buttonText="Learn More"
       />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
-)
+      <AboutSection />
+      <ServicesSection />
+      <TestimonialsSection />
+      <GallerySection />
+      <BlogSection /> */}
+      <SubscribeNewsletterSection />
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
+      {/* Contact Form Section */}
+      <section>
+        <div className="relative flex justify-center">
+          <ContactForm />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <section>
+        <div className="relative flex justify-center">
+          {/* <Footer /> */}
+        </div>
+      </section>
+    </Layout>
+  )
+}
 
 export default IndexPage

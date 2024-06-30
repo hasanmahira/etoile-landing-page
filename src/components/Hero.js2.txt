@@ -1,0 +1,49 @@
+// src/components/Hero.js
+import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+
+import HeroVideoMp4 from "../videos/hero.mp4"
+import HeroVideoWebm from "../videos/hero.mp4"
+import HeroImage from "../images/hero.png"
+import ScrollDownHintImage from "../images/scroll-down-hint.png"
+import GradientText from "../components/GradientText"
+
+
+const Hero = () => {
+  return (
+    <div className="relative flex justify-center">
+      <div className="relative flex justify-center">
+        <svg className="w-full h-full max-h-screen pointer-events-none" viewBox="0 0 2560 1966" />
+        <video
+          autoPlay
+          playsInline
+          loop
+          muted
+          className="absolute inset-0 top-0 object-contain object-top max-h-screen mx-auto scale-[1.8] translate-y-[40px] sm:translate-y-0"
+          poster={HeroImage}
+          alt="#Depub"
+          style={{ filter: 'brightness(0.9)' }}
+        >
+          <source src={HeroVideoWebm} type="video/webm" />
+          <source src={HeroVideoMp4} type="video/mp4" />
+        </video>
+        <div className="absolute hidden inset-x-0 bottom-0 h-[25%] md:flex justify-center">
+          <button className="mx-2 px-6 py-2 bg-primary hover:bg-blue-700 rounded text-white font-bold">
+            Learn More
+          </button>
+          <button className="mx-2 px-6 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold">
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div className="relative text-center p-[24px]">
+        <GradientText tag="h1" className="text-[42px] sm:text-[64px] md:text-[80px] leading-tight">ÉTOILE design</GradientText>
+        <h2 className="text-[32px] font-bold font-display mt-[24px]">
+          Hayallerinizi bizimle gerçeğe dönüştürün!
+        </h2>
+      </div>
+    </div>
+  )
+}
+
+export default Hero

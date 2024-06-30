@@ -1,0 +1,48 @@
+// src/components/Hero.js
+import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import HeroVideoMp4 from "../videos/hero.mp4"
+// import HeroImage from "../images/hero.png"
+
+const Hero = () => {
+  return (
+    <div className="relative flex justify-center">
+
+      <div className="bg-navy text-white text-center p-12">
+        <h1 className="text-4xl font-bold mb-4">ÉTOILE design Test</h1>
+        <p className="mb-8 text-xl">Hayallerinizi bizimle gerçeğe dönüştürün!</p>
+        {/* <StaticImage
+        src="../images/your-image.jpg" // Path to your central image
+        alt="Etoile Design Feature"
+        placeholder="blurred"
+        layout="fixed"
+        width={300}
+        height={300}
+      /> */}
+        <video
+          autoPlay
+          playsInline
+          loop
+          muted
+          className="absolute inset-0 top-0 object-contain object-top max-h-screen mx-auto scale-[1.8] translate-y-[40px] sm:translate-y-0"
+          // poster={HeroImage}
+          alt="#Depub"
+          style={{ filter: 'brightness(0.9)' }}
+        >
+          {/* <source src={HeroVideoWebm} type="media/hero" /> */}
+          <source src={HeroVideoMp4} type="video/hero" />
+        </video>
+        <div className="mt-8">
+          <button className="mx-2 px-6 py-2 bg-primary hover:bg-blue-700 rounded text-white font-bold">
+            Learn More
+          </button>
+          <button className="mx-2 px-6 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Hero
