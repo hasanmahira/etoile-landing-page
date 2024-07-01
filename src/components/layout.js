@@ -3,7 +3,7 @@ import cn from "classnames"
 
 import Header from "./Header"
 import Footer from "./Footer"
-import Seo from "./SEO"
+import Seo from "./seo"
 
 export default function Layout({ className, children }) {
   return (

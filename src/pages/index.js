@@ -25,6 +25,7 @@ import Button from "../components/Button"
 import {
   DREAMS_LIVE,
 } from "../text";
+import Seo from "../components/seo"
 
 const videos = [
   {
