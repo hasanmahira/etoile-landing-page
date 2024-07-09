@@ -6,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      boxShadow: {
+        'neon': '0 0 15px rgba(255, 255, 255, 0.5)'
+      },
       colors: {
         "blue-etoile": "#4286F5",
         "purple-etoile": "#7C448B",
@@ -41,6 +44,7 @@ module.exports = {
         'shade-gray': '#EBEBEB',
         'light-gray': '#F7F7F7',
         'airdrop-gold': '#D1AB79',
+        'neon-blue': '#00dbde',
       },
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],

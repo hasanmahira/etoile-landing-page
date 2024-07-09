@@ -12,8 +12,8 @@ import Layout from "../components/Layout"
 import ContactForm from "../components/ContactForm"
 // import Footer from "../components/Footer"
 import HeroVideoMp4 from "../videos/hero.mp4"
-import HeroVideoWebm from "../videos/hero.mp4"
-import HeroImage from "../images/hero.png"
+// import TeamVideoMp4 from "../videos/team.mp4"
+import AboutUsVideo from "../videos/aboutus_aurora.mp4"
 import SomeImage from "../images/some-image.png"
 import Vid1 from "../videos/Vid1.mp4"
 import Vid2 from "../videos/Vid2.mp4"
@@ -24,22 +24,28 @@ import SubscribeNewsletterSection from "../components/SubscribeNewsletterSection
 import Button from "../components/Button"
 import {
   DREAMS_LIVE,
+  Mission,
+  Vision
 } from "../text";
-import Seo from "../components/seo"
+import TeamSection from "../components/TeamSection"
+import Services from "../components/AllServices"
+import BusinessPortfolio from "../components/BusinessPortfolio"
 
-const videos = [
-  {
-    src: "../videos/vid1.mp4",
-    title: 'First GIF',
-    description: 'Description of the first GIF'
-  },
-  {
-    src: '../videos/vid2.mp4',
-    title: 'Second GIF',
-    description: 'Description of the second GIF'
-  }
-  // Add more GIFs as needed
-];
+// import Seo from "../components/seo"
+
+// const videos = [
+//   {
+//     src: "../videos/vid1.mp4",
+//     title: 'First GIF',
+//     description: 'Description of the first GIF'
+//   },
+//   {
+//     src: '../videos/vid2.mp4',
+//     title: 'Second GIF',
+//     description: 'Description of the second GIF'
+//   }
+//   // Add more GIFs as needed
+// ];
 
 const IndexPage = () => {
 
@@ -56,11 +62,9 @@ const IndexPage = () => {
               loop
               muted
               className="absolute inset-0 w-full h-full object-cover"
-              poster={HeroImage}
               alt="Decorative image"
               style={{ filter: 'brightness(0.9)' }}
             >
-              <source src={HeroVideoWebm} type="video/webm" />
               <source src={HeroVideoMp4} type="video/mp4" />
             </video>
           </div>
@@ -199,6 +203,61 @@ const IndexPage = () => {
         ))} */}
       </section>
 
+      {/* Vision and Mission Section */}
+      <section>
+        <div className="relative overflow-hidden h-screen">
+          <video
+            autoPlay
+            playsInline
+            loop
+            muted
+            className="absolute inset-0 w-full h-full object-cover"
+            alt="Decorative image"
+            style={{ filter: 'brightness(0.9)' }}
+          >
+            <source src={AboutUsVideo} type="video/mp4" />
+          </video>
+          <div className="relative z-10 flex flex-col justify-between h-full bg-black bg-opacity-50 p-4">
+            <div className="text-right text-white md:mt-20 md:mr-20">
+              <h1 className="text-4xl font-bold mb-2">VİZYONUMUZ</h1>
+              <p>{Vision}</p>
+            </div>
+            <div className="text-left text-white md:mb-20 md:ml-20">
+              <h1 className="text-4xl font-bold mb-2">MİSYONUMUZ</h1>
+              <p>{Mission}</p>
+            </div>
+            <div className="flex justify-center">
+              <button className="mt-4 px-6 py-2 bg-purple-700 hover:bg-purple-600 rounded shadow-lg">SEE SOLUTIONS</button>
+            </div>
+          </div>
+        </div>
+        <div className="absolute hidden inset-x-0 bottom-0 h-[5%] md:flex justify-center">
+          <button className="mx-2 px-6 py-2 hover:bg-gray-700 rounded text-white font-bold">
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      {/* Team Section */}
+
+      <section>
+        <div className="relative overflow-hidden h-screen py-20">
+          <TeamSection />
+        </div>
+      </section>
+
+      <section>
+        <div className="relative overflow-hidden h-screen py-20">
+          <Services />
+        </div>
+      </section>
+
+      <section>
+        {/* <div className="relative overflow-hidden h-screen py-20"> */}
+          <BusinessPortfolio />
+        {/* </div> */}
+      </section>
+
       {/* Sub-Nav Section */}
       <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
         <Button
@@ -272,11 +331,11 @@ const IndexPage = () => {
       </section>
 
       {/* Footer */}
-      <section>
+      {/* <section>
         <div className="relative flex justify-center">
-          {/* <Footer /> */}
+          <Footer />
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }
