@@ -7,11 +7,11 @@ import Seo from "./Seo"
 
 export default function Layout({ className, children }) {
   return (
-    <div className={cn("overflow-hidden bg-midnight", className)}>
+    <div className={cn("overflow-hidden bg-midnight min-h-screen", className)}>
       <Seo />
-      <div className="relative flex flex-col w-full max-w-[1440px] min-h-screen mx-auto">
+      <div className="flex flex-col w-full min-h-screen">
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow w-full">
           {children}
         </main>
         <Footer />

@@ -11,8 +11,18 @@ const ContactForm = () => {
           className="w-full px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none"
         />
         <input
+          type="text"
+          placeholder="Surname"
+          className="w-full px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none"
+        />
+        <input
           type="email"
           placeholder="Email"
+          className="w-full px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none"
+        />
+        <input
+          type="text"
+          placeholder="Phone Number"
           className="w-full px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none"
         />
         <button

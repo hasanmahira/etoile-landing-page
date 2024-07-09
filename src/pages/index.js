@@ -254,12 +254,12 @@ const IndexPage = () => {
 
       <section>
         {/* <div className="relative overflow-hidden h-screen py-20"> */}
-          <BusinessPortfolio />
+        <BusinessPortfolio />
         {/* </div> */}
       </section>
 
       {/* Sub-Nav Section */}
-      <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
+      {/* <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
         <Button
           className="text-[22px]"
           preset="filled"
@@ -306,7 +306,7 @@ const IndexPage = () => {
         <p className="text-[16px] mt-[24px]">
           Questions? Ask the <a className="underline" href="http://discord.gg/likecoin">community</a>.
         </p>
-      </section>
+      </section> */}
 
 
       {/* <Navbar /> */}
@@ -321,7 +321,7 @@ const IndexPage = () => {
       <TestimonialsSection />
       <GallerySection />
       <BlogSection /> */}
-      <SubscribeNewsletterSection />
+      {/* <SubscribeNewsletterSection /> */}
 
       {/* Contact Form Section */}
       <section>
