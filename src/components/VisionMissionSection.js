@@ -37,7 +37,7 @@ const VisionMissionSection = () => {
             </div>
             <div className="absolute hidden inset-x-0 bottom-0 h-[5%] md:flex justify-center">
                 <button className="mx-2 px-6 py-2 hover:bg-gray-700 rounded text-white font-bold">
-                    Contact Us
+                    {/* Contact Us */}
                 </button>
             </div>
         </section>

@@ -1,32 +1,21 @@
-// src/components/Navbar.js
 import React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "react-scroll"
 
 const Navbar = () => {
   return (
-    <nav className="bg-black py-4">
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/">
-          <StaticImage
-            src="../images/logo.png"
-            alt="Étoile Design Logo"
-            placeholder="blurred"
-            layout="fixed"
-            width={150}
-            height={50}
-          />
-        </Link>
-        <div>
-          <Link to="/about" className="text-white px-4 hover:text-gray-300">
-            About Us
-          </Link>
-          <Link to="/services" className="text-white px-4 hover:text-gray-300">
-            Services
-          </Link>
-          <Link to="/contact" className="text-white px-4 hover:text-gray-300">
-            Contact
-          </Link>
+    <nav className="fixed bottom-0 w-full bg-midnight bg-opacity-50 backdrop-blur-md text-white py-3">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center space-y-2">
+          <div className="flex justify-center space-x-8">
+            <Link to="about-us" smooth={true} duration={500} className="hover:underline">ABOUT US</Link>
+            <Link to="solutions" smooth={true} duration={500} className="hover:underline">SOLUTIONS</Link>
+            <Link to="homepage" smooth={true} duration={500} className="hover:underline">HOMEPAGE</Link>
+          </div>
+          <div className="flex space-x-4">
+            <Link to="tr" smooth={true} duration={500} className="hover:underline">TR</Link>
+            <span>|</span>
+            <Link to="eng" smooth={true} duration={500} className="hover:underline">ENG</Link>
+          </div>
         </div>
       </div>
     </nav>

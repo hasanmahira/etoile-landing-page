@@ -1,7 +1,7 @@
 // src/pages/index.js
 import React from "react"
 import Layout from "../components/Layout"
-// import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar"
 // import Hero from "../components/Hero"
 // import Feature from "../components/Feature"
 import AboutSection from "../components/AboutSection"
@@ -55,7 +55,7 @@ const IndexPage = () => {
   return (
     <Layout className="text-like-cyan-vlight">
       {/* Hero Section */}
-      <section>
+      <section id="homepage">
         <div className="relative flex justify-center">
           <div className="aspect-w-15 aspect-h-8 relative w-full top-0 right-0 left-0 h-full h-screen overflow-hidden">
             <video
@@ -81,7 +81,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section>
+      <section id="about-us">
         {/* <div className="relative overflow-hidden h-screen py-20"> */}
         <AboutSection />
         {/* </div> */}
@@ -105,7 +105,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section>
+      <section id="solutions">
         <div className="relative overflow-hidden h-full py-40">
           <Services />
         </div>
@@ -168,7 +168,7 @@ const IndexPage = () => {
       </section> */}
 
 
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <Feature
         title="Transform Your Dreams"
         description="Explore our services and see how we can make a difference."
