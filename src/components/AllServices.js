@@ -1,36 +1,6 @@
 import React, { useState } from 'react';
 import { ServicesDesc } from '../text';
-
-const servicesData = [
-  {
-    name: 'UI-UX Design',
-    description: 'Kullanıcı dostu ve estetik açıdan çekici arayüzler oluşturuyoruz. Amacımız, kullanıcıların sitenizde keyifli ve verimli bir deneyim yaşamasını sağlamak.',
-  },
-  {
-    name: 'HTML Web Design',
-    description: 'Responsive and modern web designs that ensure high usability and accessibility standards.',
-  },
-  {
-    name: 'ASP.NET Web Design',
-    description: 'Robust server-side rendering solutions to enhance performance and security for enterprise applications.',
-  },
-  {
-    name: 'Landing Page Design',
-    description: 'Conversion-optimized landing pages designed to boost your marketing campaigns and capture leads effectively.',
-  },
-  {
-    name: 'Corporate Web Design',
-    description: 'Corporate website solutions that reflect your brand identity and engage with your stakeholders effectively.',
-  },
-  {
-    name: 'E-Commerce Web Design',
-    description: 'Comprehensive e-commerce solutions that offer seamless shopping experiences and easy management features.',
-  },
-  {
-    name: 'Software Development',
-    description: 'Full-stack development services to create scalable and innovative software applications.',
-  }
-];
+import ServicesData from '../data/servicesData';
 
 function Services() {
   const [activeService, setActiveService] = useState(null);
@@ -51,7 +21,7 @@ function Services() {
         <p>{ServicesDesc}</p>
       </div>
       <div className="w-1/2">
-        {servicesData.map((service, index) => (
+        {ServicesData.map((service, index) => (
           <div key={index} className="border-b border-gray-700 p-5">
             <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
               {service.name}
