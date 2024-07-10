@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 // import Navbar from "../components/Navbar"
 // import Hero from "../components/Hero"
 // import Feature from "../components/Feature"
-// import AboutSection from "../components/AboutSection"
+import AboutSection from "../components/AboutSection"
 // import ServicesSection from "../components/ServicesSection"
 // import TestimonialsSection from "../components/TestimonialsSection"
 // import GallerySection from "../components/GallerySection"
@@ -78,20 +78,11 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
-
-      {/* DreamComesLife Section */}
-      <section className="relative flex mt-[88px]">
-        <div className="relative flex justify-center flex-grow">
-          {/* <KeyVisualImage className="absolute right-0 max-w-[750px] mr-[-120px] opacity-60 md:mr-0 md:opacity-100" /> */}
-          <img
-            src={SomeImage}
-          />
-        </div>
-        <div className="relative flex flex-col justify-center flex-grow md:max-w-[66%] p-[24px]">
-          <GradientText tag="h2" className="text-[48px] text-center md:text-left">Hayallerİnİzİ Bİzİmle Gerçeğe Dönüştürün!</GradientText>
-          <p className="mt-[24px] text-like-cyan-vlight text-[20px]">{DREAMS_LIVE}</p>
-        </div>
+      
+      <section>
+        {/* <div className="relative overflow-hidden h-screen py-20"> */}
+          <AboutSection />
+        {/* </div> */}
       </section>
 
       {/* Gif Section */}
@@ -316,7 +307,6 @@ const IndexPage = () => {
         imageName="feature-image.jpg"
         buttonText="Learn More"
       />
-      <AboutSection />
       <ServicesSection />
       <TestimonialsSection />
       <GallerySection />
