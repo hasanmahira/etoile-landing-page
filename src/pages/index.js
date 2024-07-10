@@ -106,7 +106,7 @@ const IndexPage = () => {
       </section>
 
       <section>
-        <div className="relative overflow-hidden h-screen py-20">
+        <div className="relative overflow-hidden h-full py-40">
           <Services />
         </div>
       </section>

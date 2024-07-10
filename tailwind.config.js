@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'neon': '0 0 15px rgba(255, 255, 255, 0.5)'
+        'neon': '0 0 15px rgba(255, 255, 255, 0.5)',
+        'neon-blue': '0 0 10px rgba(0, 223, 252, 0.5), 0 0 20px rgba(0, 223, 252, 0.5), 0 0 30px rgba(0, 223, 252, 0.5), 0 0 40px rgba(0, 223, 252, 0.5)',
       },
       colors: {
         "blue-etoile": "#4286F5",
