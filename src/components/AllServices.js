@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ServicesDesc } from '../text';
-import ServicesData from '../data/servicesData';
+import ServicesData from '../data/ServicesData.json';
 
 function Services() {
   const [activeService, setActiveService] = useState(null);

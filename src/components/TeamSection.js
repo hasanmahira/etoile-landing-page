@@ -4,7 +4,7 @@ import TayfunPhoto from "../images/tayfun_pp.png"
 import BerkePhoto from "../images/berke_pp.png"
 import MelisPhoto from "../images/melis_pp.png"
 import DefaultPhoto from "../images/default_pp.png"
-import teamMembersData from '../data/TeamMembersList.json'; // Adjust the path as necessary
+import teamMembersData from '../data/TeamMembersList.json';
 
 const TeamSection = ({ }) => {
     const [videoEnded, setVideoEnded] = useState(false);
