@@ -71,7 +71,13 @@ module.exports = {
           '0%, 100%': { opacity: '1' },
           '25%, 75%': { opacity: '0' },
         },
-      },},
+      },
+      height: {
+        '1/2': '50%',
+        '3/4': '75%',
+        '90': '90%',  // Custom height as 90%
+      }
+    },
   },
   plugins: [aspectRatio],
 }

@@ -26,8 +26,8 @@ const AboutSection = () => {
             playsInline
             onEnded={handleVideoEnd}
             muted
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ filter: 'brightness(0.9)', objectPosition: 'center 10%' }}
+            className="absolute inset-0 w-full h-full object-cover object-bottom"
+            style={{ filter: 'brightness(0.9)', objectPosition: 'center 20%' }}
           >
             <source src={AboutVideoMp4} type="video/mp4" />
           </video>
