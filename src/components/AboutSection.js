@@ -40,7 +40,7 @@ const AboutSection = () => {
             <div className="flex-1 flex justify-center items-center p-4">
               <img
                 src={AboutImage}
-                className="max-w-[50%] md:max-w-[30%] opacity-60 md:opacity-100"
+                className="w-full md:max-w-[50%] lg:max-w-[60%] opacity-60 md:opacity-100"
                 alt="Descriptive alt text"
               />
             </div>
