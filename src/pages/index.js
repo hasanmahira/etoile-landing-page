@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 // import Hero from "../components/Hero"
 // import Feature from "../components/Feature"
 import AboutSection from "../components/AboutSection"
+import VideoGallery from "../components/VideoGallery"
 // import ServicesSection from "../components/ServicesSection"
 // import TestimonialsSection from "../components/TestimonialsSection"
 // import GallerySection from "../components/GallerySection"
@@ -86,116 +87,12 @@ const IndexPage = () => {
       </section>
 
       {/* Gif Section */}
-      <section className="py-10">
-        <div key={0} className={`flex ${0 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
-          <div className="w-2/3">
-            <video
-              autoPlay
-              playsInline
-              loop
-              muted
-              controls
-              className="w-full h-auto"
-              poster={Vid1} // Assuming you have poster images for each video
-              // poster={HeroImage}
-              alt="Decorative image"
-              style={{ filter: 'brightness(0.9)' }}
-            >
-              <source src={Vid1} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-
-        <div key={1} className={`flex ${1 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
-          <div className="w-2/3">
-            <video
-              autoPlay
-              playsInline
-              loop
-              muted
-              controls
-              className="w-full h-auto"
-              poster={Vid2} // Assuming you have poster images for each video
-            >
-              <source src={Vid2} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-
-        <div key={2} className={`flex ${2 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
-          <div className="w-2/3">
-            <video
-              autoPlay
-              playsInline
-              loop
-              muted
-              controls
-              className="w-full h-auto"
-              poster={Vid3} // Assuming you have poster images for each video
-            >
-              <source src={Vid3} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-
-        <div key={3} className={`flex ${3 % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
-          <div className="w-2/3">
-            <video
-              autoPlay
-              playsInline
-              loop
-              muted
-              controls
-              className="w-full h-auto"
-              poster={Vid4} // Assuming you have poster images for each video
-            >
-              <source src={Vid4} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-
-        {/* <section className="py-10">
-          {videos.map((video, index) => (
-            <div key={index} className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
-              <div className="w-1/2">
-                <video
-                  controls
-                  className="w-full h-auto"
-                  poster={video.poster} // Assuming you have poster images for each video
-                >
-                  <source src={video.src} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div className="w-1/2 px-5">
-                <h3 className="text-lg font-bold">{video.title}</h3>
-                <p>{video.description}</p>
-              </div>
-            </div>
-          ))}
-        </section> */}
-
-
-        {/* <img src={Vid1} alt="Describe the content of the GIF" /> */}
-        {/* {gifs.map((gif, index) => (
-          <div key={index} className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10`}>
-            <div className="w-1/2">
-              <img src={gif.src} />
-            </div>
-            <div className="w-1/2 px-5">
-              <h3 className="text-lg font-bold">{gif.title}</h3>
-              <p>{gif.description}</p>
-            </div>
-          </div>
-        ))} */}
+      <section>
+          <VideoGallery />
       </section>
 
       {/* Vision and Mission Section */}
-      <section>
+      <section className="py-20">
         <div className="relative overflow-hidden h-screen">
           <video
             autoPlay
