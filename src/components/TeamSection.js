@@ -1,45 +1,40 @@
 import React, { useState } from 'react';
 import TeamVideoMp4 from "../videos/team.mp4"
 import TayfunPhoto from "../images/tayfun_pp.png"
+import BerkePhoto from "../images/berke_pp.png"
+import MelisPhoto from "../images/melis_pp.png"
+import DefaultPhoto from "../images/default_pp.png"
+import teamMembersData from '../data/TeamMembersList.json'; // Adjust the path as necessary
 
 const TeamSection = ({ }) => {
     const [videoEnded, setVideoEnded] = useState(false);
-    const teamMembers = [
-        {
-            name: "Melis Çıkalçekic",
-            role: "Co-Founder",
-            photo: { TayfunPhoto } // Ensure you use the correct path to the image
-        },
-        {
-            name: "Tayfun Özlok",
-            role: "Co-Founder",
-            photo: "path_to_tayfun_photo.jpg"
-        },
-        {
-            name: "Berke Kocyigitoglu",
-            role: "Art Director",
-            photo: "path_to_berke_photo.jpg"
-        },
-        {
-            name: "Tayfun Özlok",
-            role: "Co-Founder",
-            photo: "path_to_tayfun_second_photo.jpg"
-        },
-        {
-            name: "Melis Çıkalçekic",
-            role: "Co-Founder",
-            photo: "path_to_melis_second_photo.jpg"
-        },
-        {
-            name: "Tayfun Özlok",
-            role: "Co-Founder",
-            photo: "path_to_tayfun_third_photo.jpg"
-        }
-    ];
 
     const handleVideoEnd = () => {
         setVideoEnded(true);
     };
+
+    // Mapping each team member's name to their specific photo
+    const teamMembers = teamMembersData.map(member => {
+        let photo;
+        switch (member.name) {
+            case "Tayfun Özlok":
+                photo = TayfunPhoto;
+                break;
+            case "Berke Kocyigitoglu":
+                photo = BerkePhoto;
+                break;
+            case "Melis Çıkalçekic":
+                photo = MelisPhoto;
+                break;
+            default:
+                photo = DefaultPhoto;
+        }
+
+        return {
+            ...member,
+            photo
+        };
+    });
 
     return (
         <section>
@@ -60,12 +55,12 @@ const TeamSection = ({ }) => {
                         <source src={TeamVideoMp4} type="video/mp4" />
                     </video>
                 )}
-
+    
                 {/* Team Information Section */}
-                <div className={`relative z-10 grid grid-cols-3 gap-4 items-center justify-items-center p-4 ${videoEnded ? 'flex' : 'hidden'}`}>
+                <div className={`relative z-10 grid grid-cols-5 gap-4 items-center justify-items-center p-4 px-60 ${videoEnded ? 'flex' : 'hidden'}`}> {/* Adjust the value as needed */}
                     {teamMembers.map((member, index) => (
                         <div key={index} className="text-center text-white">
-                            <img src={TayfunPhoto} alt={member.name} className="w-32 h-32 rounded-full mb-4" />
+                            <img src={member.photo} alt={member.name} className="w-32 h-32 rounded-full mb-4" />
                             <h2 className="text-xl font-bold">{member.name}</h2>
                             <p className="text-sm">{member.role}</p>
                         </div>

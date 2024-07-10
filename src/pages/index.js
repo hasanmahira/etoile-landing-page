@@ -6,6 +6,7 @@ import Layout from "../components/Layout"
 // import Feature from "../components/Feature"
 import AboutSection from "../components/AboutSection"
 import VideoGallery from "../components/VideoGallery"
+import VisionMissionSection from "../components/VisionMissionSection"
 // import ServicesSection from "../components/ServicesSection"
 // import TestimonialsSection from "../components/TestimonialsSection"
 // import GallerySection from "../components/GallerySection"
@@ -79,51 +80,21 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      
+
       <section>
         {/* <div className="relative overflow-hidden h-screen py-20"> */}
-          <AboutSection />
+        <AboutSection />
         {/* </div> */}
       </section>
 
       {/* Gif Section */}
       <section>
-          <VideoGallery />
+        <VideoGallery />
       </section>
 
       {/* Vision and Mission Section */}
-      <section className="py-20">
-        <div className="relative overflow-hidden h-screen">
-          <video
-            autoPlay
-            playsInline
-            loop
-            muted
-            className="absolute inset-0 w-full h-full object-cover"
-            alt="Decorative image"
-            style={{ filter: 'brightness(0.9)' }}
-          >
-            <source src={AboutUsVideo} type="video/mp4" />
-          </video>
-          <div className="relative z-10 flex flex-col justify-between h-full bg-black bg-opacity-50 p-4">
-            <div className="text-right text-white md:mt-20 md:mr-20">
-              <h1 className="text-4xl font-bold mb-2">VİZYONUMUZ</h1>
-              <p>{Vision}</p>
-            </div>
-            <div className="text-left text-white md:mb-20 md:ml-20">
-              <h1 className="text-4xl font-bold mb-2">MİSYONUMUZ</h1>
-              <p>{Mission}</p>
-            </div>
-            <div className="flex justify-center">
-              <button className="mt-4 px-6 py-2 bg-purple-700 hover:bg-purple-600 rounded shadow-lg">SEE SOLUTIONS</button>
-            </div>
-          </div>
-        </div>
-        <div className="absolute hidden inset-x-0 bottom-0 h-[5%] md:flex justify-center">
-          <button className="mx-2 px-6 py-2 hover:bg-gray-700 rounded text-white font-bold">
-            Contact Us
-          </button>
-        </div>
+      <section>
+        <VisionMissionSection />
       </section>
 
       {/* Team Section */}
