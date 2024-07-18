@@ -32,12 +32,12 @@ const Navbar = () => {
   }, [isOpen]);  // Depend on isOpen state to add/remove event listener
 
   return (
-    <nav className="fixed top-0 w-full bg-midnight bg-opacity-75 backdrop-blur-lg text-white py-3 z-50">
+    <nav className="fixed top-0 w-full bg-midnight bg-opacity-30 text-white py-5 z-50">  {/* Increased padding for bigger navbar */}
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="flex">
-          <Link to="homepage" smooth={true} duration={500} className="hover:underline">HOMEPAGE</Link>
-          <Link to="about-us" smooth={true} duration={500} className="hover:underline ml-4">ABOUT US</Link>
-          <Link to="solutions" smooth={true} duration={500} className="hover:underline ml-4">CONTACT US</Link>
+        <div className="flex space-x-8">  {/* Increased spacing between buttons */}
+          <Link to="homepage" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">HOMEPAGE</Link>  {/* Increased font size */}
+          <Link to="about-us" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">ABOUT US</Link>  {/* Increased font size */}
+          <Link to="solutions" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">CONTACT US</Link>  {/* Increased font size */}
         </div>
         <div className="relative">
           <button onClick={toggleMenu} className="focus:outline-none">
