@@ -17,8 +17,8 @@ function Services() {
 
   return (
     <div className="flex">
-      <div className="w-1/2 px-10 pt-40 text-center text-2xl text-white">
-        <p>{ServicesDesc}</p>
+      <div className="w-1/2 px-10 pt-40 text-center text-3xl text-white">
+        <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>{ServicesDesc}</p>
       </div>
       <div className="w-1/2">
         {ServicesData.map((service, index) => (
