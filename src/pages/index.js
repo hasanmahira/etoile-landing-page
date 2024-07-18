@@ -10,10 +10,16 @@ import BeforeVisionMissionSection from "../components/BeforeVisionMissionSection
 import ContactForm from "../components/ContactForm"
 import TeamSection from "../components/TeamSection"
 import BrandSection from "../components/BrandSection"
-import Services from "../components/AllServices"
+import BrandSocialMediaManagementSection from "../components/BrandSocialMediaManagementSection"
+import BrandDigitalMarketingBrandingSection from "../components/BrandDigitalMarketingBrandingSection"
+import BrandProductionSection from "../components/BrandProductionSection"
+import WebServices from "../components/WebServices"
+import DigitalMarketingBrandingServices from "../components/DigitalMarketingBranding"
+import ProductionServices from "../components/ProductionServices"
+import SocialMediaManagementServices from "../components/SocialMediaManagement"
 import BusinessPortfolio from "../components/BusinessPortfolio"
 // index.js veya App.js
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import Seo from "../components/seo"
 
@@ -45,24 +51,59 @@ const IndexPage = () => {
 
       {/* Vision and Mission Section */}
       <section>
-        <VisionMissionSection />
+        <div className="relative overflow-hidden h-full py-20">
+          <VisionMissionSection />
+        </div>
       </section>
 
       {/* Team Section */}
 
       <section>
-      <div className="relative overflow-hidden h-full py-20">
+        <div className="relative overflow-hidden h-full py-20">
           <TeamSection />
         </div>
       </section>
 
       <section>
-          <BrandSection />
+        <BrandSection />
       </section>
 
       <section id="solutions">
         <div className="relative overflow-hidden h-full py-40">
-          <Services />
+          <WebServices />
+        </div>
+      </section>
+
+
+      <section>
+        <BrandSocialMediaManagementSection />
+      </section>
+
+      <section id="socialMediaManagementServices">
+        <div className="relative overflow-hidden h-full py-40">
+          <SocialMediaManagementServices />
+        </div>
+      </section>
+
+
+      <section>
+        <BrandDigitalMarketingBrandingSection />
+      </section>
+
+      <section id="digitalMarketingBrandingServices">
+        <div className="relative overflow-hidden h-full py-40">
+          <DigitalMarketingBrandingServices />
+        </div>
+      </section>
+
+
+      <section>
+        <BrandProductionSection />
+      </section>
+
+      <section id="productionServices">
+        <div className="relative overflow-hidden h-full py-40">
+          <ProductionServices />
         </div>
       </section>
 

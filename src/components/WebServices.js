@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { ServicesDesc } from '../text';
+import { ServicesDesc, ServicesDescEN } from '../text';
 import ServicesData from '../data/ServicesData.json';
 
-function Services() {
+function WebServices() {
   const [activeService, setActiveService] = useState(null);
 
   const toggleDescription = (index) => {
@@ -18,7 +18,7 @@ function Services() {
   return (
     <div className="flex">
       <div className="w-1/2 px-10 pt-40 text-center text-3xl text-white">
-        <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>{ServicesDesc}</p>
+        <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>{ServicesDescEN}</p>
       </div>
       <div className="w-1/2">
         {ServicesData.map((service, index) => (
@@ -40,4 +40,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default WebServices;
