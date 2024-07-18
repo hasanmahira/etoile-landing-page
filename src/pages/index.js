@@ -6,6 +6,7 @@ import AboutSection from "../components/AboutSection"
 import HeroSection from "../components/Hero"
 import ServicesGallery from "../components/ServicesGallery"
 import VisionMissionSection from "../components/VisionMissionSection"
+import BeforeVisionMissionSection from "../components/BeforeVisionMissionSection"
 import ContactForm from "../components/ContactForm"
 import TeamSection from "../components/TeamSection"
 import Services from "../components/AllServices"
@@ -32,6 +33,12 @@ const IndexPage = () => {
       <section>
         <ServicesGallery />
       </section>
+
+      {/* Vision and Mission Section */}
+      <section>
+        <BeforeVisionMissionSection />
+      </section>
+
 
       {/* Vision and Mission Section */}
       <section>
