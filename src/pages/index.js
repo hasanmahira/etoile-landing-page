@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar"
 // import Hero from "../components/Hero"
 // import Feature from "../components/Feature"
 import AboutSection from "../components/AboutSection"
+import HeroSection from "../components/Hero"
 import VideoGallery from "../components/VideoGallery"
 import VisionMissionSection from "../components/VisionMissionSection"
 // import ServicesSection from "../components/ServicesSection"
@@ -56,7 +57,8 @@ const IndexPage = () => {
     <Layout className="text-like-cyan-vlight">
       {/* Hero Section */}
       <section id="homepage">
-        <div className="relative flex justify-center">
+        <HeroSection />
+        {/* <div className="relative flex justify-center">
           <div className="aspect-w-15 aspect-h-8 relative w-full top-0 right-0 left-0 h-full h-screen overflow-hidden">
             <video
               autoPlay
@@ -78,7 +80,7 @@ const IndexPage = () => {
               Contact Us
             </button>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section id="about-us">
