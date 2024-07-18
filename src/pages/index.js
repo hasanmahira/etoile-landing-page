@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import Navbar from "../components/Navbar"
 import AboutSection from "../components/AboutSection"
 import HeroSection from "../components/Hero"
-import VideoGallery from "../components/VideoGallery"
+import ServicesGallery from "../components/ServicesGallery"
 import VisionMissionSection from "../components/VisionMissionSection"
 import ContactForm from "../components/ContactForm"
 import TeamSection from "../components/TeamSection"
@@ -30,7 +30,7 @@ const IndexPage = () => {
 
       {/* Gif Section */}
       <section>
-        <VideoGallery />
+        <ServicesGallery />
       </section>
 
       {/* Vision and Mission Section */}
