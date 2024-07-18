@@ -78,3 +78,19 @@ a[type=button] {
   top: 0;
   left: 0;
 }
+
+/* Slider Dots Customization */
+.slick-dots {
+  bottom: 25px;  /* Adjusts the position from the bottom */
+}
+
+.slick-dots li button:before {
+  color: white;  /* Makes the dots white */
+  font-size: 12px; /* Increases the size of the dots */
+  opacity: 1;  /* Makes dots fully opaque */
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;  /* Highlights the active dot in white */
+  opacity: 1;  /* Ensures the active dot is fully visible */
+}
