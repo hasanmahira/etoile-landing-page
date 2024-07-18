@@ -2,85 +2,24 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Navbar from "../components/Navbar"
-// import Hero from "../components/Hero"
-// import Feature from "../components/Feature"
 import AboutSection from "../components/AboutSection"
 import HeroSection from "../components/Hero"
 import VideoGallery from "../components/VideoGallery"
 import VisionMissionSection from "../components/VisionMissionSection"
-// import ServicesSection from "../components/ServicesSection"
-// import TestimonialsSection from "../components/TestimonialsSection"
-// import GallerySection from "../components/GallerySection"
-// import BlogSection from "../components/BlogSection"
 import ContactForm from "../components/ContactForm"
-// import Footer from "../components/Footer"
-import HeroVideoMp4 from "../videos/hero.mp4"
-// import TeamVideoMp4 from "../videos/team.mp4"
-import AboutUsVideo from "../videos/aboutus_aurora.mp4"
-import SomeImage from "../images/some-image.png"
-import Vid1 from "../videos/Vid1.mp4"
-import Vid2 from "../videos/Vid2.mp4"
-import Vid3 from "../videos/Vid3.mp4"
-import Vid4 from "../videos/Vid4.mp4"
-import GradientText from "../components/GradientText"
-import SubscribeNewsletterSection from "../components/SubscribeNewsletterSection"
-import Button from "../components/Button"
-import {
-  DREAMS_LIVE,
-  Mission,
-  Vision
-} from "../text";
 import TeamSection from "../components/TeamSection"
 import Services from "../components/AllServices"
 import BusinessPortfolio from "../components/BusinessPortfolio"
 
 // import Seo from "../components/seo"
 
-// const videos = [
-//   {
-//     src: "../videos/vid1.mp4",
-//     title: 'First GIF',
-//     description: 'Description of the first GIF'
-//   },
-//   {
-//     src: '../videos/vid2.mp4',
-//     title: 'Second GIF',
-//     description: 'Description of the second GIF'
-//   }
-//   // Add more GIFs as needed
-// ];
-
 const IndexPage = () => {
-
 
   return (
     <Layout className="text-like-cyan-vlight">
       {/* Hero Section */}
       <section id="homepage">
         <HeroSection />
-        {/* <div className="relative flex justify-center">
-          <div className="aspect-w-15 aspect-h-8 relative w-full top-0 right-0 left-0 h-full h-screen overflow-hidden">
-            <video
-              autoPlay
-              playsInline
-              loop
-              muted
-              className="absolute inset-0 w-full h-full object-cover"
-              alt="Decorative image"
-              style={{ filter: 'brightness(0.9)' }}
-            >
-              <source src={HeroVideoMp4} type="video/mp4" />
-            </video>
-          </div>
-          <div className="absolute hidden inset-x-0 bottom-0 h-[5%] md:flex justify-center">
-            <button className="mx-2 px-6 py-2 bg-primary hover:bg-blue-700 rounded text-white font-bold">
-              Learn More
-            </button>
-            <button className="mx-2 px-6 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold">
-              Contact Us
-            </button>
-          </div>
-        </div> */}
       </section>
 
       <section id="about-us">
