@@ -42,7 +42,7 @@ const TeamSection = ({ }) => {
 
     return (
         <section>
-            <div className="relative overflow-hidden h-screen">
+            <div className="relative overflow-hidden h-full">
                 <div className="text-center text-white mb-10">
                     <h1 className="text-4xl font-bold">THE ETOILE CONSTELLATION</h1>
                 </div>
