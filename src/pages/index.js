@@ -74,52 +74,7 @@ const IndexPage = () => {
 
       {/* Sub-Nav Section */}
       {/* <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
-        <Button
-          className="text-[22px]"
-          preset="filled"
-          href="https://liker.land"
-          target="_blank"
-          rel="noopener"
-        >Explore Writing NFT</Button>
-        <nav className="flex justify-center mt-[24px]">
-          <ul className="grid grid-cols-2 sm:flex flex-wrap gap-x-[8px] gap-y-[16px]">
-            <li>
-              <Button
-                preset="outlined"
-                href="https://app.like.co"
-                target="_blank"
-                rel="noopener"
-              >Register ISCN</Button>
-            </li>
-            <li>
-              <Button
-                preset="outlined"
-                href="https://docs.like.co/"
-                target="_blank"
-                rel="noopener"
-              >Docs</Button>
-            </li>
-            <li>
-              <Button
-                preset="outlined"
-                // href={blogUrl}
-                target="_blank"
-                rel="noopener"
-              >Blog</Button>
-            </li>
-            <li>
-              <Button
-                preset="outlined"
-                href="https://docs.like.co/faq"
-                target="_blank"
-                rel="noopener"
-              >FAQ</Button>
-            </li>
-          </ul>
-        </nav>
-        <p className="text-[16px] mt-[24px]">
-          Questions? Ask the <a className="underline" href="http://discord.gg/likecoin">community</a>.
-        </p>
+       
       </section> */}
 
 
