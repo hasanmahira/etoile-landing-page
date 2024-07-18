@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import TeamVideoMp4 from "../videos/team.mp4"
-import TayfunPhoto from "../images/tayfun_pp.png"
-import BerkePhoto from "../images/berke_pp.png"
-import MelisPhoto from "../images/melis_pp.png"
+import TayfunPhoto from "../images/tayfun_pp.jpeg"
+import BerkePhoto from "../images/berke_pp.jpeg"
+import MelisPhoto from "../images/melis_pp.jpeg"
+import MahirPhoto from "../images/mahir_pp.jpeg"
 import DefaultPhoto from "../images/default_pp.png"
 import teamMembersData from '../data/TeamMembersList.json';
 
@@ -25,6 +26,9 @@ const TeamSection = ({ }) => {
                 break;
             case "Melis Çıkalçekic":
                 photo = MelisPhoto;
+                break;
+            case "Hasan Mahir Ateş":
+                photo = MahirPhoto;
                 break;
             default:
                 photo = DefaultPhoto;

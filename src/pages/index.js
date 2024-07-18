@@ -51,9 +51,9 @@ const IndexPage = () => {
       {/* Team Section */}
 
       <section>
-        <div className="relative overflow-hidden h-screen py-20">
+        {/* <div className="relative overflow-hidden h-screen py-20"> */}
           <TeamSection />
-        </div>
+        {/* </div> */}
       </section>
 
       <section>
