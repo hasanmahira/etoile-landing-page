@@ -9,6 +9,7 @@ import VisionMissionSection from "../components/VisionMissionSection"
 import BeforeVisionMissionSection from "../components/BeforeVisionMissionSection"
 import ContactForm from "../components/ContactForm"
 import TeamSection from "../components/TeamSection"
+import BrandSection from "../components/BrandSection"
 import Services from "../components/AllServices"
 import BusinessPortfolio from "../components/BusinessPortfolio"
 
@@ -51,6 +52,10 @@ const IndexPage = () => {
         <div className="relative overflow-hidden h-screen py-20">
           <TeamSection />
         </div>
+      </section>
+
+      <section>
+          <BrandSection />
       </section>
 
       <section id="solutions">
