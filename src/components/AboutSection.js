@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import GradientText from "../components/GradientText";
-import { DREAMS_LIVE } from "../text";
 import AboutImage from "../images/about.png";
+import { useTranslation } from '../context/useTranslation';
 
 const AboutSection = () => {
   const [showContact, setShowContact] = useState(false);
+  const { t } = useTranslation();
 
   const toggleContactInfo = () => {
     setShowContact(!showContact);
@@ -24,8 +25,8 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row w-full">
             {/* Text and Button Section */}
             <div className="flex-1 flex flex-col justify-center p-[24px] md:max-w-[66%] lg:max-w-[88%] md:ml-[10%]">
-              <GradientText tag="h2" className="text-[45px] md:text-45] leading-tight">Hayallerinizi Bizimle Gerçeğe Dönüştürün!</GradientText>
-              <p className="mt-[24px] text-like-cyan-vlight text-[16px] md:text-[20px] py-10">{DREAMS_LIVE}</p>
+              <GradientText tag="h2" className="text-[45px] md:text-45] leading-tight">{t('DREAMS_LIVE')}</GradientText>
+              <p className="mt-[24px] text-like-cyan-vlight text-[16px] md:text-[20px] py-10">{t('DREAMS_LIVE_DESC')}</p>
               <button onClick={toggleContactInfo} className="ml-auto px-6 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded mt-4">
                 Learn More
               </button>

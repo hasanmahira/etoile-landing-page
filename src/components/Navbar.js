@@ -1,16 +1,21 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import { Link } from "react-scroll";
+import { LanguageContext } from '../context/LanguageContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);  // Ref for the dropdown menu
+  const dropdownRef = useRef(null);
+  // const { language, toggleLanguage } = useContext(LanguageContext);
+  const { language, setLanguage } = useContext(LanguageContext);
 
-  // Toggle dropdown open/close
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Close dropdown if clicking outside of it
+  const handleLanguageChange = () => {
+    setLanguage(prevLanguage => prevLanguage === 'en' ? 'tr' : 'en');
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -18,7 +23,6 @@ const Navbar = () => {
       }
     };
 
-    // Add when the dropdown is open and remove when it is closed
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
@@ -26,20 +30,22 @@ const Navbar = () => {
     }
 
     return () => {
-      // Cleanup the event listener
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);  // Depend on isOpen state to add/remove event listener
+  }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 w-full bg-midnight bg-opacity-30 text-white py-5 z-50">  {/* Increased padding for bigger navbar */}
+    <nav className="fixed top-0 w-full bg-midnight bg-opacity-30 text-white py-5 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="flex space-x-8">  {/* Increased spacing between buttons */}
-          <Link to="homepage" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">HOMEPAGE</Link>  {/* Increased font size */}
-          <Link to="about-us" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">ABOUT US</Link>  {/* Increased font size */}
-          <Link to="solutions" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">CONTACT US</Link>  {/* Increased font size */}
+        <div className="flex space-x-8">
+          <Link to="homepage" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">{language === 'en' ? 'HOMEPAGE' : 'ANASAYFA'}</Link>
+          <Link to="about-us" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">{language === 'en' ? 'ABOUT US' : 'HAKKIMIZDA'}</Link>
+          <Link to="solutions" smooth={true} duration={500} className="hover:underline text-2xl py-2 mx-6">{language === 'en' ? 'CONTACT US' : 'İLETİŞİM'}</Link>
         </div>
-        <div className="relative">
+        <div className="flex items-center space-x-4">
+          <button onClick={handleLanguageChange} className="text-2xl py-2">
+            {language === 'en' ? 'TR' : 'EN'}
+          </button>
           <button onClick={toggleMenu} className="focus:outline-none">
             <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24" stroke="currentColor">
               {isOpen ? (

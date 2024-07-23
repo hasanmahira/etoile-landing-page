@@ -1,7 +1,7 @@
 import './src/styles/global.css';
+import React from 'react';
+import { LanguageProvider } from './src/context/LanguageContext';
 
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
- */
+export const wrapRootElement = ({ element }) => (
+  <LanguageProvider>{element}</LanguageProvider>
+);

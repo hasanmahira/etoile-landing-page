@@ -22,10 +22,13 @@ import BusinessPortfolio from "../components/BusinessPortfolio"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import Seo from "../components/seo"
+import { LanguageProvider } from '../context/LanguageContext';
 
 const IndexPage = () => {
 
   return (
+    <LanguageProvider>
+
     <Layout className="text-like-cyan-vlight">
       {/* Hero Section */}
       <section id="homepage">
@@ -146,6 +149,8 @@ const IndexPage = () => {
         </div>
       </section> */}
     </Layout>
+    </LanguageProvider>
+
   )
 }
 

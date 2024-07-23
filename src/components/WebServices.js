@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { ServicesDesc, ServicesDescEN } from '../text';
 import ServicesData from '../data/ServicesData.json';
+import { useTranslation } from '../context/useTranslation';
 
 function WebServices() {
   const [activeService, setActiveService] = useState(null);
+  const { t } = useTranslation();
 
   const toggleDescription = (index) => {
     setActiveService(activeService === index ? null : index);
@@ -18,7 +19,7 @@ function WebServices() {
   return (
     <div className="flex">
       <div className="w-1/2 px-10 pt-40 text-center text-3xl text-white">
-        <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>{ServicesDescEN}</p>
+        <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>{t('ServicesDesc')}</p>
       </div>
       <div className="w-1/2">
         {ServicesData.map((service, index) => (
