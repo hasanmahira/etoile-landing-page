@@ -28,101 +28,100 @@ const IndexPage = () => {
 
   return (
     <LanguageProvider>
-    <Layout className="text-like-cyan-vlight">
-      {/* Hero Section */}
-      <section id="homepage">
-        <HeroSection />
-      </section>
+      <Layout className="text-like-cyan-vlight">
+        {/* Hero Section */}
+        <section id="homepage">
+          <HeroSection />
+        </section>
 
-      <section id="about-us">
-        {/* <div className="relative overflow-hidden h-screen py-20"> */}
-        <AboutSection />
-        {/* </div> */}
-      </section>
+        {/* About Section */}
+        <section id="about-us">
+          <AboutSection />
+        </section>
 
-      {/* Gif Section */}
-      <section>
-        <ServicesGallery />
-      </section>
+        {/* Services Section */}
+        <section>
+          <ServicesGallery />
+        </section>
 
-      {/* Vision and Mission Section */}
-      <section>
-        <BeforeVisionMissionSection />
-      </section>
-
-
-      {/* Vision and Mission Section */}
-      <section>
-        <div className="relative overflow-hidden h-full py-20">
-          <VisionMissionSection />
-        </div>
-      </section>
-
-      {/* Team Section */}
-
-      <section>
-        <div className="relative overflow-hidden h-full py-20">
-          <TeamSection />
-        </div>
-      </section>
-
-      <section>
-        <BrandSection />
-      </section>
-
-      <section id="solutions">
-        <div className="relative overflow-hidden h-full py-40">
-          <WebServices />
-        </div>
-      </section>
+        {/* Vision and Mission Section */}
+        <section>
+          <BeforeVisionMissionSection />
+        </section>
 
 
-      <section>
-        <BrandSocialMediaManagementSection />
-      </section>
+        {/* Vision and Mission Section */}
+        <section>
+          <div className="relative overflow-hidden h-full py-20">
+            <VisionMissionSection />
+          </div>
+        </section>
 
-      <section id="socialMediaManagementServices">
-        <div className="relative overflow-hidden h-full py-40">
-          <SocialMediaManagementServices />
-        </div>
-      </section>
+        {/* Team Section */}
+
+        <section>
+          <div className="relative overflow-hidden h-full py-20">
+            <TeamSection />
+          </div>
+        </section>
+
+        <section>
+          <BrandSection />
+        </section>
+
+        <section id="solutions">
+          <div className="relative overflow-hidden h-full py-40">
+            <WebServices />
+          </div>
+        </section>
 
 
-      <section>
-        <BrandDigitalMarketingBrandingSection />
-      </section>
+        <section>
+          <BrandSocialMediaManagementSection />
+        </section>
 
-      <section id="digitalMarketingBrandingServices">
-        <div className="relative overflow-hidden h-full py-40">
-          <DigitalMarketingBrandingServices />
-        </div>
-      </section>
+        <section id="socialMediaManagementServices">
+          <div className="relative overflow-hidden h-full py-40">
+            <SocialMediaManagementServices />
+          </div>
+        </section>
 
 
-      <section>
-        <BrandProductionSection />
-      </section>
+        <section>
+          <BrandDigitalMarketingBrandingSection />
+        </section>
 
-      <section id="productionServices">
-        <div className="relative overflow-hidden h-full py-40">
-          <ProductionServices />
-        </div>
-      </section>
+        <section id="digitalMarketingBrandingServices">
+          <div className="relative overflow-hidden h-full py-40">
+            <DigitalMarketingBrandingServices />
+          </div>
+        </section>
 
-      <section>
-        {/* <div className="relative overflow-hidden h-screen py-20"> */}
-        <BusinessPortfolio />
-        {/* </div> */}
-      </section>
 
-      {/* Sub-Nav Section */}
-      {/* <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
+        <section>
+          <BrandProductionSection />
+        </section>
+
+        <section id="productionServices">
+          <div className="relative overflow-hidden h-full py-40">
+            <ProductionServices />
+          </div>
+        </section>
+
+        <section>
+          {/* <div className="relative overflow-hidden h-screen py-20"> */}
+          <BusinessPortfolio />
+          {/* </div> */}
+        </section>
+
+        {/* Sub-Nav Section */}
+        {/* <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
        
       </section> */}
 
 
-      <Navbar />
-      {/* <Feature
+        <Navbar />
+        {/* <Feature
         title="Transform Your Dreams"
         description="Explore our services and see how we can make a difference."
         imageName="feature-image.jpg"
@@ -132,22 +131,22 @@ const IndexPage = () => {
       <TestimonialsSection />
       <GallerySection />
       <BlogSection /> */}
-      {/* <SubscribeNewsletterSection /> */}
+        {/* <SubscribeNewsletterSection /> */}
 
-      {/* Contact Form Section */}
-      <section>
-        <div className="relative flex justify-center">
-          <ContactForm />
-        </div>
-      </section>
+        {/* Contact Form Section */}
+        <section>
+          <div className="relative flex justify-center">
+            <ContactForm />
+          </div>
+        </section>
 
-      {/* Footer */}
-      {/* <section>
+        {/* Footer */}
+        {/* <section>
         <div className="relative flex justify-center">
           <Footer />
         </div>
       </section> */}
-    </Layout>
+      </Layout>
     </LanguageProvider>
 
   )
