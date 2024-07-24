@@ -147,3 +147,25 @@ a[type=button] {
       transform: translateY(-50%) translateX(calc(-100vw + 60px));
   }
 }
+
+@keyframes slideRight {
+  from {
+    left: 50%;
+    transform: translateX(-50%); /* Center the star horizontally */
+  }
+  to {
+    left: 100%;
+    transform: translateX(0%); /* Move right off-screen */
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    right: 50%;
+    transform: translateX(50%); /* Center the star horizontally */
+  }
+  to {
+    right: 100%;
+    transform: translateX(0%); /* Move left off-screen */
+  }
+}
