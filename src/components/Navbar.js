@@ -17,7 +17,7 @@ const Navbar = () => {
   const mainMenuItems = [
     { to: "homepage", en: "HOMEPAGE", tr: "ANASAYFA" },
     { to: "about-us", en: "ABOUT US", tr: "HAKKIMIZDA" },
-    { to: "solutions", en: "CONTACT US", tr: "İLETİŞİM" }
+    { to: "contact", en: "CONTACT US", tr: "İLETİŞİM" }
   ];
 
   const additionalMenuItems = [

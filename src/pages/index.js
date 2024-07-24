@@ -60,9 +60,7 @@ const IndexPage = () => {
         {/* Team Section */}
 
         <section>
-          <div className="relative overflow-hidden h-full w-full">
             <TeamSection />
-          </div>
         </section>
 
         <section>
@@ -134,7 +132,7 @@ const IndexPage = () => {
         {/* <SubscribeNewsletterSection /> */}
 
         {/* Contact Form Section */}
-        <section>
+        <section id="contact">
           <div className="relative flex justify-center">
             <ContactForm />
           </div>

@@ -28,14 +28,6 @@ const HeroSection = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="absolute hidden inset-x-0 bottom-0 h-[5%] md:flex justify-center">
-          <button className="mx-2 px-6 py-2 bg-primary hover:bg-blue-700 rounded text-white font-bold">
-            Learn More
-          </button>
-          <button className="mx-2 px-6 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold">
-            Contact Us
-          </button>
-        </div>
       </div>
     </section>
   );
