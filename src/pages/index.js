@@ -52,7 +52,7 @@ const IndexPage = () => {
 
         {/* Vision and Mission Section */}
         <section>
-          <div className="relative overflow-hidden h-full py-20">
+          <div className="relative overflow-hidden h-full">
             <VisionMissionSection />
           </div>
         </section>
