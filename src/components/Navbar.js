@@ -21,10 +21,10 @@ const Navbar = () => {
   ];
 
   const additionalMenuItems = [
-    { to: "web-design", en: "WEB DESIGN", tr: "WEB TASARIM" },
-    { to: "social-media", en: "SOCIAL MEDIA MANAGEMENT", tr: "SOSYAL MEDYA YÖNETİMİ" },
-    { to: "digital-marketing", en: "DIGITAL MARKETING & BRANDING", tr: "DİJİTAL PAZARLAMA & MARKALAŞMA" },
-    { to: "production-services", en: "PRODUCTION SERVICES", tr: "ÜRETİM HİZMETLERİ" }
+    { to: "webDesign", en: "WEB DESIGN", tr: "WEB TASARIM" },
+    { to: "socialMediaManagementServices", en: "SOCIAL MEDIA MANAGEMENT", tr: "SOSYAL MEDYA YÖNETİMİ" },
+    { to: "digitalMarketingBrandingServices", en: "DIGITAL MARKETING & BRANDING", tr: "DİJİTAL PAZARLAMA & MARKALAŞMA" },
+    { to: "productionServices", en: "PRODUCTION SERVICES", tr: "ÜRETİM HİZMETLERİ" }
   ];
 
   return (

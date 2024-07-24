@@ -94,3 +94,56 @@ a[type=button] {
   color: white;  /* Highlights the active dot in white */
   opacity: 1;  /* Ensures the active dot is fully visible */
 }
+
+
+/* 
+// CSS for the animation
+*/
+.star {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.star-left {
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+.star-right {
+  right: -30px;
+  transform: translateY(-50%);
+}
+
+.star.animate {
+  opacity: 1;
+  animation: slide 1s forwards;
+}
+
+.star.fadeOut {
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateY(-50%) translateX(0);
+  }
+  100% {
+      transform: translateY(-50%) translateX(calc(100vw - 60px));
+  }
+}
+
+/* Reverse animation for stars on the right */
+.star-right.animate {
+  animation: slide-reverse 1s forwards;
+}
+
+@keyframes slide-reverse {
+  0% {
+      transform: translateY(-50%) translateX(0);
+  }
+  100% {
+      transform: translateY(-50%) translateX(calc(-100vw + 60px));
+  }
+}

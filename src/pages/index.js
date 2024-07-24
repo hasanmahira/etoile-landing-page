@@ -67,7 +67,7 @@ const IndexPage = () => {
           <BrandSection />
         </section>
 
-        <section id="solutions">
+        <section id="webDesign">
           <div className="relative overflow-hidden h-full">
             <WebServices />
           </div>
