@@ -45,30 +45,32 @@ const TeamSection = () => {
                 <div className="text-center text-white mb-10 relative z-10">
                     <h1 className="text-4xl font-bold">THE ETOILE CONSTELLATION</h1>
                 </div>
+                <div className="relative w-screen h-screen overflow-hidden">
 
-                {/* Team Video */}
-                {!videoEnded && (
-                    <video
-                        autoPlay
-                        playsInline
-                        onEnded={handleVideoEnd}
-                        muted
-                        className="absolute inset-0 w-full h-full object-cover"
-                        style={{ filter: 'brightness(0.9)' }}
-                    >
-                        <source src={TeamVideoMp4} type="video/mp4" />
-                    </video>
-                )}
+                    {/* Team Video */}
+                    {!videoEnded && (
+                        <video
+                            autoPlay
+                            playsInline
+                            onEnded={handleVideoEnd}
+                            muted
+                            className="absolute w-screen h-screen object-cover"
+                            style={{ filter: 'brightness(0.9)' }}
+                        >
+                            <source src={TeamVideoMp4} type="video/mp4" />
+                        </video>
+                    )}
 
-                {/* Team Information Section */}
-                <div className={`relative z-10 grid grid-cols-5 gap-2 md:gap-4 items-center justify-items-center p-4 md:px-60 ${videoEnded ? 'flex' : 'hidden'}`}>
-                    {teamMembers.map((member, index) => (
-                        <div key={index} className="text-center text-white px-1">
-                            <img src={member.photo} alt={member.name} className="w-20 h-20 md:w-24 md:h-24 rounded-full mb-2" />
-                            <h2 className="text-xs md:text-lg font-bold">{member.name}</h2>
-                            <p className="text-xs">{member.role}</p>
-                        </div>
-                    ))}
+                    {/* Team Information Section */}
+                    <div className={`relative z-10 grid grid-cols-5 gap-2 md:gap-4 items-center justify-items-center p-4 md:px-60 ${videoEnded ? 'flex' : 'hidden'}`}>
+                        {teamMembers.map((member, index) => (
+                            <div key={index} className="text-center text-white px-1">
+                                <img src={member.photo} alt={member.name} className="w-20 h-20 md:w-24 md:h-24 rounded-full mb-2" />
+                                <h2 className="text-xs md:text-lg font-bold">{member.name}</h2>
+                                <p className="text-xs">{member.role}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
