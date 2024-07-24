@@ -12,7 +12,7 @@ const BrandDigitalMarketingBrandingSection = () => {
     return (
         <section>
             <div className="relative flex justify-center items-center h-screen">
-                <img src={Img} alt="Hero Image" className="absolute inset-0 w-full h-full object-cover" />
+                <img src={Img} alt="Digital marketing and branding" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="z-10 text-center">
                     <span className="text-white text-5xl lg:text-7xl font-bold p-4 rounded shadow-lg" style={{ lineHeight: '1.3' }}>
                         {imgText}

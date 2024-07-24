@@ -1,17 +1,6 @@
 import React, { useState } from "react";
 import GradientText from "../components/GradientText";
 import { useTranslation } from '../context/useTranslation';
-import Img1 from "../images/web_design_etoile.png"
-import Img2 from "../images/social_media_management_etoile.png"
-import Img3 from "../images/digital_marketing_and_branding_etoile.png"
-import Img4 from "../images/production_design_etoile.png"
-
-const images = [
-  { src: Img1, caption: "WEB DESIGN", alt: "Web Design Etoile" },
-  { src: Img2, caption: "SOCIAL MEDIA MANAGEMENT", alt: "Social Media Management Etoile" },
-  { src: Img3, caption: <><div>DIGITAL MARKETING</div><div style={{ textAlign: 'center' }}>& BRANDING</div></>, alt: "Digital Marketing Etoile" },
-  { src: Img4, caption: "PRODUCTION SERVICES", alt: "Product Design Etoile" },
-];
 
 const AboutSection = () => {
   const [showContact, setShowContact] = useState(false);
