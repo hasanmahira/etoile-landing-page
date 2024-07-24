@@ -42,9 +42,8 @@ function DigitalMarketingBranding() {
               </button>
               {activeService === index && (
                 <div className="mt-6">
-                  <h1 className="text-xl font-bold mb-2">{service.name}</h1>
-                  <p className="text-gray-400">{service.description}</p>
-                  <p className="text-gray-400">{service.descriptionTr}</p>
+                  <p>{service.description}</p>
+                  <p>{service.descriptionTr}</p>
                 </div>
               )}
             </div>
