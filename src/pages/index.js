@@ -28,7 +28,6 @@ const IndexPage = () => {
 
   return (
     <LanguageProvider>
-
     <Layout className="text-like-cyan-vlight">
       {/* Hero Section */}
       <section id="homepage">
