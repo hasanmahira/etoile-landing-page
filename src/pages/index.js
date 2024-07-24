@@ -60,7 +60,7 @@ const IndexPage = () => {
         {/* Team Section */}
 
         <section>
-          <div className="relative overflow-hidden h-full py-20">
+          <div className="relative overflow-hidden h-full w-full">
             <TeamSection />
           </div>
         </section>
@@ -70,7 +70,7 @@ const IndexPage = () => {
         </section>
 
         <section id="solutions">
-          <div className="relative overflow-hidden h-full py-40">
+          <div className="relative overflow-hidden h-full">
             <WebServices />
           </div>
         </section>

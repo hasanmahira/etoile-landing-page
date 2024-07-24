@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TeamVideoMp4 from "../videos/team.mp4"
 import TayfunPhoto from "../images/tayfun_pp.jpeg"
 import BerkePhoto from "../images/berke_pp.jpeg"
@@ -6,9 +6,23 @@ import MelisPhoto from "../images/melis_pp.jpeg"
 import MahirPhoto from "../images/mahir_pp.jpeg"
 import DefaultPhoto from "../images/default_pp.png"
 import teamMembersData from '../data/TeamMembersList.json';
+import AboutWeb from "../videos/about-web.mp4";
+import AboutMobile from "../videos/about-mobile.mp4";
 
-const TeamSection = ({ }) => {
+const TeamSection = () => {
     const [videoEnded, setVideoEnded] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768); // Adjust this breakpoint as needed
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     const handleVideoEnd = () => {
         setVideoEnded(true);
@@ -33,7 +47,6 @@ const TeamSection = ({ }) => {
             default:
                 photo = DefaultPhoto;
         }
-
         return {
             ...member,
             photo
@@ -43,10 +56,24 @@ const TeamSection = ({ }) => {
     return (
         <section>
             <div className="relative overflow-hidden h-full">
-                <div className="text-center text-white mb-10">
+                <div className="text-center text-white mb-10 relative z-10">
                     <h1 className="text-4xl font-bold">THE ETOILE CONSTELLATION</h1>
                 </div>
-                {/* Video Element */}
+                
+                {/* Background Video */}
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                    style={{ filter: 'brightness(0.9)' }}
+                >
+                    <source src={isMobile ? AboutMobile : AboutWeb} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                {/* Team Video */}
                 {!videoEnded && (
                     <video
                         autoPlay
@@ -59,14 +86,14 @@ const TeamSection = ({ }) => {
                         <source src={TeamVideoMp4} type="video/mp4" />
                     </video>
                 )}
-    
+
                 {/* Team Information Section */}
-                <div className={`relative z-10 grid grid-cols-5 gap-4 items-center justify-items-center p-4 px-60 ${videoEnded ? 'flex' : 'hidden'}`}> {/* Adjust the value as needed */}
+                <div className={`relative z-10 grid grid-cols-2 md:grid-cols-5 gap-4 items-center justify-items-center p-4 md:px-60 ${videoEnded ? 'flex' : 'hidden'}`}>
                     {teamMembers.map((member, index) => (
                         <div key={index} className="text-center text-white">
-                            <img src={member.photo} alt={member.name} className="w-32 h-32 rounded-full mb-4" />
-                            <h2 className="text-xl font-bold">{member.name}</h2>
-                            <p className="text-sm">{member.role}</p>
+                            <img src={member.photo} alt={member.name} className="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4" />
+                            <h2 className="text-lg md:text-xl font-bold">{member.name}</h2>
+                            <p className="text-xs md:text-sm">{member.role}</p>
                         </div>
                     ))}
                 </div>

@@ -10,7 +10,7 @@ const imgText = (
 
 const BrandSection = () => {
     return (
-        <section className="py-20">
+        <section>
             <div className="relative flex justify-center items-center h-screen">
                 <img src={Img} alt="Hero Image" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="z-10 text-center">
