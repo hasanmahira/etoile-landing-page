@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import TeamVideoMp4 from "../videos/team.mp4"
 import TayfunPhoto from "../images/tayfun_pp.jpeg"
 import BerkePhoto from "../images/berke_pp.jpeg"
@@ -6,23 +6,9 @@ import MelisPhoto from "../images/melis_pp.jpeg"
 import MahirPhoto from "../images/mahir_pp.jpeg"
 import DefaultPhoto from "../images/default_pp.png"
 import teamMembersData from '../data/TeamMembersList.json';
-import AboutWeb from "../videos/about-web.mp4";
-import AboutMobile from "../videos/about-mobile.mp4";
 
 const TeamSection = () => {
     const [videoEnded, setVideoEnded] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth < 768); // Adjust this breakpoint as needed
-        };
-
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
-
-        return () => window.removeEventListener('resize', checkMobile);
-    }, []);
 
     const handleVideoEnd = () => {
         setVideoEnded(true);
@@ -59,19 +45,6 @@ const TeamSection = () => {
                 <div className="text-center text-white mb-10 relative z-10">
                     <h1 className="text-4xl font-bold">THE ETOILE CONSTELLATION</h1>
                 </div>
-                
-                {/* Background Video */}
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="absolute inset-0 w-full h-full object-cover"
-                    style={{ filter: 'brightness(0.9)' }}
-                >
-                    <source src={isMobile ? AboutMobile : AboutWeb} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
 
                 {/* Team Video */}
                 {!videoEnded && (

@@ -46,7 +46,7 @@ const BusinessPortfolio = () => {
     };
 
     return (
-        <section className="py-20 bg-midnight">
+        <section>
             <style>
             {`
                 .slick-dots {

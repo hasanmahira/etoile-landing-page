@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import ServicesData from '../data/ServicesData.json';
 import { useTranslation } from '../context/useTranslation';
-import AboutWeb from "../videos/about-web.mp4";
-import AboutMobile from "../videos/about-mobile.mp4";
 
 function WebServices() {
   const [activeService, setActiveService] = useState(null);
@@ -20,16 +18,6 @@ function WebServices() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Background Video */}
-      <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover hidden md:block">
-        <source src={AboutWeb} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover md:hidden">
-        <source src={AboutMobile} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
       <div className="flex h-full">
         <div className="w-1/2 px-10 pt-40 text-center text-3xl text-white" style={{ zIndex: 10 }}>
           <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>{t('ServicesDesc')}</p>

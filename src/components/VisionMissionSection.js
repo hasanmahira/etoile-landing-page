@@ -1,7 +1,5 @@
 import React from 'react';
 import { useTranslation } from '../context/useTranslation';
-import AboutWeb from "../videos/about-web.mp4";
-import AboutMobile from "../videos/about-mobile.mp4";
 
 const VisionMissionSection = () => {
     const { t } = useTranslation();
@@ -10,14 +8,6 @@ const VisionMissionSection = () => {
         <section>
             <div className="relative flex justify-center">
                 <div className="aspect-w-15 aspect-h-8 relative w-full top-0 right-0 left-0 h-full h-screen overflow-hidden">
-                    <video autoPlay loop muted playsInline className="object-cover w-full h-full hidden md:block">
-                        <source src={AboutWeb} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <video autoPlay loop muted playsInline className="object-cover w-full h-full md:hidden">
-                        <source src={AboutMobile} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
                     <div className="relative z-10 flex flex-col justify-between h-full bg-black bg-opacity-50 p-4">
                         <div className="text-right text-white md:mt-20 md:mr-20">
                             <h1 className="text-2xl md:text-[3rem] lg:text-[3rem] font-bold mb-2 py-8" >VİZYONUMUZ</h1>
