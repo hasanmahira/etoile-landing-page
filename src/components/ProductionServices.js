@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from '../context/useTranslation';
 
 const services = [
   { name: "Advertisement Film Shooting", description: "Creating impressive advertisement films for your brand. Providing high-quality production services with professional teams and equipment.", descriptionTr: "Markanız için etkileyici reklam filmleri çekiyoruz. Profesyonel ekip ve ekipmanlarla, kaliteli prodüksiyon hizmetleri sunuyoruz." },
@@ -12,6 +13,7 @@ const services = [
 
 function ProductionServices() {
   const [activeService, setActiveService] = useState(null);
+  const { t } = useTranslation();
 
   const toggleDescription = (index) => {
     setActiveService(activeService === index ? null : index);
@@ -24,26 +26,30 @@ function ProductionServices() {
   );
 
   return (
-    <div className="flex">
-      <div className="w-1/2 px-10 pt-40 text-center text-3xl text-white">
-        <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>Our production services help you tell your brand's story in the most impressive and original way. With our video production, photo shoot, and graphic design services, we produce high-quality visual content that engages your target audience. Our professional team completes your projects on time and within budget.</p>
-      </div>
-      <div className="w-1/2">
-        {services.map((service, index) => (
-          <div key={index} className="border-b border-gray-700 p-5">
-            <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
-              {service.name}
-              <ArrowIcon isOpen={activeService === index} />
-            </button>
-            {activeService === index && (
-              <div className="bg-midnight text-neon-blue shadow-neon-blue p-5 rounded-full mt-6">
-                <h1 className="text-xl font-bold mb-2">{service.name}</h1>
-                <p className="mt-2 text-gray-400">{service.description}</p>
-                <p className="mt-2 text-gray-400">{service.descriptionTr}</p>
-              </div>
-            )}
-          </div>
-        ))}
+    <div className="relative w-full h-full overflow-hidden">
+      <div className="flex flex-col h-full md:flex-row">
+        <div className="w-full md:w-1/2 px-10 pt-10 md:pt-40 text-center text-white p-5" style={{ zIndex: 10 }}>
+          <p style={{ width: '100%', margin: 'auto', transform: 'translateY(0)', fontSize: '20px' }}>
+            {t('ProductionServicesDesc')}
+          </p>
+        </div>
+        <div className="w-full md:w-1/2" style={{ zIndex: 10 }}>
+          {services.map((service, index) => (
+            <div key={index} className="border-b border-neon-blue p-5">
+              <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
+                {service.name}
+                <ArrowIcon isOpen={activeService === index} />
+              </button>
+              {activeService === index && (
+                <div className="mt-6">
+                  <h1 className="text-xl font-bold mb-2">{service.name}</h1>
+                  <p className="text-gray-400">{service.description}</p>
+                  <p className="text-gray-400">{service.descriptionTr}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

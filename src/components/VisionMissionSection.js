@@ -8,7 +8,7 @@ const VisionMissionSection = () => {
         <section>
             <div className="relative flex justify-center">
                 <div className="aspect-w-15 aspect-h-8 relative w-full top-0 right-0 left-0 h-full h-screen overflow-hidden">
-                    <div className="relative z-10 flex flex-col justify-between h-full bg-black bg-opacity-50 p-4">
+                    <div className="relative z-10 flex flex-col justify-between h-full p-4">
                         <div className="text-right text-white md:mt-20 md:mr-20">
                             <h1 className="text-2xl md:text-[3rem] lg:text-[3rem] font-bold mb-2 py-8" >VİZYONUMUZ</h1>
                             <p className="text-1xl md:text-1xl md:w-1/2 ml-auto text-right">{t('Vision')}</p>

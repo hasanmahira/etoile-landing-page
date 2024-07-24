@@ -22,6 +22,7 @@ export const CONTENT_CALENDAR_PLANNING = 'We create your social media content in
 export const FOLLOWER_INTERACTION_SYSTEM = 'We ensure effective communication with your followers. We provide quick and professional responses to their questions and feedback.';
 export const EVENT_MANAGEMENT = 'We plan and manage your social media events. We increase engagement with events that promote your brand.';
 export const ACCOUNT_SECURITY = 'We take the necessary measures to ensure the security of your social media accounts. We protect your accounts against cyber threats.';
+export const SocialMediaDesc = 'Our social media management services help you establish an effective and strategic presence on social media channels. We increase engagement with content that appeals to your target audience, expanding your brand awareness and loyal customer base. Our expert team strengthens your social media presence using the latest trends and analyses.'
 
 // Digital Marketing and Branding
 export const BRAND_CONSULTANCY = 'We determine the positioning and strategy of your brand. We help you create a strong and consistent brand identity.';
@@ -31,6 +32,7 @@ export const SPONSORSHIP_SERVICES = 'We identify and manage suitable sponsorship
 export const GOOGLE_ADS_CAMPAIGN_CREATION = 'We create effective Google Ads campaigns targeted at your audience. We increase the conversion rates of your ads.';
 export const PR_AND_ORGANIZATION_MANAGEMENT = 'We plan effective PR strategies and organizations for your brand. We manage your media and public relations activities.';
 export const CORPORATE_IDENTITY_SERVICES = 'We create the visual and corporate identity of your brand. We represent your brand with a consistent and professional image.';
+export const DigitalMarketingDesc = 'Our digital marketing and branding services ensure that your brand has a strong and recognized identity online. We make it easy for you to reach your target audience and increase conversions with SEO, SEM, email marketing, and content strategies. We help you stand out from the competition with creative and effective solutions that differentiate your brand.';
 
 // Production Services
 export const COMMERCIAL_FILM_PRODUCTION = 'We shoot impressive commercials for your brand. With professional teams and equipment, we offer quality production services.';
@@ -40,3 +42,4 @@ export const MARKETING_CAMPAIGN_SHOOTING = 'We carry out professional shoots for
 export const VIDEO_EDITING = 'We professionally edit your footage. We create impressive and smooth videos.';
 export const MAGAZINE_CATALOG_SHOOTING = 'We perform high-quality photo shoots for your magazines and catalogs. We prepare your visuals with professional edits.';
 export const PHOTO_RETOUCHING = 'We professionally retouch and edit your photos. We make your visuals perfect.';
+export const ProductionServicesDesc ='Our production services help you tell your brands story in the most impressive and original way. With our video production, photo shoot, and graphic design services, we produce high-quality visual content that engages your target audience. Our professional team completes your projects on time and within budget.';

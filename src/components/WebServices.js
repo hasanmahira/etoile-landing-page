@@ -17,22 +17,22 @@ function WebServices() {
   );
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <div className="flex h-full">
-        <div className="w-1/2 px-10 pt-40 text-center text-3xl text-white" style={{ zIndex: 10 }}>
-          <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>{t('ServicesDesc')}</p>
+    <div className="relative w-full h-full overflow-hidden">
+      <div className="flex flex-col h-full md:flex-row">
+        <div className="w-full md:w-1/2 px-10 pt-10 md:pt-40 text-center text-3xl text-white p-5" style={{ zIndex: 10 }}>
+          <p style={{ width: '100%', margin: 'auto', transform: 'translateY(0)', fontSize: '20px' }}>{t('ServicesDesc')}</p>
         </div>
-        <div className="w-1/2" style={{ zIndex: 10 }}>
+        <div className="w-full md:w-1/2" style={{ zIndex: 10 }}>
           {ServicesData.map((service, index) => (
-            <div key={index} className="border-b border-gray-700 p-5">
+            <div key={index} className="border-b border-neon-blue p-5">
               <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
                 {service.name}
                 <ArrowIcon isOpen={activeService === index} />
               </button>
               {activeService === index && (
-                <div className="bg-midnight text-neon-blue shadow-neon-blue p-5 rounded-full mt-6">
-                  <h1 className="text-xl font-bold mb-2">UI-UX DESIGN</h1>
-                  <p className="mt-2 text-gray-400">{service.description}</p>
+                <div className="mt-6">
+                  <h1 className="text-xl font-bold mb-2">{service.name}</h1>
+                  <p className="text-gray-400">{service.description}</p>
                 </div>
               )}
             </div>

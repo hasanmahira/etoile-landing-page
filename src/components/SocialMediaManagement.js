@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from '../context/useTranslation';
 
 const services = [
   { name: "Social Media Analysis", description: "Analyzing the performance of your social media accounts to determine strengths and weaknesses. Optimizing your strategy.", descriptionTr: "Sosyal medya hesaplarınızın performansını analiz ederek, güçlü ve zayıf yönlerinizi belirliyoruz. Stratejinizi optimize ediyoruz." },
@@ -12,6 +13,7 @@ const services = [
 
 function SocialMediaManagement() {
   const [activeService, setActiveService] = useState(null);
+  const { t } = useTranslation();
 
   const toggleDescription = (index) => {
     setActiveService(activeService === index ? null : index);
@@ -24,26 +26,30 @@ function SocialMediaManagement() {
   );
 
   return (
-    <div className="flex">
-      <div className="w-1/2 px-10 pt-40 text-center text-3xl text-white">
-        <p style={{ width: '80%', marginLeft: '10%', transform: 'translateY(-80px)' }}>Our social media management services help you establish an effective and strategic presence on social media channels. We increase engagement with content that appeals to your target audience, expanding your brand awareness and loyal customer base. Our expert team strengthens your social media presence using the latest trends and analyses.</p>
-      </div>
-      <div className="w-1/2">
-        {services.map((service, index) => (
-          <div key={index} className="border-b border-gray-700 p-5">
-            <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
-              {service.name}
-              <ArrowIcon isOpen={activeService === index} />
-            </button>
-            {activeService === index && (
-              <div className="bg-midnight text-neon-blue shadow-neon-blue p-5 rounded-full mt-6">
-                <h1 className="text-xl font-bold mb-2">{service.name}</h1>
-                <p className="mt-2 text-gray-400">{service.description}</p>
-                <p className="mt-2 text-gray-400">{service.descriptionTr}</p>
-              </div>
-            )}
-          </div>
-        ))}
+    <div className="relative w-full h-full overflow-hidden">
+      <div className="flex flex-col h-full md:flex-row">
+        <div className="w-full md:w-1/2 px-10 pt-10 md:pt-40 text-center text-white p-5" style={{ zIndex: 10 }}>
+          <p style={{ width: '100%', margin: 'auto', transform: 'translateY(0)', fontSize: '20px' }}>
+            {t('SocialMediaDesc')}
+          </p>
+        </div>
+        <div className="w-full md:w-1/2" style={{ zIndex: 10 }}>
+          {services.map((service, index) => (
+            <div key={index} className="border-b border-neon-blue p-5">
+              <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
+                {service.name}
+                <ArrowIcon isOpen={activeService === index} />
+              </button>
+              {activeService === index && (
+                <div className="mt-6">
+                  <h1 className="text-xl font-bold mb-2">{service.name}</h1>
+                  <p className="text-gray-400">{service.description}</p>
+                  <p className="text-gray-400">{service.descriptionTr}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
