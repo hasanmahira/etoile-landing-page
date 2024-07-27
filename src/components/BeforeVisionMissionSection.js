@@ -1,13 +1,6 @@
 import React from 'react';
 import Vid from "../videos/swirling.mp4";  // Ensure the path and extension are correct
 
-const imgText = (
-  <>
-    <div>THE SWIRLING CONSTELLATIONS ALIGN</div>
-    <div style={{ textAlign: 'center' }}>TO GO BEYOND THE ORDINARY</div>
-  </>
-);
-
 const BeforeVisionMissionSection = () => {
     return (
         <section>
@@ -24,9 +17,14 @@ const BeforeVisionMissionSection = () => {
                         Your browser does not support the video tag.
                     </video>
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-white text-4xl lg:text-5xl font-bold p-4 rounded">
-                            {imgText}
-                        </span>
+                        <div className="text-white text-center px-4">
+                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold whitespace-nowrap">
+                                THE SWIRLING CONSTELLATIONS&nbsp;ALIGN
+                            </div>
+                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold whitespace-nowrap">
+                                TO GO BEYOND THE ORDINARY
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -19,8 +19,8 @@ const ServicesGallery = () => {
 
     useEffect(() => {
         const timeout = setTimeout(() => {
-            setShowAnimation(false); // Hide the stars after the initial animation
-        }, 3000); // Assume animation duration is 3000ms
+            setShowAnimation(false);
+        }, 3000);
 
         return () => clearTimeout(timeout);
     }, []);
@@ -32,7 +32,9 @@ const ServicesGallery = () => {
                     <div className="w-1/2 h-auto flex items-center relative">
                         <img src={image.src} alt={image.alt} className="w-full h-auto mx-auto" style={{ filter: 'brightness(1.9)' }} />
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-white text-3xl lg:text-4xl font-bold p-4 rounded">{image.caption}</span>
+                            <span className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold p-2 sm:p-4 rounded text-center">
+                                {image.caption}
+                            </span>
                         </div>
                         {showAnimation && (
                             <img src={index % 2 === 0 ? StarRight : StarLeft} alt="Star Animation"

@@ -17,10 +17,12 @@ function WebServices() {
   );
 
   return (
-    <div className="relative w-full h-full overflow-hidden">
-      <div className="flex flex-col h-full md:flex-row">
-        <div className="w-full md:w-1/2 px-10 pt-10 md:pt-40 text-center text-3xl text-white p-5" style={{ zIndex: 10 }}>
-          <p style={{ width: '100%', margin: 'auto', transform: 'translateY(0)', fontSize: '20px' }}>{t('ServicesDesc')}</p>
+    <div className="relative w-full h-screen overflow-hidden">
+      <div className="flex items-center justify-center flex-col h-full md:flex-row">
+        <div className="w-full md:w-1/2 flex items-center justify-center px-10 py-10 md:py-0" style={{ zIndex: 10 }}>
+          <p className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-2xl">
+            {t('ServicesDesc')}
+          </p>
         </div>
         <div className="w-full md:w-1/2" style={{ zIndex: 10 }}>
           {ServicesData.map((service, index) => (
