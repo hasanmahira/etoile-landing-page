@@ -133,7 +133,7 @@ const IndexPage = () => {
 
         {/* Contact Form Section */}
         <section id="contact">
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center py-40">
             <ContactForm />
           </div>
         </section>
