@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from '../context/useTranslation';
 
 // Import company logos
 import OmkoLogo from "../images/companies/omko.png";
@@ -91,6 +92,7 @@ const companies = [
 const BusinessPortfolio = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const sliderRef = useRef();
+    const { t } = useTranslation();
 
     const settings = {
         dots: true,
@@ -119,7 +121,7 @@ const BusinessPortfolio = () => {
     return (
         <section>
             <style>
-            {`
+                {`
                 .slick-dots {
                     bottom: -50px; // Adjust position if necessary
                     display: flex;
@@ -149,7 +151,11 @@ const BusinessPortfolio = () => {
             `}
             </style>
             <div className="container mx-auto px-4">
-                <h2 className="text-white text-center text-3xl font-bold mb-8">REFERANSLARIMIZ</h2>
+                <div className="w-full md:w-1/2 flex items-center justify-center px-10 py-10 md:py-0" style={{ zIndex: 10 }}>
+                    <p className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-2xl">
+                        {t('REFERENCES')}
+                    </p>
+                </div>
                 <Slider {...settings} ref={sliderRef}>
                     {companies.map((company, index) => (
                         <div key={index} className="px-2 flex justify-center">

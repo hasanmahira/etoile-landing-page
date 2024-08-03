@@ -12,6 +12,7 @@ export const WEB_DESIGN = "WEB TASARIM";
 export const SOCIAL_MEDIA_MANAGEMENT = "SOSYAL MEDYA YÖNETİMİ";
 export const DIGITAL_MARKETING_BRANDING = "DİJİTAL PAZARLAMA & MARKALAŞMA";
 export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
+export const REFERENCES = "REFERANSLARIMIZ";
 
 // Vision Mission
 export const SWIRLING_CONSTELLATIONS_ALIGN = "Yıldızların Uğultusu";
