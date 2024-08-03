@@ -90,4 +90,13 @@ export const PHOTO_RETOUCHING = 'We professionally retouch and edit your photos.
 export const ProductionServicesDescOld = 'Our production services help you tell your brands story in the most impressive and original way. With our video production, photo shoot, and graphic design services, we produce high-quality visual content that engages your target audience. Our professional team completes your projects on time and within budget.';
 export const ProductionServicesDesc = 'Tell your story powerfully with our creative production solutions.';
 
-
+// Contact From
+export const FORM_HEADER = 'JOIN THE STARS';
+export const FORM_SUBHEADER = 'Join Etoile Design among the stars!';
+export const FORM_NAME_PLACEHOLDER = 'Name';
+export const FORM_SURNAME_PLACEHOLDER = 'Surname';
+export const FORM_EMAIL_PLACEHOLDER = 'Email';
+export const FORM_PHONE_PLACEHOLDER = 'Phone Number';
+export const FORM_SUBMIT_BUTTON = 'Submit';
+export const FORM_SUBMIT_SUCCESS = 'Information submitted successfully!';
+export const FORM_SUBMIT_ERROR = 'Failed to submit information. Please try again later.';

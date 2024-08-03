@@ -88,3 +88,15 @@ export const VIDEO_EDITING = 'Çekimlerinizi profesyonel bir şekilde montajlıy
 export const MAGAZINE_CATALOG_SHOOTING = 'Magazin ve kataloglarınız için yüksek kaliteli fotoğraf çekimleri yapıyoruz. Profesyonel düzenlemeler ile görsellerinizi hazırlıyoruz.';
 export const PHOTO_RETOUCHING = 'Fotoğraflarınızın düzenleme ve retouch işlemlerini profesyonel olarak yapıyoruz. Görsellerinizi mükemmel hale getiriyoruz.';
 export const ProductionServicesDesc = 'Yaratıcı prodüksiyon çözümlerimizle hikayenizi güçlü bir şekilde anlatın.';
+
+// Contact From
+export const FORM_HEADER = 'YILDIZLARA KATIL';
+export const FORM_SUBHEADER = 'Etoile Design ile Yıldızların Arasında Yerinizi Alın!';
+export const FORM_NAME_PLACEHOLDER = 'İsim';
+export const FORM_SURNAME_PLACEHOLDER = 'Soyisim';
+export const FORM_EMAIL_PLACEHOLDER = 'E-posta';
+export const FORM_PHONE_PLACEHOLDER = 'Telefon Numarası';
+export const FORM_SUBMIT_BUTTON = 'Gönder';
+export const FORM_SUBMIT_SUCCESS = 'Bilgiler başarıyla gönderildi!';
+export const FORM_SUBMIT_ERROR = 'Bilgi gönderimi başarısız. Lütfen daha sonra tekrar deneyin.';
+
