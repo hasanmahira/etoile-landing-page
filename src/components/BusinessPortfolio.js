@@ -154,7 +154,7 @@ const BusinessPortfolio = () => {
                     }
                 }
             `}
-            </style>
+            </style> 
             <div className="container mx-auto px-4">
                 <Slider {...settings} ref={sliderRef}>
                     {companies.map((company, index) => (
