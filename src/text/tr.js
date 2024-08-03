@@ -7,6 +7,12 @@ export const ServicesDescEN = 'Our web design services create modern and user-fr
 export const DREAMS_LIVE = "Hayallerinizi Bizimle Gerçeğe Dönüştürün!";
 export const DREAMS_LIVE_DESC = "Firmanızın pazarlama ve reklam ihtiyaçlarını karşılamak için buradayız. 360 ° Ajans hizmetimizle, tasarımdan sosyal medya yönetimine, reklam çalışmalarından marka yönetimine kadar geniş bir yelpazede çözümler sunuyoruz. Sizin için en iyi stratejileri belirleyerek, markanızı dünyaya duyurmak için buradayız.";
 
+// Service Gallery
+export const WEB_DESIGN = "WEB TASARIM";
+export const SOCIAL_MEDIA_MANAGEMENT = "SOSYAL MEDYA YÖNETİMİ";
+export const DIGITAL_MARKETING_BRANDING = "DİJİTAL PAZARLAMA & MARKALAŞMA";
+export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
+
 // UX/UI Design
 export const UX_UI_WEB_DESIGN = 'Kullanıcı dostu ve estetik açıdan çekici arayüzler oluşturuyoruz. Amacımız, kullanıcıların sitenizde keyifli ve verimli bir deneyim yaşamasını sağlamak.';
 export const HTML_WEB_DESIGN = 'Hızlı ve modern web tasarımları ile yüksek kullanılabilirlik ve erişilebilirlik standartları sağlıyoruz.';

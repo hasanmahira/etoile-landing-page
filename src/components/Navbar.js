@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   const handleLanguageChange = () => {
-    setLanguage(prevLanguage => prevLanguage === 'en' ? 'tr' : 'en');
+    setLanguage(prevLanguage => prevLanguage === 'tr' ? 'en' : 'tr');
   };
 
   const mainMenuItems = [
@@ -41,12 +41,12 @@ const Navbar = () => {
                 duration={500} 
                 className="hover:underline text-lg py-2"
               >
-                {language === 'en' ? item.en : item.tr}
+                {language === 'tr' ? item.tr : item.en}
               </Link>
             ))}
           </div>
           <button onClick={handleLanguageChange} className="text-lg py-2">
-            {language === 'en' ? 'TR' : 'EN'}
+            {language === 'tr' ? 'EN' : 'TR'}
           </button>
         </div>
 
@@ -62,13 +62,13 @@ const Navbar = () => {
                   duration={500} 
                   className="text-sm hover:underline py-2"
                 >
-                  {language === 'en' ? item.en : item.tr}
+                  {language === 'tr' ? item.tr : item.en}
                 </Link>
               ))}
             </div>
             <div className="flex items-center space-x-4">
               <button onClick={handleLanguageChange} className="text-sm py-2">
-                {language === 'en' ? 'TR' : 'EN'}
+                {language === 'tr' ? 'TR' : 'EN'}
               </button>
               <button onClick={toggleMenu} className="focus:outline-none">
                 <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,7 +93,7 @@ const Navbar = () => {
                 className="block py-2 hover:bg-gray-700"
                 onClick={toggleMenu}
               >
-                {language === 'en' ? item.en : item.tr}
+                {language === 'tr' ? item.tr : item.en}
               </Link>
             ))}
           </div>

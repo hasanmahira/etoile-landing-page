@@ -6,6 +6,12 @@ export const ServicesDescEN = 'Our web design services create modern and user-fr
 export const DREAMS_LIVE = "Turn Your Dreams Into Reality with Us!";
 export const DREAMS_LIVE_DESC = "We are here to meet your company's marketing and advertising needs. With our 360° agency services, we offer a wide range of solutions from design to social media management, from advertising to brand management. We are here to determine the best strategies for you and to announce your brand to the world.";
 
+// Service Gallery
+export const WEB_DESIGN = "WEB DESIGN";
+export const SOCIAL_MEDIA_MANAGEMENT = "SOCIAL MEDIA MANAGEMENT";
+export const DIGITAL_MARKETING_BRANDING = "DIGITAL MARKETING & BRANDING";
+export const PRODUCTION_SERVICES = "PRODUCTION SERVICES";
+
 // UX/UI Design
 export const UX_UI_WEB_DESIGN = 'We create user-friendly and aesthetically appealing interfaces. Our goal is to ensure that users have a pleasant and efficient experience on your site.';
 export const HTML_WEB_DESIGN = 'Responsive and modern web designs that ensure high usability and accessibility standards.';

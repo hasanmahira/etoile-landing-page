@@ -6,16 +6,18 @@ import Img3 from "../images/digital_marketing_and_branding_etoile.png";
 import Img4 from "../images/production_design_etoile.png";
 import StarLeft from "../images/star-left.png";
 import StarRight from "../images/star-right.png";
+import { useTranslation } from '../context/useTranslation';
 
 const images = [
-    { src: Img1, caption: "WEB DESIGN", alt: "Web Design Etoile", id: "webDesign" },
-    { src: Img2, caption: "SOCIAL MEDIA MANAGEMENT", alt: "Social Media Management Etoile", id: "socialMediaManagementServices" },
-    { src: Img3, caption: "DIGITAL MARKETING & BRANDING", alt: "Digital Marketing Etoile", id: "digitalMarketingBrandingServices" },
-    { src: Img4, caption: "PRODUCTION SERVICES", alt: "Product Design Etoile", id: "productionServices" },
+    { src: Img1, caption: 'WEB_DESIGN', alt: "Web Design Etoile", id: "webDesign" },
+    { src: Img2, caption: 'SOCIAL_MEDIA_MANAGEMENT', alt: "Social Media Management Etoile", id: "socialMediaManagementServices" },
+    { src: Img3, caption: 'DIGITAL_MARKETING_BRANDING', alt: "Digital Marketing Etoile", id: "digitalMarketingBrandingServices" },
+    { src: Img4, caption: 'PRODUCTION_SERVICES', alt: "Product Design Etoile", id: "productionServices" },
 ];
 
 const ServicesGallery = () => {
     const [showAnimation, setShowAnimation] = useState(true);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -30,10 +32,10 @@ const ServicesGallery = () => {
             {images.map((image, index) => (
                 <div key={image.id} className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center my-10 relative`}>
                     <div className="w-1/2 h-auto flex items-center relative">
-                        <img src={image.src} alt={image.alt} className="w-full h-auto mx-auto" style={{ filter: 'brightness(1.9)' }} />
+                        <img src={image.src} alt={t(image.alt)} className="w-full h-auto mx-auto" style={{ filter: 'brightness(1.9)' }} />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <span className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold p-2 sm:p-4 rounded text-center">
-                                {image.caption}
+                                {t(image.caption)}
                             </span>
                         </div>
                         {showAnimation && (
