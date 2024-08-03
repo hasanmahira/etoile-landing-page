@@ -13,6 +13,13 @@ export const SOCIAL_MEDIA_MANAGEMENT = "SOSYAL MEDYA YÖNETİMİ";
 export const DIGITAL_MARKETING_BRANDING = "DİJİTAL PAZARLAMA & MARKALAŞMA";
 export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
 
+// Vision Mission
+export const SWIRLING_CONSTELLATIONS_ALIGN = "Yıldızların Uğultusu";
+export const GO_BEYOND_THE_ORDINARY = "Sıradanın Ötesine Geçmek İçin Birleşir";
+export const THE_ETOILE_CONSTELLATION = 'ETOILE TAKIMYILDIZI';
+export const ELEVATE_YOUR_BRAND = "MARKANIZI YÜKSELTİN";
+export const GLOBAL_STANDARDS = "KÜRESEL STANDARTLARA UYGUN";
+
 // UX/UI Design
 export const UX_UI_WEB_DESIGN = 'Kullanıcı dostu ve estetik açıdan çekici arayüzler oluşturuyoruz. Amacımız, kullanıcıların sitenizde keyifli ve verimli bir deneyim yaşamasını sağlamak.';
 export const HTML_WEB_DESIGN = 'Hızlı ve modern web tasarımları ile yüksek kullanılabilirlik ve erişilebilirlik standartları sağlıyoruz.';

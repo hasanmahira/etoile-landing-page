@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from '../context/useTranslation';
+import { Link } from "react-scroll";
 
 const VisionMissionSection = () => {
     const { t } = useTranslation();
@@ -18,9 +19,11 @@ const VisionMissionSection = () => {
                             <p className="text-1xl md:text-1xl w-full md:w-1/2" >{t('Mission')}</p>
                         </div>
                         <div className="flex justify-center">
-                            <button className="mt-[-50px] px-10 py-5 border-2 rounded-full shadow-lg font-bold text-2lg text-white" style={{ borderColor: '#0056b3', color: '#0056b3' }}>
-                                SEE SOLUTIONS
-                            </button>
+                            <Link to="webDesign" smooth={true} duration={500}>
+                                <button className="mt-[-50px] px-10 py-5 border-2 rounded-full shadow-lg font-bold text-2lg text-white" style={{ borderColor: '#0056b3', color: '#0056b3' }}>
+                                    SEE SOLUTIONS
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

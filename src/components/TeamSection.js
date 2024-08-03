@@ -6,9 +6,11 @@ import MelisPhoto from "../images/melis_pp.jpeg"
 import MahirPhoto from "../images/mahir_pp.jpeg"
 import DefaultPhoto from "../images/default_pp.png"
 import teamMembersData from '../data/TeamMembersList.json';
+import { useTranslation } from '../context/useTranslation';
 
 const TeamSection = () => {
     const [videoEnded, setVideoEnded] = useState(false);
+    const { t } = useTranslation();
 
     const handleVideoEnd = () => {
         setVideoEnded(true);
@@ -43,10 +45,10 @@ const TeamSection = () => {
         <section>
             <div className="relative overflow-hidden h-full">
                 <div className="text-center text-white mb-10 relative z-10">
-                    <h1 className="text-4xl font-bold">THE ETOILE CONSTELLATION</h1>
+                    <h1 className="text-4xl font-bold">{t('THE_ETOILE_CONSTELLATION')}</h1>
                 </div>
                 <div className="relative w-screen h-screen overflow-hidden">
-
+                    
                     {/* Team Video */}
                     {!videoEnded && (
                         <video

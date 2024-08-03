@@ -12,6 +12,13 @@ export const SOCIAL_MEDIA_MANAGEMENT = "SOCIAL MEDIA MANAGEMENT";
 export const DIGITAL_MARKETING_BRANDING = "DIGITAL MARKETING & BRANDING";
 export const PRODUCTION_SERVICES = "PRODUCTION SERVICES";
 
+// Vision Mission
+export const SWIRLING_CONSTELLATIONS_ALIGN = "THE SWIRLING CONSTELLATIONS ALIGN";
+export const GO_BEYOND_THE_ORDINARY = "TO GO BEYOND THE ORDINARY";
+export const THE_ETOILE_CONSTELLATION = 'THE ETOILE CONSTELLATION';
+export const ELEVATE_YOUR_BRAND = "ELEVATE YOUR BRAND TO";
+export const GLOBAL_STANDARDS = "THE GLOBAL STANDARDS";
+
 // UX/UI Design
 export const UX_UI_WEB_DESIGN = 'We create user-friendly and aesthetically appealing interfaces. Our goal is to ensure that users have a pleasant and efficient experience on your site.';
 export const HTML_WEB_DESIGN = 'Responsive and modern web designs that ensure high usability and accessibility standards.';
