@@ -20,15 +20,29 @@ export const ELEVATE_YOUR_BRAND = "ELEVATE YOUR BRAND TO";
 export const GLOBAL_STANDARDS = "THE GLOBAL STANDARDS";
 
 // UX/UI Design
-export const UX_UI_WEB_DESIGN = 'We create user-friendly and aesthetically appealing interfaces. Our goal is to ensure that users have a pleasant and efficient experience on your site.';
-export const HTML_WEB_DESIGN = 'Responsive and modern web designs that ensure high usability and accessibility standards.';
-export const ASP_NET_WEB_DESIGN = 'Robust server-side rendering solutions to enhance performance and security for enterprise applications.';
-export const LANDING_PAGE_DESIGN = 'Conversion-optimized landing pages designed to boost your marketing campaigns and capture leads effectively.';
-export const CORPORATE_WEB_DESIGN = 'Corporate website solutions that reflect your brand identity and engage with your stakeholders effectively.';
-export const ECOMMERCE_WEB_DESIGN = 'Comprehensive e-commerce solutions that offer seamless shopping experiences and easy management features.';
-export const SOFTWARE_DEVELOPMENT = 'Full-stack development services to create scalable and innovative software applications.';
+export const UX_UI_WEB_DESIGN_KEY = 'UI-UX Design';
+export const UX_UI_WEB_DESIGN_DESC = 'We create user-friendly and aesthetically appealing interfaces. Our goal is to ensure that users have a pleasant and efficient experience on your site.';
+export const HTML_WEB_DESIGN_KEY = 'HTML Web Design';
+export const HTML_WEB_DESIGN_DESC = 'Responsive and modern web designs that ensure high usability and accessibility standards.';
+export const ASP_NET_WEB_DESIGN_KEY = 'ASP.NET Web Design';
+export const ASP_NET_WEB_DESIGN_DESC = 'Robust server-side rendering solutions to enhance performance and security for enterprise applications.';
+export const LANDING_PAGE_DESIGN_KEY = 'Landing Page Design';
+export const LANDING_PAGE_DESIGN_DESC = 'Conversion-optimized landing pages designed to boost your marketing campaigns and capture leads effectively.';
+export const CORPORATE_WEB_DESIGN_KEY = 'Corporate Web Design';
+export const CORPORATE_WEB_DESIGN_DESC = 'Corporate website solutions that reflect your brand identity and engage with your stakeholders effectively.';
+export const ECOMMERCE_WEB_DESIGN_KEY = 'E-Commerce Web Design';
+export const ECOMMERCE_WEB_DESIGN_DESC = 'Comprehensive e-commerce solutions that offer seamless shopping experiences and easy management features.';
+export const SOFTWARE_DEVELOPMENT_KEY = 'Software Development';
+export const SOFTWARE_DEVELOPMENT_DESC = 'Full-stack development services to create scalable and innovative software applications.';
 
 // Social Media Management
+export const SOCIAL_MEDIA_ANALYSIS_KEY = 'Social Media Analysis';
+export const BRAND_IMAGE_KEY = 'Brand Image';
+export const COMPETITOR_ANALYSIS_KEY = 'Competitor Analysis';
+export const CONTENT_CALENDAR_PLANNING_KEY = 'Content Calendar and Planning';
+export const FOLLOWER_COMMUNICATION_SYSTEM_KEY = 'Follower Communication System';
+export const EVENT_MANAGEMENT_KEY = 'Event Management';
+export const ACCOUNT_SECURITY_KEY = 'Account Security';
 export const SOCIAL_MEDIA_ANALYSIS = 'We analyze the performance of your social media accounts, identifying your strengths and weaknesses. We optimize your strategy.';
 export const BRAND_IMAGE = 'We ensure that your brand creates a strong image on social media. We help you reach your target audience with consistent and effective content.';
 export const COMPETITOR_ANALYSIS = 'We analyze the social media activities of your competitors, providing you with a competitive advantage. We shape your strategy according to your competitors.';
@@ -40,17 +54,31 @@ export const SocialMediaDescOld = 'Our social media management services help you
 export const SocialMediaDesc = 'Highlight your brand impressively on social media and increase engagement.'
 
 // Digital Marketing and Branding
+export const BRAND_CONSULTANCY_KEY = 'Brand Consultancy';
 export const BRAND_CONSULTANCY = 'We determine the positioning and strategy of your brand. We help you create a strong and consistent brand identity.';
+export const BRAND_COMMUNICATION_KEY = 'Brand Communication';
 export const BRAND_COMMUNICATION = 'We ensure that your brand communicates effectively with your target audience. We increase the value of your brand with the right messages.';
+export const MEDIA_PLANNING_KEY = 'Media Planning';
 export const MEDIA_PLANNING = 'We carry out effective media planning on digital platforms. We create advertising strategies suitable for your target audience.';
+export const SPONSORSHIP_SERVICES_KEY = 'Sponsorship Services';
 export const SPONSORSHIP_SERVICES = 'We identify and manage suitable sponsorship opportunities for your brand. We provide collaborations that increase your brand awareness.';
+export const GOOGLE_ADS_CAMPAIGN_CREATION_KEY = 'Google Ads Campaign Creation';
 export const GOOGLE_ADS_CAMPAIGN_CREATION = 'We create effective Google Ads campaigns targeted at your audience. We increase the conversion rates of your ads.';
+export const PR_ORGANIZATION_MANAGEMENT_KEY = 'PR and Organization Management';
 export const PR_AND_ORGANIZATION_MANAGEMENT = 'We plan effective PR strategies and organizations for your brand. We manage your media and public relations activities.';
+export const CORPORATE_IDENTITY_SERVICES_KEY = 'Corporate Identity Services';
 export const CORPORATE_IDENTITY_SERVICES = 'We create the visual and corporate identity of your brand. We represent your brand with a consistent and professional image.';
 export const DigitalMarketingDescOld = 'Our digital marketing and branding services ensure that your brand has a strong and recognized identity online. We make it easy for you to reach your target audience and increase conversions with SEO, SEM, email marketing, and content strategies. We help you stand out from the competition with creative and effective solutions that differentiate your brand.';
 export const DigitalMarketingDesc = "Elevate your brand's voice with our digital marketing strategies and reach a wider audience."
 
 // Production Services
+export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Advertisement Film Shooting';
+export const ECOMMERCE_PRODUCT_SHOOTING_KEY = 'E-Commerce Product Shooting';
+export const SOCIAL_MEDIA_PHOTO_SHOOTING_KEY = 'Social Media Photo Shooting';
+export const MARKETING_CAMPAIGN_SHOOTING_KEY = 'Marketing Campaign Shooting';
+export const VIDEO_EDITING_KEY = 'Video Editing';
+export const MAGAZINE_CATALOG_SHOOTING_KEY = 'Magazine/Catalog Shooting';
+export const RETOUCH_DECOUPE_SERVICES_KEY = 'Retouch/Decoupe Services';
 export const COMMERCIAL_FILM_PRODUCTION = 'We shoot impressive commercials for your brand. With professional teams and equipment, we offer quality production services.';
 export const ECOMMERCE_PHOTOGRAPHY = 'We perform product photography for your e-commerce site. We prepare photos and videos that best promote your products.';
 export const SOCIAL_MEDIA_PHOTOGRAPHY = 'We take attractive and high-quality photos for your social media accounts. We increase engagement with your visual content.';

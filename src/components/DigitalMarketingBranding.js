@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import { useTranslation } from '../context/useTranslation';
 
-const services = [
-  { name: "Brand Consultancy", description: "Determining the positioning and strategy of your brand. Helping you create a strong and consistent brand identity.", descriptionTr: "Markanızın konumlandırmasını ve stratejisini belirliyoruz. Güçlü ve tutarlı bir marka kimliği oluşturmanıza yardımcı oluyoruz." },
-  { name: "Brand Communication", description: "Ensuring your brand communicates effectively with your target audience. Enhancing your brand's value with the right messages.", descriptionTr: "Markanızın hedef kitlenizle etkili iletişim kurmasını sağlıyoruz. Doğru mesajlarla markanızın değerini artırıyoruz." },
-  { name: "Media Planning", description: "Planning effective media strategies on digital platforms. Creating ad strategies suitable for your target audience.", descriptionTr: "Dijital platformlarda etkili medya planlaması yapıyoruz. Hedef kitlenize uygun reklam stratejileri oluşturuyoruz." },
-  { name: "Sponsorship Services", description: "Identifying and managing suitable sponsorship opportunities for your brand. Providing collaborations that increase your brand awareness.", descriptionTr: "Markanız için uygun sponsorluk fırsatlarını belirliyor ve yönetiyoruz. Marka bilinirliğinizi artıracak işbirlikleri sağlıyoruz." },
-  { name: "Google Ads Campaign Creation", description: "Creating effective Google Ads campaigns targeting your audience. Increasing the conversion rates of your ads.", descriptionTr: "Hedef kitlenize yönelik etkili Google Ads kampanyaları oluşturuyoruz. Reklamlarınızın dönüşüm oranlarını artırıyoruz." },
-  { name: "PR and Organization Management", description: "Planning effective PR strategies and organizations for your brand. Managing your media and public relations activities.", descriptionTr: "Markanız için etkili PR stratejileri ve organizasyonlar planlıyoruz. Medya ve halkla ilişkiler faaliyetlerinizi yönetiyoruz." },
-  { name: "Corporate Identity Services", description: "Creating your brand's visual and corporate identity. Representing your brand with a consistent and professional image.", descriptionTr: "Markanızın görsel ve kurumsal kimliğini oluşturuyoruz. Tutarlı ve profesyonel bir imaj ile markanızı temsil ediyoruz." }
-];
-
-function DigitalMarketingBranding() {
+const DigitalMarketingBranding = () => {
   const [activeService, setActiveService] = useState(null);
   const { t } = useTranslation();
+
+  // Define service keys for translations
+  const services = [
+    { key: 'BRAND_CONSULTANCY_KEY', name: t('BRAND_CONSULTANCY') },
+    { key: 'BRAND_COMMUNICATION_KEY', name: t('BRAND_COMMUNICATION') },
+    { key: 'MEDIA_PLANNING_KEY', name: t('MEDIA_PLANNING') },
+    { key: 'SPONSORSHIP_SERVICES_KEY', name: t('SPONSORSHIP_SERVICES') },
+    { key: 'GOOGLE_ADS_CAMPAIGN_CREATION_KEY', name: t('GOOGLE_ADS_CAMPAIGN_CREATION') },
+    { key: 'PR_ORGANIZATION_MANAGEMENT_KEY', name: t('PR_AND_ORGANIZATION_MANAGEMENT') },
+    { key: 'CORPORATE_IDENTITY_SERVICES_KEY', name: t('CORPORATE_IDENTITY_SERVICES') }
+  ];
 
   const toggleDescription = (index) => {
     setActiveService(activeService === index ? null : index);
@@ -35,15 +36,14 @@ function DigitalMarketingBranding() {
         </div>
         <div className="w-full md:w-1/2" style={{ zIndex: 10 }}>
           {services.map((service, index) => (
-            <div key={index} className="border-b border-neon-blue p-5">
+            <div key={service.key} className="border-b border-neon-blue p-5">
               <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
-                {service.name}
+                {t(service.key)}
                 <ArrowIcon isOpen={activeService === index} />
               </button>
               {activeService === index && (
                 <div className="mt-6">
-                  <p>{service.description}</p>
-                  <p>{service.descriptionTr}</p>
+                  <p>{t(service.name)}</p>
                 </div>
               )}
             </div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ServicesData from '../data/ServicesData.json';
 import { useTranslation } from '../context/useTranslation';
 
 function WebServices() {
@@ -9,6 +8,16 @@ function WebServices() {
   const toggleDescription = (index) => {
     setActiveService(activeService === index ? null : index);
   };
+
+  const services = [
+    { key: 'UX_UI_WEB_DESIGN_KEY', description: t('UX_UI_WEB_DESIGN_DESC') },
+    { key: 'HTML_WEB_DESIGN_KEY', description: t('HTML_WEB_DESIGN_DESC') },
+    { key: 'ASP_NET_WEB_DESIGN_KEY', description: t('ASP_NET_WEB_DESIGN_DESC') },
+    { key: 'LANDING_PAGE_DESIGN_KEY', description: t('LANDING_PAGE_DESIGN_DESC') },
+    { key: 'CORPORATE_WEB_DESIGN_KEY', description: t('CORPORATE_WEB_DESIGN_DESC') },
+    { key: 'ECOMMERCE_WEB_DESIGN_KEY', description: t('ECOMMERCE_WEB_DESIGN_DESC') },
+    { key: 'SOFTWARE_DEVELOPMENT_KEY', description: t('SOFTWARE_DEVELOPMENT_DESC') }
+  ];
 
   const ArrowIcon = ({ isOpen }) => (
     <svg className={`transform transition-transform ${isOpen ? 'rotate-180' : ''}`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,10 +34,10 @@ function WebServices() {
           </p>
         </div>
         <div className="w-full md:w-1/2" style={{ zIndex: 10 }}>
-          {ServicesData.map((service, index) => (
+          {services.map((service, index) => (
             <div key={index} className="border-b border-neon-blue p-5">
               <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
-                {service.name}
+                {t(service.key)}
                 <ArrowIcon isOpen={activeService === index} />
               </button>
               {activeService === index && (

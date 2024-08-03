@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { useTranslation } from '../context/useTranslation';
 
-const services = [
-  { name: "Social Media Analysis", description: "Analyzing the performance of your social media accounts to determine strengths and weaknesses. Optimizing your strategy.", descriptionTr: "Sosyal medya hesaplarınızın performansını analiz ederek, güçlü ve zayıf yönlerinizi belirliyoruz. Stratejinizi optimize ediyoruz." },
-  { name: "Brand Image", description: "Creating a strong brand image on social media. Helping you reach your target audience with consistent and effective content.", descriptionTr: "Markanızın sosyal medyada güçlü bir imaj oluşturmasını sağlıyoruz. Tutarlı ve etkili içeriklerle hedef kitlenize ulaşmanızı sağlıyoruz." },
-  { name: "Competitor Analysis", description: "Analyzing the social media activities of your competitors to gain a competitive advantage. Shaping your strategy according to your competitors.", descriptionTr: "Rakiplerinizin sosyal medya faaliyetlerini analiz ederek, rekabet avantajı sağlıyoruz. Stratejinizi rakiplerinize göre şekillendiriyoruz." },
-  { name: "Content Calendar and Planning", description: "Creating your social media content in a planned and regular manner. Increasing engagement with content that appeals to your target audience.", descriptionTr: "Sosyal medya içeriklerinizi planlı ve düzenli bir şekilde oluşturuyoruz. Hedef kitlenize hitap eden içeriklerle etkileşimi artırıyoruz." },
-  { name: "Follower Communication System", description: "Ensuring effective communication with your followers. Providing quick and professional responses to their questions and feedback.", descriptionTr: "Takipçilerinizle etkili bir iletişim kurmanızı sağlıyoruz. Sorularına ve geri bildirimlerine hızlı ve profesyonel yanıtlar veriyoruz." },
-  { name: "Event Management", description: "Planning and managing your social media events. Increasing engagement with events that promote your brand.", descriptionTr: "Sosyal medya etkinliklerinizi planlıyor ve yönetiyoruz. Markanızı tanıtacak etkinliklerle etkileşimi artırıyoruz." },
-  { name: "Account Security", description: "Taking necessary precautions to ensure the security of your social media accounts. Protecting your accounts from cyber threats.", descriptionTr: "Sosyal medya hesaplarınızın güvenliğini sağlamak için gerekli önlemleri alıyoruz. Hesaplarınızı siber tehditlere karşı koruyoruz." }
-];
-
 function SocialMediaManagement() {
   const [activeService, setActiveService] = useState(null);
   const { t } = useTranslation();
+
+  const services = [
+    { key: 'SOCIAL_MEDIA_ANALYSIS_KEY', description: t('SOCIAL_MEDIA_ANALYSIS') },
+    { key: 'BRAND_IMAGE_KEY', description: t('BRAND_IMAGE') },
+    { key: 'COMPETITOR_ANALYSIS_KEY', description: t('COMPETITOR_ANALYSIS') },
+    { key: 'CONTENT_CALENDAR_PLANNING_KEY', description: t('CONTENT_CALENDAR_PLANNING') },
+    { key: 'FOLLOWER_COMMUNICATION_SYSTEM_KEY', description: t('FOLLOWER_INTERACTION_SYSTEM') },
+    { key: 'EVENT_MANAGEMENT_KEY', description: t('EVENT_MANAGEMENT') },
+    { key: 'ACCOUNT_SECURITY_KEY', description: t('ACCOUNT_SECURITY') }
+  ];
 
   const toggleDescription = (index) => {
     setActiveService(activeService === index ? null : index);
@@ -37,13 +37,12 @@ function SocialMediaManagement() {
           {services.map((service, index) => (
             <div key={index} className="border-b border-neon-blue p-5">
               <button onClick={() => toggleDescription(index)} className="flex justify-between items-center w-full text-white">
-                {service.name}
+                {t(service.key)}
                 <ArrowIcon isOpen={activeService === index} />
               </button>
               {activeService === index && (
                 <div className="mt-6">
                   <p>{service.description}</p>
-                  <p>{service.descriptionTr}</p>
                 </div>
               )}
             </div>
