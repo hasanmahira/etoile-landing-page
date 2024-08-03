@@ -17,7 +17,7 @@ export const REFERENCES = "REFERANSLARIMIZ";
 // Vision Mission
 export const SWIRLING_CONSTELLATIONS_ALIGN = "Yıldızların Uğultusu";
 export const GO_BEYOND_THE_ORDINARY = "Sıradanın Ötesine Geçmek İçin Birleşir";
-export const THE_ETOILE_CONSTELLATION = 'ETOILE TAKIMYILDIZI';
+export const THE_ETOILE_CONSTELLATION = 'ETOILE TAKIM YILDIZI';
 export const ELEVATE_YOUR_BRAND = "MARKANIZI YÜKSELTİN";
 export const GLOBAL_STANDARDS = "KÜRESEL STANDARTLARA UYGUN";
 

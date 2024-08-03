@@ -57,8 +57,6 @@ const IndexPage = () => {
           </div>
         </section>
 
-        {/* Team Section */}
-
         <section>
             <TeamSection />
         </section>
