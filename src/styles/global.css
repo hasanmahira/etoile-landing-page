@@ -78,3 +78,94 @@ a[type=button] {
   top: 0;
   left: 0;
 }
+
+/* Slider Dots Customization */
+.slick-dots {
+  bottom: 25px;  /* Adjusts the position from the bottom */
+}
+
+.slick-dots li button:before {
+  color: white;  /* Makes the dots white */
+  font-size: 12px; /* Increases the size of the dots */
+  opacity: 1;  /* Makes dots fully opaque */
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;  /* Highlights the active dot in white */
+  opacity: 1;  /* Ensures the active dot is fully visible */
+}
+
+
+/* 
+// CSS for the animation
+*/
+.star {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.star-left {
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+.star-right {
+  right: -30px;
+  transform: translateY(-50%);
+}
+
+.star.animate {
+  opacity: 1;
+  animation: slide 1s forwards;
+}
+
+.star.fadeOut {
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateY(-50%) translateX(0);
+  }
+  100% {
+      transform: translateY(-50%) translateX(calc(100vw - 60px));
+  }
+}
+
+/* Reverse animation for stars on the right */
+.star-right.animate {
+  animation: slide-reverse 1s forwards;
+}
+
+@keyframes slide-reverse {
+  0% {
+      transform: translateY(-50%) translateX(0);
+  }
+  100% {
+      transform: translateY(-50%) translateX(calc(-100vw + 60px));
+  }
+}
+
+@keyframes slideRight {
+  from {
+    left: 50%;
+    transform: translateX(-50%); /* Center the star horizontally */
+  }
+  to {
+    left: 100%;
+    transform: translateX(0%); /* Move right off-screen */
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    right: 50%;
+    transform: translateX(50%); /* Center the star horizontally */
+  }
+  to {
+    right: 100%;
+    transform: translateX(0%); /* Move left off-screen */
+  }
+}

@@ -1,19 +1,33 @@
-// src/components/AboutSection.js
-import React from "react"
+import React, { useState } from "react";
+import GradientText from "../components/GradientText";
+import { useTranslation } from '../context/useTranslation';
 
 const AboutSection = () => {
-  return (
-    <div className="bg-black text-white py-10">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-4">About Étoile Design</h2>
-        <p>
-          We specialize in transforming your dreams into reality. With our
-          cutting-edge design and innovative solutions, we help brands shine
-          like stars in their industry.
-        </p>
-      </div>
-    </div>
-  )
-}
+  const [showContact, setShowContact] = useState(false);
+  const { t } = useTranslation();
 
-export default AboutSection
+  const toggleContactInfo = () => {
+    setShowContact(!showContact);
+  };
+
+  return (
+    <section className="relative w-full mt-[88px] overflow-hidden">
+      {/* Content Section */}
+      <div className="top-0 right-0 w-full md:w-5xl p-4 md:p-20 flex flex-col items-end">
+        <GradientText tag="h2" className="text-[30px] md:text-[50px] leading-tight">
+          {t('DREAMS_LIVE')}
+        </GradientText>
+        <div className="mt-[24px] pl-4 md:pl-12 max-w-3xl md:ml-auto">
+          <p className="text-like-cyan-vlight text-[16px] md:text-[24px]">
+            {t('DREAMS_LIVE_DESC')}
+          </p>
+          <button onClick={toggleContactInfo} className="px-6 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded mt-4">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;

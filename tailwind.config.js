@@ -6,6 +6,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      boxShadow: {
+        'neon': '0 0 15px rgba(255, 255, 255, 0.5)',
+        'neon-blue': '0 0 10px rgba(0, 223, 252, 0.5), 0 0 20px rgba(0, 223, 252, 0.5), 0 0 30px rgba(0, 223, 252, 0.5), 0 0 40px rgba(0, 223, 252, 0.5)',
+      },
       colors: {
         "blue-etoile": "#4286F5",
         "purple-etoile": "#7C448B",
@@ -41,6 +45,7 @@ module.exports = {
         'shade-gray': '#EBEBEB',
         'light-gray': '#F7F7F7',
         'airdrop-gold': '#D1AB79',
+        'neon-blue': '#00dbde',
       },
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
@@ -67,7 +72,13 @@ module.exports = {
           '0%, 100%': { opacity: '1' },
           '25%, 75%': { opacity: '0' },
         },
-      },},
+      },
+      height: {
+        '1/2': '50%',
+        '3/4': '75%',
+        '90': '90%',  // Custom height as 90%
+      }
+    },
   },
   plugins: [aspectRatio],
 }
