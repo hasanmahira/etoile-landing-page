@@ -120,6 +120,11 @@ const BusinessPortfolio = () => {
 
     return (
         <section>
+            <div className="relative overflow-hidden h-full">
+                <div className="text-center text-white mb-10 relative z-10">
+                    <h1 className="text-4xl font-bold">{t('REFERENCES')}</h1>
+                </div>
+            </div>
             <style>
                 {`
                 .slick-dots {
@@ -151,11 +156,6 @@ const BusinessPortfolio = () => {
             `}
             </style>
             <div className="container mx-auto px-4">
-                <div className="w-full md:w-1/2 flex items-center justify-center px-10 py-10 md:py-0" style={{ zIndex: 10 }}>
-                    <p className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-2xl">
-                        {t('REFERENCES')}
-                    </p>
-                </div>
                 <Slider {...settings} ref={sliderRef}>
                     {companies.map((company, index) => (
                         <div key={index} className="px-2 flex justify-center">
