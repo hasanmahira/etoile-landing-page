@@ -13,7 +13,7 @@ export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
 export const REFERENCES = "REFERANSLARIMIZ";
 
 // Vision Mission
-export const VISION = "VİZYONUMUZ";
+export const VISION = "VİZYONUMUZ"; 
 export const VisionDesc = 'Étolie Design olarak, ‘Siz hayal edin, biz yapalım!’ prensibiyle yola çıktık. Amacımız, uzman ekibimizle birlikte Türkiye ve uluslararası arenada reklam dünyasına yön vermek. Müşteri memnuniyetini ön planda tutarak, en üst düzeyde hizmet sunmayı kendimize görev edindik.';
 export const MISSION = "MİSYONUMUZ";
 export const MissionDesc = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. Etolie Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
