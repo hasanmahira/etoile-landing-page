@@ -18,6 +18,7 @@ export const VisionDesc = 'Étolie Design olarak, ‘Siz hayal edin, biz yapalı
 export const MISSION = "MİSYONUMUZ";
 export const MissionDesc = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. Etolie Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
 export const SEE_SOLUTIONS = "ÇÖZÜMLERE GÖZ AT";
+export const LEARN_MORE = "DAHA FAZLA BİLGİ";
 export const SWIRLING_CONSTELLATIONS_ALIGN = "DÖNEN YILDIZLAR";
 export const GO_BEYOND_THE_ORDINARY = "SIRADANIN ÖTESİNE GEÇMEK İÇİN BİRLEŞİYOR";
 export const THE_ETOILE_CONSTELLATION = 'ETOILE TAKIM YILDIZI';
