@@ -1,5 +1,3 @@
-export const Mission = 'Our mission is to combine creativity and quality to contribute to the success of our clients. At Etoile Design, we work to realize the vision of our clients in every project. We aim to exceed their expectations by maintaining the highest level of customer satisfaction. We adhere to the principles of honesty, transparency, and reliability at every step.';
-export const Vision = 'At Étolie Design, we set out with the principle of "You dream it, we make it happen!" Our goal is to lead the advertising world both in Turkey and internationally with our expert team. We have made it our duty to provide the highest level of service by prioritizing customer satisfaction.';
 export const ServicesDescOld = 'With our web design services, we create modern and user-friendly websites that reflect the digital face of your brand in the most effective way. Our professional team combines aesthetics and functionality to deliver designs that captivate your visitors and increase your conversion rates. We provide an excellent user experience on all platforms with sites optimized for both desktop and mobile devices.';
 export const ServicesDesc = 'Shape your digital world with our innovative and user-friendly designs.'
 export const ServicesDescEN = 'Our web design services create modern and user-friendly websites that effectively reflect the digital face of your brand. Our professional team combines aesthetics and functionality to deliver designs that captivate your visitors and increase your conversion rates. We ensure an excellent user experience on all platforms with sites optimized for both desktop and mobile devices.';
@@ -14,6 +12,11 @@ export const PRODUCTION_SERVICES = "PRODUCTION SERVICES";
 export const REFERENCES = "OUR REFERENCES";
 
 // Vision Mission
+export const Vision = "OUR VISION";
+export const VisionDesc = 'At Étolie Design, we set out with the principle of "You dream it, we make it happen!" Our goal is to lead the advertising world both in Turkey and internationally with our expert team. We have made it our duty to provide the highest level of service by prioritizing customer satisfaction.';
+export const Mission = "OUR MISSION";
+export const MissionDesc = 'Our mission is to combine creativity and quality to contribute to the success of our clients. At Etoile Design, we work to realize the vision of our clients in every project. We aim to exceed their expectations by maintaining the highest level of customer satisfaction. We adhere to the principles of honesty, transparency, and reliability at every step.';
+export const SEE_SOLUTIONS = "SEE SOLUTIONS";
 export const SWIRLING_CONSTELLATIONS_ALIGN = "THE SWIRLING CONSTELLATIONS ALIGN";
 export const GO_BEYOND_THE_ORDINARY = "TO GO BEYOND THE ORDINARY";
 export const THE_ETOILE_CONSTELLATION = 'THE ETOILE CONSTELLATION';
