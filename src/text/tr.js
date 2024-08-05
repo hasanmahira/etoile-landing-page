@@ -1,5 +1,3 @@
-export const Mission = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. Etolie Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
-export const Vision = 'Étolie Design olarak, ‘Siz hayal edin, biz yapalım!’ prensibiyle yola çıktık. Amacımız, uzman ekibimizle birlikte Türkiye ve uluslararası arenada reklam dünyasına yön vermek. Müşteri memnuniyetini ön planda tutarak, en üst düzeyde hizmet sunmayı kendimize görev edindik.';
 export const ServicesDescOld = 'Web sitesi tasarımı hizmetimizle, markanızın dijital yüzünü en etkili şekilde yansıtacak modern ve kullanıcı dostu web siteleri oluşturuyoruz. Profesyonel ekibimiz, estetik ve işlevselliği bir araya getirerek, ziyaretçilerinizi etkileyen ve dönüşüm oranlarınızı artıran tasarımlar sunar. Hem masaüstü hem de mobil cihazlar için optimize edilmiş sitelerle, her platformda mükemmel bir kullanıcı deneyimi sağlıyoruz.';
 export const ServicesDesc = 'Yenilikçi ve kullanıcı dostu tasarımlarımızla dijital dünyanızı şekillendirin.'
 
@@ -15,11 +13,16 @@ export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
 export const REFERENCES = "REFERANSLARIMIZ";
 
 // Vision Mission
-export const SWIRLING_CONSTELLATIONS_ALIGN = "Yıldızların Uğultusu";
-export const GO_BEYOND_THE_ORDINARY = "Sıradanın Ötesine Geçmek İçin Birleşir";
+export const VISION = "VİZYONUMUZ"; 
+export const VisionDesc = 'Étolie Design olarak, ‘Siz hayal edin, biz yapalım!’ prensibiyle yola çıktık. Amacımız, uzman ekibimizle birlikte Türkiye ve uluslararası arenada reklam dünyasına yön vermek. Müşteri memnuniyetini ön planda tutarak, en üst düzeyde hizmet sunmayı kendimize görev edindik.';
+export const MISSION = "MİSYONUMUZ";
+export const MissionDesc = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. Etolie Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
+export const SEE_SOLUTIONS = "ÇÖZÜMLERE GÖZ AT";
+export const SWIRLING_CONSTELLATIONS_ALIGN = "DÖNEN YILDIZLAR";
+export const GO_BEYOND_THE_ORDINARY = "SIRADANIN ÖTESİNE GEÇMEK İÇİN BİRLEŞİYOR";
 export const THE_ETOILE_CONSTELLATION = 'ETOILE TAKIM YILDIZI';
-export const ELEVATE_YOUR_BRAND = "MARKANIZI YÜKSELTİN";
-export const GLOBAL_STANDARDS = "KÜRESEL STANDARTLARA UYGUN";
+export const ELEVATE_YOUR_BRAND = "MARKANIZI";
+export const GLOBAL_STANDARDS = "KÜRESEL STANDARTLARA YÜKSELTİN";
 
 // UX/UI Design
 export const UX_UI_WEB_DESIGN_KEY = 'UI-UX Tasarım';
