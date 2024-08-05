@@ -22,7 +22,7 @@ const AboutSection = () => {
             {t('DREAMS_LIVE_DESC')}
           </p>
           <button onClick={toggleContactInfo} className="px-6 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded mt-4">
-            Learn More
+            {t('LEARN_MORE')}
           </button>
         </div>
       </div>
