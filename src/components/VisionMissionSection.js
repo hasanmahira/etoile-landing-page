@@ -21,7 +21,7 @@ const VisionMissionSection = () => {
                         <div className="flex justify-center">
                             <Link to="webDesign" smooth={true} duration={500}>
                                 <button className="mt-[-50px] px-10 py-5 border-2 rounded-full shadow-lg font-bold text-2lg text-white" style={{ borderColor: '#0056b3', color: '#0056b3' }}>
-                                    SEE SOLUTIONS
+                                    {t('SEE_SOLUTIONS')}
                                 </button>
                             </Link>
                         </div>
