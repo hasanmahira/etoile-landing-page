@@ -1,50 +1,46 @@
-import React, { useState, useRef } from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
 import { useTranslation } from '../context/useTranslation';
-
 // Import company logos
-import OmkoLogo from "../images/companies/omko.png";
-import YatagyLogo from "../images/companies/atagur.png";
-import HidromekLogo from "../images/companies/hidromek.png";
-import GuzelKasapLogo from "../images/companies/guzel-kasap.png";
-import CaseLogo from "../images/companies/case.png";
-import HmbrgLogo from "../images/companies/hmbrgr.png";
-import GenesisLogo from "../images/companies/genesis.png";
-import SheinLogo from "../images/companies/shein.png";
-import TencelLogo from "../images/companies/tencel.png";
-import GoeliaLogo from "../images/companies/goelia.png";
-import LatteLierLogo from "../images/companies/lattelier.png";
-import DeptAnonymLogo from "../images/companies/dept-anonym.png";
-import SheepIncLogo from "../images/companies/sheep-inc.png";
-import AdventureChallengeLogo from "../images/companies/adventure-challange.png";
-import LolaRoseLogo from "../images/companies/lola-rose.png";
-import AkiflowLogo from "../images/companies/akiflow.png";
-import HaylouLogo from "../images/companies/haylou.png";
-import IdealOfSwedenLogo from "../images/companies/ideal-of-sweden.png";
-import MonicaVinaderLogo from "../images/companies/monica-vinader.png";
-import ElkeLogo from "../images/companies/elke.png";
-import RomweLogo from "../images/companies/romwe.png";
-import YogibowLogo from "../images/companies/sugarbearpro.png";
-import AochuanLogo from "../images/companies/aochuan.png";
-import ApothekaryLogo from "../images/companies/apothekary.png";
-import AnifurryLogo from "../images/companies/anifurry.png";
-import ZafulLogo from "../images/companies/zaful.png";
-import AnalemmaLogo from "../images/companies/analemma.png";
-import JwPeiLogo from "../images/companies/jw-pei.png";
-import ModLilyLogo from "../images/companies/modlily.png";
-import CoredyLogo from "../images/companies/coredy.png";
-import PrettyDressLogo from "../images/companies/pretty-dress.png";
-import MintoTrackerLogo from "../images/companies/minto-tracker.png";
-import AirnumLogo from "../images/companies/airnum.png";
-import TakeMonDayLogo from "../images/companies/take-monday.png";
-import EcoSusiLogo from "../images/companies/ecosusi.png";
-import BellaBarnettLogo from "../images/companies/bella-barnett.png";
-import VivaivaLogo from "../images/companies/vivaia.png";
-import RikiLovesRikiLogo from "../images/companies/riki-loves-riki.png";
-// import InCreoDesignLogo from "../images/companies/increo-design.png";
-import KimTrueLogo from "../images/companies/kimtrue.png";
+import OmkoLogo from "../images/logos/omko.png";
+import YatagyLogo from "../images/logos/atagur.png";
+import HidromekLogo from "../images/logos/hidromek.png";
+import GuzelKasapLogo from "../images/logos/guzel-kasap.png";
+import CaseLogo from "../images/logos/case.png";
+import HmbrgLogo from "../images/logos/hmbrgr.png";
+import GenesisLogo from "../images/logos/genesis.png";
+import SheinLogo from "../images/logos/shein.png";
+import TencelLogo from "../images/logos/tencel.png";
+import GoeliaLogo from "../images/logos/goelia.jpg";
+import LatteLierLogo from "../images/logos/lattelier.png";
+import DeptAnonymLogo from "../images/logos/deptanonym.png";
+import SheepIncLogo from "../images/logos/sheep-inc.png";
+import AdventureChallengeLogo from "../images/logos/adventure-challange.png";
+import LolaRoseLogo from "../images/logos/lola-rose.png";
+import AkiflowLogo from "../images/logos/akiflow.png";
+import HaylouLogo from "../images/logos/haylou.png";
+import IdealOfSwedenLogo from "../images/logos/ideal-of-sweden.png";
+import MonicaVinaderLogo from "../images/logos/monica-vinader.png";
+import ElkeLogo from "../images/logos/elke.png";
+import RomweLogo from "../images/logos/romwe.png";
+import YogibowLogo from "../images/logos/sugarbearpro.jpeg";
+import AochuanLogo from "../images/logos/aochuan.png";
+import ApothekaryLogo from "../images/logos/apothekary.png";
+import AnifurryLogo from "../images/logos/anifurry.png";
+import ZafulLogo from "../images/logos/zaful.jpg";
+import AnalemmaLogo from "../images/logos/analemma.png";
+import JwPeiLogo from "../images/logos/jw-pei.png";
+import ModLilyLogo from "../images/logos/modlily.png";
+import CoredyLogo from "../images/logos/coredy.webp";
+import PrettyDressLogo from "../images/logos/pretty-dress.jpeg";
+import MintoTrackerLogo from "../images/logos/mintal.png";
+import AirnumLogo from "../images/logos/airnum.png";
+import TakeMonDayLogo from "../images/logos/take-monday.webp";
+import EcoSusiLogo from "../images/logos/ecosusi.png";
+import BellaBarnettLogo from "../images/logos/bella-barnett.png";
+import VivaivaLogo from "../images/logos/vivaia.jpeg";
+import RikiLovesRikiLogo from "../images/logos/riki-loves-riki.webp";
+// import InCreoDesignLogo from "../images/logos/increo-design.png";
+import KimTrueLogo from "../images/logos/kimtrue.png";
 
 const companies = [
     { src: OmkoLogo, alt: "Omko Logo", url: "https://www.omko.org.tr" },
@@ -90,85 +86,21 @@ const companies = [
 ];
 
 const BusinessPortfolio = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const sliderRef = useRef();
     const { t } = useTranslation();
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        centerMode: true,
-        centerPadding: '120px',
-        autoplay: true,
-        autoplaySpeed: 3000,
-        beforeChange: (current, next) => setCurrentSlide(next),
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                }
-            }
-        ]
-    };
-
     return (
-        <section>
-            <div className="relative overflow-hidden h-full">
-                <div className="text-center text-white mb-10 relative z-10">
-                    <h1 className="text-4xl font-bold">{t('REFERENCES')}</h1>
-                </div>
-            </div>
-            <style>
-                {`
-                .slick-dots {
-                    bottom: -50px; // Adjust position if necessary
-                    display: flex;
-                    justify-content: center; // Center the dots container
-                }
-    
-                .slick-dots li {
-                    margin: 0 5px; // Increase spacing
-                }
-
-                .slick-dots li button:before {
-                    color: white;
-                    font-size: 12px; // Adjust font size
-                    opacity: 0.75; // Make inactive dots less prominent
-                }
-    
-                .slick-dots li.slick-active button:before {
-                    color: white;
-                    opacity: 1; // Active dot is fully opaque
-                }
-
-                @media (max-width: 768px) {
-                    .slick-dots {
-                        bottom: -100px; // Mobil cihazlarda noktaları daha aşağı çek
-                    }
-                }
-            `}
-            </style> 
-            <div className="container mx-auto px-4">
-                <Slider {...settings} ref={sliderRef}>
+        <section className="relative w-full mt-0 overflow-hidden">
+            <div className="container mx-auto">
+                <h1 className="text-center text-white text-3xl font-bold mb-8">{t('REFERENCES')}</h1>
+                <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-4">
                     {companies.map((company, index) => (
-                        <div key={index} className="px-2 flex justify-center">
+                        <div key={index} className="flex justify-center items-center p-1 bg-white rounded-lg shadow" style={{ maxWidth: '120px', maxHeight: '120px' }}>
                             <a href={company.url} target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src={company.src}
-                                    alt={company.alt}
-                                    className={`mx-auto object-cover transition-all duration-300 ease-in-out ${index === currentSlide ? 'h-[500px]' : 'h-[400px] opacity-50'}`}
-                                />
+                                <img src={company.src} alt={company.alt} className="w-32 h-32 object-contain" />
                             </a>
                         </div>
                     ))}
-                </Slider>
+                </div>
             </div>
         </section>
     );
