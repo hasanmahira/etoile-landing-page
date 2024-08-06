@@ -4,6 +4,7 @@ import TayfunPhoto from "../images/tayfun_pp_new3.jpg";
 import BerkePhoto from "../images/berke_pp.jpeg";
 import MelisPhoto from "../images/melis_pp_new.jpg";
 import MahirPhoto from "../images/mahir_pp.jpeg";
+import SinaPhoto from "../images/sina_pp.jpeg";
 import DefaultPhoto from "../images/default_pp.png";
 import teamMembersData from '../data/TeamMembersList.json';
 import BackgroundImage from "../images/card_bg.png";
@@ -11,17 +12,20 @@ import BackgroundImage from "../images/card_bg.png";
 const teamMembers = teamMembersData.map(member => {
     let photo;
     switch (member.name) {
-        case "Tayfun Özlok":
+        case "Tayfun ÖZLOK":
             photo = TayfunPhoto;
             break;
-        case "Berke Kocyigitoglu":
+        case "Berke KOÇYİĞİTOĞLU":
             photo = BerkePhoto;
             break;
-        case "Melis Çıkalçekiç":
+        case "Melis ÇIKLAÇEKİÇ":
             photo = MelisPhoto;
             break;
-        case "Hasan Mahir Ateş":
+        case "Hasan Mahir ATEŞ":
             photo = MahirPhoto;
+            break;
+        case "Sina Barış AKKOCAOĞLU":
+            photo = SinaPhoto;
             break;
         default:
             photo = DefaultPhoto;

@@ -1,22 +1,27 @@
 [
     {
-        "name": "Melis Çıkalçekiç",
+        "name": "Melis ÇIKLAÇEKİÇ",
         "role": "Co-Founder",
         "photo": "/images/melis_pp.jpeg"
     },
     {
-        "name": "Tayfun Özlok",
+        "name": "Tayfun ÖZLOK",
         "role": "Co-Founder",
         "photo": "/images/tayfun_pp.jpeg"
     },
     {
-        "name": "Berke Kocyigitoglu",
+        "name": "Berke KOÇYİĞİTOĞLU",
         "role": "Art Director",
         "photo": "../images/berke_pp.jpeg"
     },
     {
-        "name": "Hasan Mahir Ateş",
+        "name": "Hasan Mahir ATEŞ",
         "role": "Tech Lead",
         "photo": "../images/mahir_pp.jpeg"
+    },
+    {
+        "name": "Sina Barış AKKOCAOĞLU",
+        "role": "Content Creator",
+        "photo": "../images/sina_pp.jpeg"
     }
 ]

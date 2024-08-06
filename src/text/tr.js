@@ -14,9 +14,9 @@ export const REFERENCES = "REFERANSLARIMIZ";
 
 // Vision Mission
 export const VISION = "VİZYONUMUZ"; 
-export const VisionDesc = 'Étolie Design olarak, ‘Siz hayal edin, biz yapalım!’ prensibiyle yola çıktık. Amacımız, uzman ekibimizle birlikte Türkiye ve uluslararası arenada reklam dünyasına yön vermek. Müşteri memnuniyetini ön planda tutarak, en üst düzeyde hizmet sunmayı kendimize görev edindik.';
+export const VisionDesc = 'etoile Design olarak, ‘Siz hayal edin, biz yapalım!’ prensibiyle yola çıktık. Amacımız, uzman ekibimizle birlikte Türkiye ve uluslararası arenada reklam dünyasına yön vermek. Müşteri memnuniyetini ön planda tutarak, en üst düzeyde hizmet sunmayı kendimize görev edindik.';
 export const MISSION = "MİSYONUMUZ";
-export const MissionDesc = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. Etolie Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
+export const MissionDesc = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. etoile Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
 export const SEE_SOLUTIONS = "ÇÖZÜMLERE GÖZ AT";
 export const LEARN_MORE = "DAHA FAZLA BİLGİ";
 export const SWIRLING_CONSTELLATIONS_ALIGN = "DÖNEN YILDIZLAR";
@@ -75,6 +75,8 @@ export const PR_AND_ORGANIZATION_MANAGEMENT = 'Markanız için etkili PR stratej
 export const CORPORATE_IDENTITY_SERVICES_KEY = 'Kurumsal Kimlik Hizmetleri';
 export const CORPORATE_IDENTITY_SERVICES = 'Markanızın görsel ve kurumsal kimliğini oluşturuyoruz. Tutarlı ve profesyonel bir imaj ile markanızı temsil ediyoruz.';
 export const DigitalMarketingDesc = 'Dijital pazarlama stratejilerimizle markanızın sesini yükseltin ve geniş kitlelere ulaşın.';
+export const INFLUENCE_MARKETING_SERVICES_KEY = 'Etki Pazar Hizmetleri';
+export const INFLUENCE_MARKETING_SERVICES = 'Etkileyici pazarlama stratejileri oluşturuyoruz. Markanızı etkileyici kişilerle buluşturarak, hedef kitlenize ulaşmanızı sağlıyoruz.';
 
 // Production Services
 export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Reklam Filmi Çekimi';
