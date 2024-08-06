@@ -90,19 +90,19 @@ const BusinessPortfolio = () => {
 
     return (
         <section className="relative w-full mt-0 overflow-hidden">
-    <div className="container mx-auto">
-        <h1 className="text-center text-white text-3xl font-bold mb-8">{t('REFERENCES')}</h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-10 gap-4">
-            {companies.map((company, index) => (
-                <div key={index} className="flex justify-center items-center p-1 bg-white rounded-lg shadow" style={{ maxWidth: '120px', maxHeight: '120px' }}>
-                    <a href={company.url} target="_blank" rel="noopener noreferrer">
-                        <img src={company.src} alt={company.alt} className="w-32 h-32 object-contain" />
-                    </a>
+            <div className="container mx-auto">
+                <h1 className="text-center text-white text-3xl font-bold mb-8">{t('REFERENCES')}</h1>
+                <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-4">
+                    {companies.map((company, index) => (
+                        <div key={index} className="flex justify-center items-center p-1 bg-white rounded-lg shadow" style={{ maxWidth: '120px', maxHeight: '120px' }}>
+                            <a href={company.url} target="_blank" rel="noopener noreferrer">
+                                <img src={company.src} alt={company.alt} className="w-32 h-32 object-contain" />
+                            </a>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
-    </div>
-</section>
+            </div>
+        </section>
     );
 };
 
