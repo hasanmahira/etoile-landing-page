@@ -13,9 +13,9 @@ export const REFERENCES = "OUR REFERENCES";
 
 // Vision Mission
 export const VISION = "OUR VISION";
-export const VisionDesc = 'At etoile Design, we set out with the principle of "You dream it, we make it happen!" Our goal is to lead the advertising world both in Turkey and internationally with our expert team. We have made it our duty to provide the highest level of service by prioritizing customer satisfaction.';
+export const VisionDesc = 'At étoile Design, we set out with the principle of "You dream it, we make it happen!" Our goal is to lead the advertising world both in Turkey and internationally with our expert team. We have made it our duty to provide the highest level of service by prioritizing customer satisfaction.';
 export const MISSION = "OUR MISSION";
-export const MissionDesc = 'Our mission is to combine creativity and quality to contribute to the success of our clients. At etoile Design, we work to realize the vision of our clients in every project. We aim to exceed their expectations by maintaining the highest level of customer satisfaction. We adhere to the principles of honesty, transparency, and reliability at every step.';
+export const MissionDesc = 'Our mission is to combine creativity and quality to contribute to the success of our clients. At étoile Design, we work to realize the vision of our clients in every project. We aim to exceed their expectations by maintaining the highest level of customer satisfaction. We adhere to the principles of honesty, transparency, and reliability at every step.';
 export const SEE_SOLUTIONS = "SEE SOLUTIONS";
 export const LEARN_MORE = "LEARN_MORE";
 export const SWIRLING_CONSTELLATIONS_ALIGN = "THE SWIRLING CONSTELLATIONS ALIGN";
@@ -98,7 +98,7 @@ export const ProductionServicesDesc = 'Tell your story powerfully with our creat
 
 // Contact From
 export const FORM_HEADER = 'JOIN THE STARS';
-export const FORM_SUBHEADER = 'Join Etoile Design among the stars!';
+export const FORM_SUBHEADER = 'Join étoile Design among the stars!';
 export const FORM_NAME_PLACEHOLDER = 'Name';
 export const FORM_SURNAME_PLACEHOLDER = 'Surname';
 export const FORM_EMAIL_PLACEHOLDER = 'Email';
