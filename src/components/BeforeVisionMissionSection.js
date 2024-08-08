@@ -21,10 +21,10 @@ const BeforeVisionMissionSection = () => {
                     </video>
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-white text-center px-4">
-                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold whitespace-nowrap">
+                            <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bebas whitespace-nowrap overflow-hidden">
                                 {t('SWIRLING_CONSTELLATIONS_ALIGN')}
                             </div>
-                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold whitespace-nowrap">
+                            <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bebas whitespace-nowrap overflow-hidden text-ellipsis">
                                 {t('GO_BEYOND_THE_ORDINARY')}
                             </div>
                         </div>

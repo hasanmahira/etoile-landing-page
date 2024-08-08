@@ -13,9 +13,9 @@ export const REFERENCES = "OUR REFERENCES";
 
 // Vision Mission
 export const VISION = "OUR VISION";
-export const VisionDesc = 'At étoile Design, we set out with the principle of "You dream it, we make it happen!" Our goal is to lead the advertising world both in Turkey and internationally with our expert team. We have made it our duty to provide the highest level of service by prioritizing customer satisfaction.';
+export const VisionDesc = 'At Etoile Design, we set out with the principle of "You dream it, we make it happen!" Our goal is to lead the advertising world both in Turkey and internationally with our expert team. We have made it our duty to provide the highest level of service by prioritizing customer satisfaction.';
 export const MISSION = "OUR MISSION";
-export const MissionDesc = 'Our mission is to combine creativity and quality to contribute to the success of our clients. At étoile Design, we work to realize the vision of our clients in every project. We aim to exceed their expectations by maintaining the highest level of customer satisfaction. We adhere to the principles of honesty, transparency, and reliability at every step.';
+export const MissionDesc = 'Our mission is to combine creativity and quality to contribute to the success of our clients. At Etoile Design, we work to realize the vision of our clients in every project. We aim to exceed their expectations by maintaining the highest level of customer satisfaction. We adhere to the principles of honesty, transparency, and reliability at every step.';
 export const SEE_SOLUTIONS = "SEE SOLUTIONS";
 export const LEARN_MORE = "LEARN_MORE";
 export const SWIRLING_CONSTELLATIONS_ALIGN = "THE SWIRLING CONSTELLATIONS ALIGN";
@@ -75,8 +75,8 @@ export const CORPORATE_IDENTITY_SERVICES_KEY = 'Corporate Identity Services';
 export const CORPORATE_IDENTITY_SERVICES = 'We create the visual and corporate identity of your brand. We represent your brand with a consistent and professional image.';
 export const DigitalMarketingDescOld = 'Our digital marketing and branding services ensure that your brand has a strong and recognized identity online. We make it easy for you to reach your target audience and increase conversions with SEO, SEM, email marketing, and content strategies. We help you stand out from the competition with creative and effective solutions that differentiate your brand.';
 export const DigitalMarketingDesc = "Elevate your brand's voice with our digital marketing strategies and reach a wider audience."
-export const INFLUENCE_MARKETING_SERVICES_KEY = 'Influence Marketing Services';
-export const INFLUENCE_MARKETING_SERVICES = 'We identify and manage suitable influencers for your brand. We increase your brand awareness with effective collaborations.';
+export const INFLUENCE_MARKETING_SERVICES_KEY = 'Influencer Marketing';
+export const INFLUENCE_MARKETING_SERVICES = "Through the right influencer collaborations, we expand your brand's story to a wider audience. We enhance your brand awareness by engaging your target audience with strong and compelling content. Our influencer strategies boost your conversion rates."
 
 // Production Services
 export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Advertisement Film Shooting';
@@ -98,7 +98,7 @@ export const ProductionServicesDesc = 'Tell your story powerfully with our creat
 
 // Contact From
 export const FORM_HEADER = 'JOIN THE STARS';
-export const FORM_SUBHEADER = 'Join étoile Design among the stars!';
+export const FORM_SUBHEADER = 'Join Etoile Design among the stars!';
 export const FORM_NAME_PLACEHOLDER = 'Name';
 export const FORM_SURNAME_PLACEHOLDER = 'Surname';
 export const FORM_EMAIL_PLACEHOLDER = 'Email';

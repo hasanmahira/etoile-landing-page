@@ -36,7 +36,7 @@ const ServicesGallery = () => {
                         <div className="w-1/2 h-auto flex items-center relative">
                             <img src={image.src} alt={t(image.alt)} className="w-full h-auto mx-auto" style={{ filter: 'brightness(1.9)' }} />
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <span className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold p-2 sm:p-4 rounded text-center">
+                                <span className="text-white text-lg sm:text-xl md:text-3xl lg:text-3xl xl:text-6xl font-bebas p-2 sm:p-4 rounded text-center">
                                     {t(image.caption)}
                                 </span>
                             </div>

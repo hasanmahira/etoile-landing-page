@@ -14,7 +14,7 @@ const AboutSection = () => {
     <section className="relative w-full mt-[88px] overflow-hidden">
       {/* Content Section */}
       <div className="top-0 right-0 w-full md:w-5xl p-4 md:p-20 flex flex-col items-end">
-        <GradientText tag="h2" className="text-[30px] md:text-[50px] leading-tight">
+        <GradientText tag="h2" className="font-bebas text-[50px] md:text-[70px] leading-tight">
           {t('DREAMS_LIVE')}
         </GradientText>
         <div className="mt-[24px] pl-4 md:pl-12 max-w-3xl md:ml-auto">

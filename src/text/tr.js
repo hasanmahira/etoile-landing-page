@@ -14,9 +14,9 @@ export const REFERENCES = "REFERANSLARIMIZ";
 
 // Vision Mission
 export const VISION = "VİZYONUMUZ"; 
-export const VisionDesc = 'étoile Design olarak, ‘Siz hayal edin, biz yapalım!’ prensibiyle yola çıktık. Amacımız, uzman ekibimizle birlikte Türkiye ve uluslararası arenada reklam dünyasına yön vermek. Müşteri memnuniyetini ön planda tutarak, en üst düzeyde hizmet sunmayı kendimize görev edindik.';
+export const VisionDesc = 'Etoile Design olarak, ‘Siz hayal edin, biz yapalım!’ prensibiyle yola çıktık. Amacımız, uzman ekibimizle birlikte Türkiye ve uluslararası arenada reklam dünyasına yön vermek. Müşteri memnuniyetini ön planda tutarak, en üst düzeyde hizmet sunmayı kendimize görev edindik.';
 export const MISSION = "MİSYONUMUZ";
-export const MissionDesc = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. étoile Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
+export const MissionDesc = 'Misyonumuz, yaratıcılığı ve kaliteyi bir araya getirerek müşterilerimizin başarılarına katkıda bulunmaktır. Etoile Design olarak, her projede müşterilerimizin vizyonunu gerçekleştirmek için çalışıyoruz. Müşteri memnuniyetini en üst düzeyde tutarak, onların beklentilerini aşmayı hedefliyoruz. Her adımda dürüstlük, şeffaflık ve güvenilirlik ilkelerine bağlı kalıyoruz.';
 export const SEE_SOLUTIONS = "ÇÖZÜMLERE GÖZ AT";
 export const LEARN_MORE = "DAHA FAZLA BİLGİ";
 export const SWIRLING_CONSTELLATIONS_ALIGN = "DÖNEN YILDIZLAR";
@@ -75,8 +75,8 @@ export const PR_AND_ORGANIZATION_MANAGEMENT = 'Markanız için etkili PR stratej
 export const CORPORATE_IDENTITY_SERVICES_KEY = 'Kurumsal Kimlik Hizmetleri';
 export const CORPORATE_IDENTITY_SERVICES = 'Markanızın görsel ve kurumsal kimliğini oluşturuyoruz. Tutarlı ve profesyonel bir imaj ile markanızı temsil ediyoruz.';
 export const DigitalMarketingDesc = 'Dijital pazarlama stratejilerimizle markanızın sesini yükseltin ve geniş kitlelere ulaşın.';
-export const INFLUENCE_MARKETING_SERVICES_KEY = 'Etki Pazar Hizmetleri';
-export const INFLUENCE_MARKETING_SERVICES = 'Etkileyici pazarlama stratejileri oluşturuyoruz. Markanızı etkileyici kişilerle buluşturarak, hedef kitlenize ulaşmanızı sağlıyoruz.';
+export const INFLUENCE_MARKETING_SERVICES_KEY = 'Influencer Pazarlama';
+export const INFLUENCE_MARKETING_SERVICES = 'Doğru influencer iş birlikleriyle, markanızın hikayesini geniş kitlelere ulaştırıyoruz. Güçlü ve etkileyici içeriklerle hedef kitlenize hitap ederek, marka farkındalığınızı artırıyoruz. Influencer stratejilerimizle dönüşüm oranlarınızı yükseltiyoruz';
 
 // Production Services
 export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Reklam Filmi Çekimi';
@@ -97,7 +97,7 @@ export const ProductionServicesDesc = 'Yaratıcı prodüksiyon çözümlerimizle
 
 // Contact From
 export const FORM_HEADER = 'YILDIZLARA KATIL';
-export const FORM_SUBHEADER = 'étoile Design ile Yıldızların Arasında Yerinizi Alın!';
+export const FORM_SUBHEADER = 'Etoile Design ile Yıldızların Arasında Yerinizi Alın!';
 export const FORM_NAME_PLACEHOLDER = 'İsim';
 export const FORM_SURNAME_PLACEHOLDER = 'Soyisim';
 export const FORM_EMAIL_PLACEHOLDER = 'E-posta';
