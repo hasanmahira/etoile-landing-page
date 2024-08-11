@@ -39,7 +39,7 @@ const Navbar = () => {
                 to={item.to} 
                 smooth={true} 
                 duration={500} 
-                className="hover:underline text-lg py-2"
+                className="hover:underline text-2xl py-4 font-bebas"
               >
                 {language === 'tr' ? item.tr : item.en}
               </Link>
@@ -60,14 +60,14 @@ const Navbar = () => {
                   to={item.to} 
                   smooth={true} 
                   duration={500} 
-                  className="text-sm hover:underline py-2"
+                  className="text-sm hover:underline py-2 font-bebas"
                 >
                   {language === 'tr' ? item.tr : item.en}
                 </Link>
               ))}
             </div>
             <div className="flex items-center space-x-4">
-              <button onClick={handleLanguageChange} className="text-sm py-2">
+              <button onClick={handleLanguageChange} className="text-sm py-2 font-bebas">
                 {language === 'tr' ? 'TR' : 'EN'}
               </button>
               <button onClick={toggleMenu} className="focus:outline-none">
@@ -90,7 +90,7 @@ const Navbar = () => {
                 to={item.to} 
                 smooth={true} 
                 duration={500} 
-                className="block py-2 hover:bg-gray-700"
+                className="block py-2 hover:bg-gray-700 font-bebas"
                 onClick={toggleMenu}
               >
                 {language === 'tr' ? item.tr : item.en}
