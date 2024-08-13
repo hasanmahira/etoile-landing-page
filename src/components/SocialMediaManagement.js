@@ -29,7 +29,7 @@ function SocialMediaManagement() {
     <div className="relative w-full h-screen overflow-hidden">
       <div className="flex items-center justify-center flex-col h-full md:flex-row">
         <div className="w-full md:w-1/2 flex items-center justify-center px-10 py-10 md:py-0" style={{ zIndex: 10 }}>
-          <p className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-2xl">
+          <p className="text-center text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-2xl font-bebas">
             {t('SocialMediaDesc')}
           </p>
         </div>

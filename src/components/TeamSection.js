@@ -42,7 +42,7 @@ const ServicesGallery = () => {
     return (
         <section className="relative w-full mt-0 overflow-hidden py-20">
             <div className="container mx-auto px-4">
-                <h1 className="text-center text-white text-5xl font-bold mb-10">{t('THE_ETOILE_CONSTELLATION')}</h1>
+                <h1 className="text-center text-white text-7xl font-bebas mb-10">{t('THE_ETOILE_CONSTELLATION')}</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-white bg-opacity-80 rounded-lg shadow-lg p-4 flex flex-col items-center justify-center" style={{ backgroundImage: `url(${BackgroundImage})`, minHeight: '600px', maxWidth: '600px', width: '100%' }}>

@@ -81,4 +81,19 @@ module.exports = {
     },
   },
   plugins: [aspectRatio],
+  rules: [
+    {
+      test: /\.(ttf|woff|woff2|eot|svg)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/', // Directory in the output where fonts will be moved
+            publicPath: 'fonts/'  // Path used to generate URL in your CSS
+          }
+        }
+      ]
+    }
+  ]
 }

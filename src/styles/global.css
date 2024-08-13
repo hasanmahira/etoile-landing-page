@@ -5,12 +5,28 @@
 /* Example of responsive Tailwind CSS in your components */
 
 
-html {
+/* html {
   @apply bg-midnight;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+} */
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
 }
+
+/* Global HTML settings */
+html {
+  font-family: 'Arial', sans-serif;  /* Default font for the website */
+}
+
+/* Custom font for all heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", sans-serif;  /* Custom font for titles */
+}
+
 /* #010724 */
 /* "blue-etoile": "#4286F5",
 "purple-etoile": "#7C448B",
@@ -43,10 +59,13 @@ a[type=button] {
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("/path-to-your-fonts/BebasNeue-Regular.woff2") format("woff2"),
-    url("/path-to-your-fonts/BebasNeue-Regular.woff") format("woff");
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 @layer components {
@@ -65,15 +84,19 @@ a[type=button] {
 
 .video-container {
   position: relative;
-  width: 100%; /* Adjust width as needed */
-  aspect-ratio: 16 / 9; /* Ensures the container keeps a 16:9 ratio */
-  overflow: hidden; /* Optional, depending on design needs */
+  width: 100%;
+  /* Adjust width as needed */
+  aspect-ratio: 16 / 9;
+  /* Ensures the container keeps a 16:9 ratio */
+  overflow: hidden;
+  /* Optional, depending on design needs */
 }
 
 .video-container video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Cover might be preferable for full-screen background videos */
+  object-fit: cover;
+  /* Cover might be preferable for full-screen background videos */
   position: absolute;
   top: 0;
   left: 0;
@@ -81,18 +104,24 @@ a[type=button] {
 
 /* Slider Dots Customization */
 .slick-dots {
-  bottom: 25px;  /* Adjusts the position from the bottom */
+  bottom: 25px;
+  /* Adjusts the position from the bottom */
 }
 
 .slick-dots li button:before {
-  color: white;  /* Makes the dots white */
-  font-size: 12px; /* Increases the size of the dots */
-  opacity: 1;  /* Makes dots fully opaque */
+  color: white;
+  /* Makes the dots white */
+  font-size: 12px;
+  /* Increases the size of the dots */
+  opacity: 1;
+  /* Makes dots fully opaque */
 }
 
 .slick-dots li.slick-active button:before {
-  color: white;  /* Highlights the active dot in white */
-  opacity: 1;  /* Ensures the active dot is fully visible */
+  color: white;
+  /* Highlights the active dot in white */
+  opacity: 1;
+  /* Ensures the active dot is fully visible */
 }
 
 
@@ -127,10 +156,11 @@ a[type=button] {
 
 @keyframes slide {
   0% {
-      transform: translateY(-50%) translateX(0);
+    transform: translateY(-50%) translateX(0);
   }
+
   100% {
-      transform: translateY(-50%) translateX(calc(100vw - 60px));
+    transform: translateY(-50%) translateX(calc(100vw - 60px));
   }
 }
 
@@ -141,31 +171,38 @@ a[type=button] {
 
 @keyframes slide-reverse {
   0% {
-      transform: translateY(-50%) translateX(0);
+    transform: translateY(-50%) translateX(0);
   }
+
   100% {
-      transform: translateY(-50%) translateX(calc(-100vw + 60px));
+    transform: translateY(-50%) translateX(calc(-100vw + 60px));
   }
 }
 
 @keyframes slideRight {
   from {
     left: 50%;
-    transform: translateX(-50%); /* Center the star horizontally */
+    transform: translateX(-50%);
+    /* Center the star horizontally */
   }
+
   to {
     left: 100%;
-    transform: translateX(0%); /* Move right off-screen */
+    transform: translateX(0%);
+    /* Move right off-screen */
   }
 }
 
 @keyframes slideLeft {
   from {
     right: 50%;
-    transform: translateX(50%); /* Center the star horizontally */
+    transform: translateX(50%);
+    /* Center the star horizontally */
   }
+
   to {
     right: 100%;
-    transform: translateX(0%); /* Move left off-screen */
+    transform: translateX(0%);
+    /* Move left off-screen */
   }
 }

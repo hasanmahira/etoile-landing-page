@@ -39,7 +39,7 @@ const ContactForm = () => {
 
   return (
     <div className="max-w-md mx-auto p-8">
-      <h2 className="text-3xl text-center text-white mb-4">{t('FORM_HEADER')}</h2>
+      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bebas text-center text-white mb-4">{t('FORM_HEADER')}</h2>
       <p className="text-lg text-center text-white mb-6">
         {t('FORM_SUBHEADER')}
       </p>

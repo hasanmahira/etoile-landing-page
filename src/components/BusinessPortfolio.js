@@ -41,8 +41,12 @@ import VivaivaLogo from "../images/logos/vivaia.jpeg";
 import RikiLovesRikiLogo from "../images/logos/riki-loves-riki.webp";
 // import InCreoDesignLogo from "../images/logos/increo-design.png";
 import KimTrueLogo from "../images/logos/kimtrue.png";
+import Rafael from "../images/logos/rafael.png";
+import SarayCiftligi from "../images/logos/saray-ciftligi.jpg";
 
 const companies = [
+    { src: Rafael, alt: "Rafael Logo", url: "https://www.rafael.com.tr" },
+    { src: SarayCiftligi, alt: "Saray Ciftligi Logo", url: "https://www.sarayciftligi.com.tr" },
     { src: OmkoLogo, alt: "Omko Logo", url: "https://www.omko.org.tr" },
     { src: YatagyLogo, alt: "Yatagy Logo", url: "https://atagur.com" },
     { src: HidromekLogo, alt: "Hidromek Logo", url: "https://www.hidromek.com.tr" },
@@ -91,7 +95,7 @@ const BusinessPortfolio = () => {
     return (
         <section className="relative w-full mt-0 overflow-hidden">
             <div className="container mx-auto">
-                <h1 className="text-center text-white text-3xl font-bold mb-8">{t('REFERENCES')}</h1>
+                <h1 className="text-center text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 font-bebas">{t('REFERENCES')}</h1>
                 <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-4">
                     {companies.map((company, index) => (
                         <div key={index} className="flex justify-center items-center p-1 bg-white rounded-lg shadow" style={{ maxWidth: '120px', maxHeight: '120px' }}>
