@@ -57,7 +57,7 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section>
+        <section id="team">
             <TeamSection />
         </section>
 

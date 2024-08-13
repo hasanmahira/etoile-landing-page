@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GradientText from "../components/GradientText";
 import { useTranslation } from '../context/useTranslation';
+import { Link } from "react-scroll";
 
 const AboutSection = () => {
   const [showContact, setShowContact] = useState(false);
@@ -21,9 +22,11 @@ const AboutSection = () => {
           <p className="text-like-cyan-vlight text-[16px] md:text-[24px]">
             {t('DREAMS_LIVE_DESC')}
           </p>
-          <button onClick={toggleContactInfo} className="px-6 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded mt-4">
-            {t('LEARN_MORE')}
-          </button>
+          <Link to="team" smooth={true} duration={500}>
+            <button onClick={toggleContactInfo} className="px-6 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded mt-4">
+              {t('LEARN_MORE')}
+            </button>
+          </Link>
         </div>
       </div>
     </section>
