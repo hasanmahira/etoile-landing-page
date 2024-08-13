@@ -41,8 +41,12 @@ import VivaivaLogo from "../images/logos/vivaia.jpeg";
 import RikiLovesRikiLogo from "../images/logos/riki-loves-riki.webp";
 // import InCreoDesignLogo from "../images/logos/increo-design.png";
 import KimTrueLogo from "../images/logos/kimtrue.png";
+import Rafael from "../images/logos/rafael.png";
+import SarayCiftligi from "../images/logos/saray-ciftligi.jpg";
 
 const companies = [
+    { src: Rafael, alt: "Rafael Logo", url: "https://www.rafael.com.tr" },
+    { src: SarayCiftligi, alt: "Saray Ciftligi Logo", url: "https://www.sarayciftligi.com.tr" },
     { src: OmkoLogo, alt: "Omko Logo", url: "https://www.omko.org.tr" },
     { src: YatagyLogo, alt: "Yatagy Logo", url: "https://atagur.com" },
     { src: HidromekLogo, alt: "Hidromek Logo", url: "https://www.hidromek.com.tr" },
