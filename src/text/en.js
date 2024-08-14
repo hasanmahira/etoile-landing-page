@@ -6,7 +6,7 @@ export const DREAMS_LIVE_DESC = "We are here to meet your company's marketing an
 
 // Service Gallery
 export const WEB_DESIGN = 'WEBSITE DESIGN';
-export const SOCIAL_MEDIA_GOVERNANCE = 'SOCIAL MEDIA MANAGEMENT';
+export const SOCIAL_MEDIA_MANAGEMENT = 'SOCIAL MEDIA MANAGEMENT';
 export const DIGITAL_MARKETING_BRANDING = 'DIGITAL MARKETING and BRANDING';
 export const PRODUCTION_SERVICES = 'PRODUCTION SERVICES';
 export const REFERENCES = 'OUR REFERENCES';
@@ -116,3 +116,9 @@ export const FORM_PHONE_PLACEHOLDER = 'Phone Number';
 export const FORM_SUBMIT_BUTTON = 'Submit';
 export const FORM_SUBMIT_SUCCESS = 'Information submitted successfully!';
 export const FORM_SUBMIT_ERROR = 'Failed to submit information. Please try again later.';
+export const ADDRESS = 'Address: Kızılırmak, 1443. Cd. No:25, 06530 Çankaya/Ankara';
+export const EMAIL = 'E-mail: info@etoiledsgn.com';
+export const ALL_RIGHTS_RESERVED = "© {{year}} Étoile Design. All rights reserved.";
+export const HOMEPAGE = "Homepage";
+export const ABOUT_US = "About Us";
+export const CONTACT_US = "Contact Us";

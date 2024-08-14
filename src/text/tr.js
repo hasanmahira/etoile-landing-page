@@ -117,4 +117,9 @@ export const FORM_PHONE_PLACEHOLDER = 'Telefon Numarası';
 export const FORM_SUBMIT_BUTTON = 'Gönder';
 export const FORM_SUBMIT_SUCCESS = 'Bilgiler başarıyla gönderildi!';
 export const FORM_SUBMIT_ERROR = 'Bilgi gönderimi başarısız. Lütfen daha sonra tekrar deneyin.';
-
+export const ADDRESS = "Adres: Kızılırmak, 1443. Cd. No:25, 06530 Çankaya/Ankara";
+export const EMAIL = "E-posta: info@etoiledsgn.com";
+export const ALL_RIGHTS_RESERVED = "© {{year}} Étoile Tasarım. Tüm hakları saklıdır.";
+export const HOMEPAGE = "Anasayfa";
+export const ABOUT_US = "Hakkımızda";
+export const CONTACT_US = "İletişim";
