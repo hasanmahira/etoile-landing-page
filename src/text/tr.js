@@ -6,7 +6,7 @@ export const DREAMS_LIVE = "Hayallerinizi Bizimle Gerçeğe Dönüştürün!";
 export const DREAMS_LIVE_DESC = "Firmanızın pazarlama ve reklam ihtiyaçlarını karşılamak için buradayız. 360 ° Ajans hizmetimizle, tasarımdan sosyal medya yönetimine, reklam çalışmalarından marka yönetimine kadar geniş bir yelpazede çözümler sunuyoruz. Sizin için en iyi stratejileri belirleyerek, markanızı dünyaya duyurmak için buradayız.";
 
 // Service Gallery
-export const WEB_DESIGN = "Web Sitesi Tasarımı";
+export const WEB_DESIGN = "WEB SİTESİ TASARIMI";
 export const SOCIAL_MEDIA_MANAGEMENT = "SOSYAL MEDYA YÖNETİMİ";
 export const DIGITAL_MARKETING_BRANDING = "DİJİTAL PAZARLAMA & MARKALAŞMA";
 export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
@@ -55,21 +55,21 @@ export const SOFTWARE_DEVELOPMENT_DESC = 'Özel yazılım çözümleri ile işle
 
 // Social Media Management
 export const SOCIAL_MEDIA_ANALYSIS_KEY = 'Sosyal Medya Analizi';
-export const BRAND_IMAGE_KEY = 'Marka İmajı';
-export const COMPETITOR_ANALYSIS_KEY = 'Rekabet Analizi';
-export const CONTENT_CALENDAR_PLANNING_KEY = 'İçerik Takvimi ve Planlama';
-export const FOLLOWER_COMMUNICATION_SYSTEM_KEY = 'Takipçi İletişim Sistemi';
-export const EVENT_MANAGEMENT_KEY = 'Etkinlik Yönetimi';
-export const ACCOUNT_SECURITY_KEY = 'Hesap Güvenliği';
 export const SOCIAL_MEDIA_ANALYSIS = 'Sosyal medya hesaplarınızın performansını analiz ederek, güçlü ve zayıf yönlerinizi belirliyoruz. Stratejinizi optimize ediyoruz.';
+export const BRAND_IMAGE_KEY = 'Marka İmajı';
 export const BRAND_IMAGE = 'Markanızın sosyal medyada güçlü bir imaj oluşturmasını sağlıyoruz. Tutarlı ve etkili içeriklerle hedef kitlenize ulaşmanızı sağlıyoruz.';
+export const COMPETITOR_ANALYSIS_KEY = 'Rakip Analizi';
 export const COMPETITOR_ANALYSIS = 'Rakiplerinizin sosyal medya faaliyetlerini analiz ederek, rekabet avantajı sağlıyoruz. Stratejinizi rakiplerinize göre şekillendiriyoruz.';
+export const CONTENT_CALENDAR_PLANNING_KEY = 'İçerik Takvimi ve Planlaması';
 export const CONTENT_CALENDAR_PLANNING = 'Sosyal medya içeriklerinizi planlı ve düzenli bir şekilde oluşturuyoruz. Hedef kitlenize hitap eden içeriklerle etkileşimi artırıyoruz.';
+export const FOLLOWER_COMMUNICATION_SYSTEM_KEY = 'Takipçi İletişim Sistemi';
 export const FOLLOWER_INTERACTION_SYSTEM = 'Takipçilerinizle etkili bir iletişim kurmanızı sağlıyoruz. Sorularına ve geri bildirimlerine hızlı ve profesyonel yanıtlar veriyoruz.';
+export const EVENT_MANAGEMENT_KEY = 'Etkinlik Yönetimi';
 export const EVENT_MANAGEMENT = 'Sosyal medya etkinliklerinizi planlıyor ve yönetiyoruz. Markanızı tanıtacak etkinliklerle etkileşimi artırıyoruz.';
+export const ACCOUNT_SECURITY_KEY = 'Hesap Güvenliği';
 export const ACCOUNT_SECURITY = 'Sosyal medya hesaplarınızın güvenliğini sağlamak için gerekli önlemleri alıyoruz. Hesaplarınızı siber tehditlere karşı koruyoruz.';
 export const SocialMediaDesc = 'Markanızı sosyal medyada etkileyici bir şekilde öne çıkarın ve etkileşimi artırın.';
-export const SocialMediaDescOld = 'Sosyal medya yönetim hizmetlerimizle, sosyal medya kanallarında etkili ve stratejik bir varlık kurmanıza yardımcı oluyoruz. Hedef kitlenizi çeken içeriklerle etkileşimi artırarak marka bilinirliğinizi ve sadık müşteri tabanınızı genişletiyoruz. Uzman ekibimiz en son trendleri ve analizleri kullanarak sosyal medya varlığınızı güçlendiriyor.';
+
 
 // Digital Marketing and Branding
 export const BRAND_CONSULTANCY_KEY = 'Marka Danışmanlığı';

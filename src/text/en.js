@@ -55,21 +55,20 @@ export const SOFTWARE_DEVELOPMENT_DESC = 'We develop software for the needs of y
 
 // Social Media Management
 export const SOCIAL_MEDIA_ANALYSIS_KEY = 'Social Media Analysis';
+export const SOCIAL_MEDIA_ANALYSIS = 'We analyze the performance of your social media accounts and identify your strengths and weaknesses. We optimize your strategy.';
 export const BRAND_IMAGE_KEY = 'Brand Image';
+export const BRAND_IMAGE = 'We ensure that your brand creates a strong image on social media. We enable you to reach your target audience with consistent and effective content.';
 export const COMPETITOR_ANALYSIS_KEY = 'Competitor Analysis';
+export const COMPETITOR_ANALYSIS = 'We provide competitive advantage by analyzing the social media activities of your competitors. We shape your strategy according to your competitors.';
 export const CONTENT_CALENDAR_PLANNING_KEY = 'Content Calendar and Planning';
+export const CONTENT_CALENDAR_PLANNING = 'We create your social media content in a planned and organized manner. We increase interaction with content that appeals to your target audience.';
 export const FOLLOWER_COMMUNICATION_SYSTEM_KEY = 'Follower Communication System';
+export const FOLLOWER_INTERACTION_SYSTEM = 'We enable you to communicate effectively with your followers. We respond quickly and professionally to their questions and feedback.';
 export const EVENT_MANAGEMENT_KEY = 'Event Management';
+export const EVENT_MANAGEMENT = 'We plan and manage your social media events. We increase interaction with events that will promote your brand.';
 export const ACCOUNT_SECURITY_KEY = 'Account Security';
-export const SOCIAL_MEDIA_ANALYSIS = 'We analyze the performance of your social media accounts, identifying your strengths and weaknesses. We optimize your strategy.';
-export const BRAND_IMAGE = 'We ensure that your brand creates a strong image on social media. We help you reach your target audience with consistent and effective content.';
-export const COMPETITOR_ANALYSIS = 'We analyze the social media activities of your competitors, providing you with a competitive advantage. We shape your strategy according to your competitors.';
-export const CONTENT_CALENDAR_PLANNING = 'We create your social media content in a planned and orderly manner. We increase engagement with content that appeals to your target audience.';
-export const FOLLOWER_INTERACTION_SYSTEM = 'We ensure effective communication with your followers. We provide quick and professional responses to their questions and feedback.';
-export const EVENT_MANAGEMENT = 'We plan and manage your social media events. We increase engagement with events that promote your brand.';
 export const ACCOUNT_SECURITY = 'We take the necessary measures to ensure the security of your social media accounts. We protect your accounts against cyber threats.';
-export const SocialMediaDescOld = 'Our social media management services help you establish an effective and strategic presence on social media channels. We increase engagement with content that appeals to your target audience, expanding your brand awareness and loyal customer base. Our expert team strengthens your social media presence using the latest trends and analyses.';
-export const SocialMediaDesc = 'Highlight your brand impressively on social media and increase engagement.'
+export const SocialMediaDesc = 'Promote your brand in an impressive way on social media and increase engagement.';
 
 // Digital Marketing and Branding
 export const BRAND_CONSULTANCY_KEY = 'Brand Consultancy';
