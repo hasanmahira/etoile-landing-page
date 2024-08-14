@@ -5,11 +5,11 @@ export const DREAMS_LIVE = "Turn Your Dreams Into Reality with Us!";
 export const DREAMS_LIVE_DESC = "We are here to meet your company's marketing and advertising needs. With our 360° agency services, we offer a wide range of solutions from design to social media management, from advertising to brand management. We are here to determine the best strategies for you and to announce your brand to the world.";
 
 // Service Gallery
-export const WEB_DESIGN = "WEB DESIGN";
-export const SOCIAL_MEDIA_MANAGEMENT = "SOCIAL MEDIA MANAGEMENT";
-export const DIGITAL_MARKETING_BRANDING = "DIGITAL MARKETING & BRANDING";
-export const PRODUCTION_SERVICES = "PRODUCTION SERVICES";
-export const REFERENCES = "OUR REFERENCES";
+export const WEB_DESIGN = 'WEBSITE DESIGN';
+export const SOCIAL_MEDIA_GOVERNANCE = 'SOCIAL MEDIA MANAGEMENT';
+export const DIGITAL_MARKETING_BRANDING = 'DIGITAL MARKETING and BRANDING';
+export const PRODUCTION_SERVICES = 'PRODUCTION SERVICES';
+export const REFERENCES = 'OUR REFERENCES';
 
 // Vision Mission
 export const VISION = "OUR VISION";
@@ -72,23 +72,22 @@ export const SocialMediaDesc = 'Promote your brand in an impressive way on socia
 
 // Digital Marketing and Branding
 export const BRAND_CONSULTANCY_KEY = 'Brand Consultancy';
-export const BRAND_CONSULTANCY = 'We determine the positioning and strategy of your brand. We help you create a strong and consistent brand identity.';
+export const BRAND_CONSULTANCY = 'We determine the positioning and strategy of your brand. We help you build a strong and consistent brand identity.';
 export const BRAND_COMMUNICATION_KEY = 'Brand Communication';
 export const BRAND_COMMUNICATION = 'We ensure that your brand communicates effectively with your target audience. We increase the value of your brand with the right messages.';
 export const MEDIA_PLANNING_KEY = 'Media Planning';
-export const MEDIA_PLANNING = 'We carry out effective media planning on digital platforms. We create advertising strategies suitable for your target audience.';
+export const MEDIA_PLANNING = 'We make effective media planning on digital platforms. We create advertising strategies suitable for your target audience.';
 export const SPONSORSHIP_SERVICES_KEY = 'Sponsorship Services';
-export const SPONSORSHIP_SERVICES = 'We identify and manage suitable sponsorship opportunities for your brand. We provide collaborations that increase your brand awareness.';
+export const SPONSORSHIP_SERVICES = 'We identify and manage appropriate sponsorship opportunities for your brand. We provide collaborations that will increase your brand awareness.';
 export const GOOGLE_ADS_CAMPAIGN_CREATION_KEY = 'Google Ads Campaign Creation';
-export const GOOGLE_ADS_CAMPAIGN_CREATION = 'We create effective Google Ads campaigns targeted at your audience. We increase the conversion rates of your ads.';
+export const GOOGLE_ADS_CAMPAIGN_CREATION = 'We create effective Google Ads campaigns for your target audience. We increase the conversion rates of your ads.';
 export const PR_ORGANIZATION_MANAGEMENT_KEY = 'PR and Organization Management';
 export const PR_AND_ORGANIZATION_MANAGEMENT = 'We plan effective PR strategies and organizations for your brand. We manage your media and public relations activities.';
 export const CORPORATE_IDENTITY_SERVICES_KEY = 'Corporate Identity Services';
 export const CORPORATE_IDENTITY_SERVICES = 'We create the visual and corporate identity of your brand. We represent your brand with a consistent and professional image.';
-export const DigitalMarketingDescOld = 'Our digital marketing and branding services ensure that your brand has a strong and recognized identity online. We make it easy for you to reach your target audience and increase conversions with SEO, SEM, email marketing, and content strategies. We help you stand out from the competition with creative and effective solutions that differentiate your brand.';
-export const DigitalMarketingDesc = "Elevate your brand's voice with our digital marketing strategies and reach a wider audience."
+export const DigitalMarketingDesc = "Raise your brand's voice and reach a wide audience with our digital marketing strategies.";
 export const INFLUENCE_MARKETING_SERVICES_KEY = 'Influencer Marketing';
-export const INFLUENCE_MARKETING_SERVICES = "Through the right influencer collaborations, we expand your brand's story to a wider audience. We enhance your brand awareness by engaging your target audience with strong and compelling content. Our influencer strategies boost your conversion rates."
+export const INFLUENCE_MARKETING_SERVICES = "With the right influencer collaborations, we bring your brand's story to a wide audience. We increase your brand awareness by addressing your target audience with powerful and impressive content. We increase your conversion rates with our influencer strategies";
 
 // Production Services
 export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Advertisement Film Shooting';

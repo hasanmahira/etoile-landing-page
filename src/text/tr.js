@@ -8,8 +8,8 @@ export const DREAMS_LIVE_DESC = "Firmanızın pazarlama ve reklam ihtiyaçların
 // Service Gallery
 export const WEB_DESIGN = "WEB SİTESİ TASARIMI";
 export const SOCIAL_MEDIA_MANAGEMENT = "SOSYAL MEDYA YÖNETİMİ";
-export const DIGITAL_MARKETING_BRANDING = "DİJİTAL PAZARLAMA & MARKALAŞMA";
-export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
+export const DIGITAL_MARKETING_BRANDING = "DİJİTAL PAZARLAMA ve MARKA OLUŞTURMA";
+export const PRODUCTION_SERVICES = "PRODÜKSİYON HİZMETLERİ";
 export const REFERENCES = "REFERANSLARIMIZ";
 
 // Vision Mission
@@ -76,11 +76,11 @@ export const BRAND_CONSULTANCY_KEY = 'Marka Danışmanlığı';
 export const BRAND_CONSULTANCY = 'Markanızın konumlandırmasını ve stratejisini belirliyoruz. Güçlü ve tutarlı bir marka kimliği oluşturmanıza yardımcı oluyoruz.';
 export const BRAND_COMMUNICATION_KEY = 'Marka İletişimi';
 export const BRAND_COMMUNICATION = 'Markanızın hedef kitlenizle etkili iletişim kurmasını sağlıyoruz. Doğru mesajlarla markanızın değerini artırıyoruz.';
-export const MEDIA_PLANNING_KEY = 'Medya Planlama';
+export const MEDIA_PLANNING_KEY = 'Medya Planlaması';
 export const MEDIA_PLANNING = 'Dijital platformlarda etkili medya planlaması yapıyoruz. Hedef kitlenize uygun reklam stratejileri oluşturuyoruz.';
 export const SPONSORSHIP_SERVICES_KEY = 'Sponsorluk Hizmetleri';
 export const SPONSORSHIP_SERVICES = 'Markanız için uygun sponsorluk fırsatlarını belirliyor ve yönetiyoruz. Marka bilinirliğinizi artıracak işbirlikleri sağlıyoruz.';
-export const GOOGLE_ADS_CAMPAIGN_CREATION_KEY = 'Google Ads Kampanya Oluşturma';
+export const GOOGLE_ADS_CAMPAIGN_CREATION_KEY = 'Google Ads Kampanyası Oluşturma';
 export const GOOGLE_ADS_CAMPAIGN_CREATION = 'Hedef kitlenize yönelik etkili Google Ads kampanyaları oluşturuyoruz. Reklamlarınızın dönüşüm oranlarını artırıyoruz.';
 export const PR_ORGANIZATION_MANAGEMENT_KEY = 'PR ve Organizasyon Yönetimi';
 export const PR_AND_ORGANIZATION_MANAGEMENT = 'Markanız için etkili PR stratejileri ve organizasyonlar planlıyoruz. Medya ve halkla ilişkiler faaliyetlerinizi yönetiyoruz.';
