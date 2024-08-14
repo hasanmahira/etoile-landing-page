@@ -123,3 +123,4 @@ export const ALL_RIGHTS_RESERVED = "© {{year}} Étoile Tasarım. Tüm hakları 
 export const HOMEPAGE = "Anasayfa";
 export const ABOUT_US = "Hakkımızda";
 export const CONTACT_US = "İletişim";
+export const US = "Biz Kimiz?";

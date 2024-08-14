@@ -122,3 +122,4 @@ export const ALL_RIGHTS_RESERVED = "© {{year}} Étoile Design. All rights reser
 export const HOMEPAGE = "Homepage";
 export const ABOUT_US = "About Us";
 export const CONTACT_US = "Contact Us";
+export const US = "US";

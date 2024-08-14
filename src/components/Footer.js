@@ -14,6 +14,7 @@ const Footer = () => {
           <Link to="homepage" smooth={true} duration={500} className="mb-2 hover:underline text-sm sm:text-base">{t('HOMEPAGE')}</Link>
           <Link to="about-us" smooth={true} duration={500} className="mb-2 hover:underline text-sm sm:text-base">{t('ABOUT_US')}</Link>
           <Link to="contact" smooth={true} duration={500} className="mb-2 hover:underline text-sm sm:text-base">{t('CONTACT_US')}</Link>
+          <Link to="team" smooth={true} duration={500} className="mb-2 hover:underline text-sm sm:text-base">{t('US')}</Link>
         </div>
 
         {/* Additional Mobile Menu Column */}
