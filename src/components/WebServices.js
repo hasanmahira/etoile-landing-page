@@ -16,7 +16,12 @@ function WebServices() {
     { key: 'LANDING_PAGE_DESIGN_KEY', description: t('LANDING_PAGE_DESIGN_DESC') },
     { key: 'CORPORATE_WEB_DESIGN_KEY', description: t('CORPORATE_WEB_DESIGN_DESC') },
     { key: 'ECOMMERCE_WEB_DESIGN_KEY', description: t('ECOMMERCE_WEB_DESIGN_DESC') },
-    { key: 'SOFTWARE_DEVELOPMENT_KEY', description: t('SOFTWARE_DEVELOPMENT_DESC') }
+    { key: 'ECOOMERCE_SOLUTIONS_KEY', description: t('ECOOMERCE_SOLUTIONS_DESC') },
+    { key: 'SECURITY_SERVICES_KEY', description: t('SECURITY_SERVICES_DESC') },
+    { key: 'SEO_SERVICES_KEY', description: t('SEO_SERVICES_DESC') },
+    { key: 'WEBSITE_ANALYSIS_KEY', description: t('WEBSITE_ANALYSIS_DESC') },
+    { key: 'EMAIL_MARKETING_KEY', description: t('EMAIL_MARKETING_DESC') },
+    { key: 'MOBILE_APP_DEVELOPMENT_KEY', description: t('MOBILE_APP_DEVELOPMENT_DESC') }
   ];
 
   const ArrowIcon = ({ isOpen }) => (

@@ -1,7 +1,6 @@
 import React from "react";
 import cn from "classnames";
 import Header from "./Header";
-import Footer from "./Footer";
 import Seo from "./Seo";
 import AboutWeb from "../videos/about-web.mp4";
 import AboutMobile from "../videos/about-mobile.mp4";
@@ -24,7 +23,6 @@ export default function Layout({ className, children }) {
         <main className="flex-grow w-full">
           {children}
         </main>
-        <Footer />
       </div>
     </div>
   );

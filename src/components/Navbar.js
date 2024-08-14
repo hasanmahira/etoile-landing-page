@@ -17,7 +17,8 @@ const Navbar = () => {
   const mainMenuItems = [
     { to: "homepage", en: "HOMEPAGE", tr: "ANASAYFA" },
     { to: "about-us", en: "ABOUT US", tr: "HAKKIMIZDA" },
-    { to: "contact", en: "CONTACT US", tr: "İLETİŞİM" }
+    { to: "contact", en: "CONTACT US", tr: "İLETİŞİM" },
+    { to: "team", en: "US", tr: "BİZ KİMİZ?" }
   ];
 
   const additionalMenuItems = [
@@ -60,14 +61,14 @@ const Navbar = () => {
                   to={item.to} 
                   smooth={true} 
                   duration={500} 
-                  className="text-sm hover:underline py-2 font-bebas"
+                  className="text-lg hover:underline py-2 font-bebas"
                 >
                   {language === 'tr' ? item.tr : item.en}
                 </Link>
               ))}
             </div>
             <div className="flex items-center space-x-4">
-              <button onClick={handleLanguageChange} className="text-sm py-2 font-bebas">
+              <button onClick={handleLanguageChange} className="text-lg py-2 font-bebas">
                 {language === 'tr' ? 'TR' : 'EN'}
               </button>
               <button onClick={toggleMenu} className="focus:outline-none">

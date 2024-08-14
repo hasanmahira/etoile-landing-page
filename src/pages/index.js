@@ -10,17 +10,16 @@ import BeforeVisionMissionSection from "../components/BeforeVisionMissionSection
 import ContactForm from "../components/ContactForm"
 import TeamSection from "../components/TeamSection"
 import BrandSection from "../components/BrandSection"
-import BrandSocialMediaManagementSection from "../components/BrandSocialMediaManagementSection"
-import BrandDigitalMarketingBrandingSection from "../components/BrandDigitalMarketingBrandingSection"
-import BrandProductionSection from "../components/BrandProductionSection"
 import WebServices from "../components/WebServices"
 import DigitalMarketingBrandingServices from "../components/DigitalMarketingBranding"
 import ProductionServices from "../components/ProductionServices"
 import SocialMediaManagementServices from "../components/SocialMediaManagement"
 import BusinessPortfolio from "../components/BusinessPortfolio"
+import Footer from "../components/Footer"
 // index.js veya App.js
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import '../text/i18n'; // Import i18n configuration
 // import Seo from "../components/seo"
 import { LanguageProvider } from '../context/LanguageContext';
 
@@ -57,10 +56,6 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section id="team">
-            <TeamSection />
-        </section>
-
         <section>
           <BrandSection />
         </section>
@@ -72,9 +67,9 @@ const IndexPage = () => {
         </section>
 
 
-        <section>
+        {/* <section>
           <BrandSocialMediaManagementSection />
-        </section>
+        </section> */}
 
         <section id="socialMediaManagementServices">
           <div className="relative overflow-hidden h-full py-40">
@@ -83,9 +78,9 @@ const IndexPage = () => {
         </section>
 
 
-        <section>
+        {/* <section>
           <BrandDigitalMarketingBrandingSection />
-        </section>
+        </section> */}
 
         <section id="digitalMarketingBrandingServices">
           <div className="relative overflow-hidden h-full py-40">
@@ -94,14 +89,18 @@ const IndexPage = () => {
         </section>
 
 
-        <section>
+        {/* <section>
           <BrandProductionSection />
-        </section>
+        </section> */}
 
         <section id="productionServices">
           <div className="relative overflow-hidden h-full py-40">
             <ProductionServices />
           </div>
+        </section>
+
+        <section id="team">
+          <TeamSection />
         </section>
 
         <section>
@@ -110,24 +109,8 @@ const IndexPage = () => {
           {/* </div> */}
         </section>
 
-        {/* Sub-Nav Section */}
-        {/* <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
-       
-      </section> */}
-
 
         <Navbar />
-        {/* <Feature
-        title="Transform Your Dreams"
-        description="Explore our services and see how we can make a difference."
-        imageName="feature-image.jpg"
-        buttonText="Learn More"
-      />
-      <ServicesSection />
-      <TestimonialsSection />
-      <GallerySection />
-      <BlogSection /> */}
-        {/* <SubscribeNewsletterSection /> */}
 
         {/* Contact Form Section */}
         <section id="contact">
@@ -136,12 +119,11 @@ const IndexPage = () => {
           </div>
         </section>
 
-        {/* Footer */}
-        {/* <section>
-        <div className="relative flex justify-center">
-          <Footer />
-        </div>
-      </section> */}
+        <section>
+          <div className="relative flex justify-center">
+            <Footer />
+          </div>
+        </section>
       </Layout>
     </LanguageProvider>
 
