@@ -87,23 +87,23 @@ export const PR_AND_ORGANIZATION_MANAGEMENT = 'Markanız için etkili PR stratej
 export const CORPORATE_IDENTITY_SERVICES_KEY = 'Kurumsal Kimlik Hizmetleri';
 export const CORPORATE_IDENTITY_SERVICES = 'Markanızın görsel ve kurumsal kimliğini oluşturuyoruz. Tutarlı ve profesyonel bir imaj ile markanızı temsil ediyoruz.';
 export const DigitalMarketingDesc = 'Dijital pazarlama stratejilerimizle markanızın sesini yükseltin ve geniş kitlelere ulaşın.';
-export const INFLUENCE_MARKETING_SERVICES_KEY = 'Influencer Pazarlama';
-export const INFLUENCE_MARKETING_SERVICES = 'Doğru influencer iş birlikleriyle, markanızın hikayesini geniş kitlelere ulaştırıyoruz. Güçlü ve etkileyici içeriklerle hedef kitlenize hitap ederek, marka farkındalığınızı artırıyoruz. Influencer stratejilerimizle dönüşüm oranlarınızı yükseltiyoruz';
+export const INFLUENCE_MARKETING_SERVICES_KEY = 'Influencer Marketing';
+export const INFLUENCE_MARKETING_SERVICES = 'Doğru influencer iş birlikleriyle, markanızın hikayesini geniş kitlelere ulaştırıyoruz. Güçlü ve etkileyici içeriklerle hedef kitlenize hitap ederek, marka farkındalığınızı artırıyoruz. Influencer stratejilerimizle dönüşüm oranlarınızı yükseltiyoruz.';
 
 // Production Services
 export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Reklam Filmi Çekimi';
-export const ECOMMERCE_PRODUCT_SHOOTING_KEY = 'E-Ticaret Ürün Çekimi';
-export const SOCIAL_MEDIA_PHOTO_SHOOTING_KEY = 'Sosyal Medya Fotoğraf Çekimi';
-export const MARKETING_CAMPAIGN_SHOOTING_KEY = 'Pazarlama Kampanyası Çekimi';
-export const VIDEO_EDITING_KEY = 'Video Düzenleme';
-export const MAGAZINE_CATALOG_SHOOTING_KEY = 'Dergi/Katalog Çekimi';
-export const RETOUCH_DECOUPE_SERVICES_KEY = 'Retuş/Decoupe Hizmetleri';
 export const COMMERCIAL_FILM_PRODUCTION = 'Markanız için etkileyici reklam filmleri çekiyoruz. Profesyonel ekip ve ekipmanlarla, kaliteli prodüksiyon hizmetleri sunuyoruz.';
+export const ECOMMERCE_PRODUCT_SHOOTING_KEY = 'E-Ticaret Amaçlı Çekim';
 export const ECOMMERCE_PHOTOGRAPHY = 'E-ticaret siteniz için ürün çekimleri yapıyoruz. Ürünlerinizi en iyi şekilde tanıtacak fotoğraf ve videolar hazırlıyoruz.';
+export const SOCIAL_MEDIA_PHOTO_SHOOTING_KEY = 'Sosyal Medya İçin Fotoğraf Çekimi';
 export const SOCIAL_MEDIA_PHOTOGRAPHY = 'Sosyal medya hesaplarınız için dikkat çekici ve kaliteli fotoğraf çekimleri yapıyoruz. Görsel içeriklerinizle etkileşimi artırıyoruz.';
+export const MARKETING_CAMPAIGN_SHOOTING_KEY = 'Pazarlama Kampanyası İçin Çekim';
 export const MARKETING_CAMPAIGN_SHOOTING = 'Pazarlama kampanyalarınız için profesyonel çekimler gerçekleştiriyoruz. Hedef kitlenize yönelik etkili görsel içerikler üretiyoruz.';
+export const VIDEO_EDITING_KEY = 'Video Montaj';
 export const VIDEO_EDITING = 'Çekimlerinizi profesyonel bir şekilde montajlıyoruz. Etkileyici ve akıcı videolar oluşturuyoruz.';
+export const MAGAZINE_CATALOG_SHOOTING_KEY = 'Magazin/Katalog Çekimi';
 export const MAGAZINE_CATALOG_SHOOTING = 'Magazin ve kataloglarınız için yüksek kaliteli fotoğraf çekimleri yapıyoruz. Profesyonel düzenlemeler ile görsellerinizi hazırlıyoruz.';
+export const RETOUCH_DECOUPE_SERVICES_KEY = 'Retouch/Decoupe Hizmetleri';
 export const PHOTO_RETOUCHING = 'Fotoğraflarınızın düzenleme ve retouch işlemlerini profesyonel olarak yapıyoruz. Görsellerinizi mükemmel hale getiriyoruz.';
 export const ProductionServicesDesc = 'Yaratıcı prodüksiyon çözümlerimizle hikayenizi güçlü bir şekilde anlatın.';
 

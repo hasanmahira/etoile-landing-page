@@ -87,24 +87,23 @@ export const CORPORATE_IDENTITY_SERVICES_KEY = 'Corporate Identity Services';
 export const CORPORATE_IDENTITY_SERVICES = 'We create the visual and corporate identity of your brand. We represent your brand with a consistent and professional image.';
 export const DigitalMarketingDesc = "Raise your brand's voice and reach a wide audience with our digital marketing strategies.";
 export const INFLUENCE_MARKETING_SERVICES_KEY = 'Influencer Marketing';
-export const INFLUENCE_MARKETING_SERVICES = "With the right influencer collaborations, we bring your brand's story to a wide audience. We increase your brand awareness by addressing your target audience with powerful and impressive content. We increase your conversion rates with our influencer strategies";
+export const INFLUENCE_MARKETING_SERVICES = "With the right influencer collaborations, we bring your brand's story to a wide audience. We increase your brand awareness by addressing your target audience with powerful and impressive content. We increase your conversion rates with our influencer strategies.";
 
 // Production Services
-export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Advertisement Film Shooting';
-export const ECOMMERCE_PRODUCT_SHOOTING_KEY = 'E-Commerce Product Shooting';
-export const SOCIAL_MEDIA_PHOTO_SHOOTING_KEY = 'Social Media Photo Shooting';
-export const MARKETING_CAMPAIGN_SHOOTING_KEY = 'Marketing Campaign Shooting';
+export const ADVERTISEMENT_FILM_SHOOTING_KEY = 'Commercial Film Shooting';
+export const COMMERCIAL_FILM_PRODUCTION = 'We shoot impressive commercials for your brand. We offer quality production services with professional team and equipment.';
+export const ECOMMERCE_PRODUCT_SHOOTING_KEY = 'E-Commerce Shooting';
+export const ECOMMERCE_PHOTOGRAPHY = 'We shoot products for your e-commerce site. We prepare photos and videos that will promote your products in the best way.';
+export const SOCIAL_MEDIA_PHOTO_SHOOTING_KEY = 'Photography for Social Media';
+export const SOCIAL_MEDIA_PHOTOGRAPHY = 'We make remarkable and high quality photo shoots for your social media accounts. We increase interaction with your visual content.';
+export const MARKETING_CAMPAIGN_SHOOTING_KEY = 'Shooting for Marketing Campaign';
+export const MARKETING_CAMPAIGN_SHOOTING = 'We make professional shots for your marketing campaigns. We produce effective visual content for your target audience.';
 export const VIDEO_EDITING_KEY = 'Video Editing';
+export const VIDEO_EDITING = 'We edit your footage professionally. We create impressive and fluid videos.';
 export const MAGAZINE_CATALOG_SHOOTING_KEY = 'Magazine/Catalog Shooting';
+export const MAGAZINE_CATALOG_SHOOTING = 'We make high quality photo shoots for your magazines and catalogs. We prepare your images with professional edits.';
 export const RETOUCH_DECOUPE_SERVICES_KEY = 'Retouch/Decoupe Services';
-export const COMMERCIAL_FILM_PRODUCTION = 'We shoot impressive commercials for your brand. With professional teams and equipment, we offer quality production services.';
-export const ECOMMERCE_PHOTOGRAPHY = 'We perform product photography for your e-commerce site. We prepare photos and videos that best promote your products.';
-export const SOCIAL_MEDIA_PHOTOGRAPHY = 'We take attractive and high-quality photos for your social media accounts. We increase engagement with your visual content.';
-export const MARKETING_CAMPAIGN_SHOOTING = 'We carry out professional shoots for your marketing campaigns. We produce effective visual content for your target audience.';
-export const VIDEO_EDITING = 'We professionally edit your footage. We create impressive and smooth videos.';
-export const MAGAZINE_CATALOG_SHOOTING = 'We perform high-quality photo shoots for your magazines and catalogs. We prepare your visuals with professional edits.';
-export const PHOTO_RETOUCHING = 'We professionally retouch and edit your photos. We make your visuals perfect.';
-export const ProductionServicesDescOld = 'Our production services help you tell your brands story in the most impressive and original way. With our video production, photo shoot, and graphic design services, we produce high-quality visual content that engages your target audience. Our professional team completes your projects on time and within budget.';
+export const PHOTO_RETOUCHING = 'We professionally edit and retouch your photos. We make your images perfect.';
 export const ProductionServicesDesc = 'Tell your story powerfully with our creative production solutions.';
 
 // Contact From
