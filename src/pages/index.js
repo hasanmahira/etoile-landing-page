@@ -10,9 +10,6 @@ import BeforeVisionMissionSection from "../components/BeforeVisionMissionSection
 import ContactForm from "../components/ContactForm"
 import TeamSection from "../components/TeamSection"
 import BrandSection from "../components/BrandSection"
-import BrandSocialMediaManagementSection from "../components/BrandSocialMediaManagementSection"
-import BrandDigitalMarketingBrandingSection from "../components/BrandDigitalMarketingBrandingSection"
-import BrandProductionSection from "../components/BrandProductionSection"
 import WebServices from "../components/WebServices"
 import DigitalMarketingBrandingServices from "../components/DigitalMarketingBranding"
 import ProductionServices from "../components/ProductionServices"
@@ -72,9 +69,9 @@ const IndexPage = () => {
         </section>
 
 
-        <section>
+        {/* <section>
           <BrandSocialMediaManagementSection />
-        </section>
+        </section> */}
 
         <section id="socialMediaManagementServices">
           <div className="relative overflow-hidden h-full py-40">
@@ -83,9 +80,9 @@ const IndexPage = () => {
         </section>
 
 
-        <section>
+        {/* <section>
           <BrandDigitalMarketingBrandingSection />
-        </section>
+        </section> */}
 
         <section id="digitalMarketingBrandingServices">
           <div className="relative overflow-hidden h-full py-40">
@@ -94,9 +91,9 @@ const IndexPage = () => {
         </section>
 
 
-        <section>
+        {/* <section>
           <BrandProductionSection />
-        </section>
+        </section> */}
 
         <section id="productionServices">
           <div className="relative overflow-hidden h-full py-40">

@@ -25,20 +25,33 @@ export const ELEVATE_YOUR_BRAND = "ELEVATE YOUR BRAND TO";
 export const GLOBAL_STANDARDS = "THE GLOBAL STANDARDS";
 
 // UX/UI Design
-export const UX_UI_WEB_DESIGN_KEY = 'UI-UX Design';
-export const UX_UI_WEB_DESIGN_DESC = 'We create user-friendly and aesthetically appealing interfaces. Our goal is to ensure that users have a pleasant and efficient experience on your site.';
+export const UX_UI_WEB_DESIGN_KEY = 'UX-UI Web Design';
+export const UX_UI_WEB_DESIGN_DESC = 'We create user-friendly and aesthetically appealing interfaces. Our goal is to ensure that users have a pleasant and productive experience on your site.';
 export const HTML_WEB_DESIGN_KEY = 'HTML Web Design';
-export const HTML_WEB_DESIGN_DESC = 'Responsive and modern web designs that ensure high usability and accessibility standards.';
+export const HTML_WEB_DESIGN_DESC = 'We offer fast and effective solutions with HTML based web design. With its simple and flexible structure, we can make customizations to suit your needs.';
 export const ASP_NET_WEB_DESIGN_KEY = 'ASP.NET Web Design';
-export const ASP_NET_WEB_DESIGN_DESC = 'Robust server-side rendering solutions to enhance performance and security for enterprise applications.';
+export const ASP_NET_WEB_DESIGN_DESC = 'We develop high performance and reliable websites using the powerful and dynamic ASP.Net platform. We offer ideal solutions for large-scale projects.';
 export const LANDING_PAGE_DESIGN_KEY = 'Landing Page Design';
-export const LANDING_PAGE_DESIGN_DESC = 'Conversion-optimized landing pages designed to boost your marketing campaigns and capture leads effectively.';
-export const CORPORATE_WEB_DESIGN_KEY = 'Corporate Web Design';
-export const CORPORATE_WEB_DESIGN_DESC = 'Corporate website solutions that reflect your brand identity and engage with your stakeholders effectively.';
+export const LANDING_PAGE_DESIGN_DESC = 'We turn your visitors into customers with our conversion-oriented landing page designs. We create effective pages that appeal to your target audience.';
+export const CORPORATE_WEB_DESIGN_KEY = 'Corporate Website Design';
+export const CORPORATE_WEB_DESIGN_DESC = "We design corporate websites that reflect your company's reputation and professionalism. We offer designs that represent your brand in the best way.";
 export const ECOMMERCE_WEB_DESIGN_KEY = 'E-Commerce Web Design';
-export const ECOMMERCE_WEB_DESIGN_DESC = 'Comprehensive e-commerce solutions that offer seamless shopping experiences and easy management features.';
+export const ECOMMERCE_WEB_DESIGN_DESC = 'We develop e-commerce websites that will increase your sales. We aim for customer satisfaction with user-friendly interfaces and secure payment systems.';
+export const ECOOMERCE_SOLUTIONS_KEY = 'E-Commerce Solutions';
+export const ECOOMERCE_SOLUTIONS_DESC = 'We offer e-commerce solutions tailored to the needs of your business. We make your work easier with integrated systems and easy management panels.';
+export const SECURITY_SERVICES_KEY = 'Security Services';
+export const SECURITY_SERVICES_DESC = 'We use the latest technologies to ensure the security of your website. We keep your site safe with data protection and security audits.';
+export const SEO_SERVICES_KEY = 'SEO Services';
+export const SEO_SERVICES_DESC = 'We develop comprehensive SEO strategies to ensure you rank high in search engines. We increase your traffic and visibility.';
+export const WEBSITE_ANALYSIS_KEY = 'Website Analysis';
+export const WEBSITE_ANALYSIS_DESC = 'We analyze the performance of your website and identify areas that need improvement. We increase the efficiency of your site with effective solutions.';
+export const EMAIL_MARKETING_KEY = 'E-Mail Marketing';
+export const EMAIL_MARKETING_DESC = 'We create effective email campaigns that will help you reach your target audience. We deliver personalized and conversion-oriented content.';
+export const MOBILE_APP_DEVELOPMENT_KEY = 'Mobile Application Development';
+export const MOBILE_APP_DEVELOPMENT_DESC = 'We develop mobile applications suitable for your needs. We have a presence on mobile with user-friendly and performant applications.';
 export const SOFTWARE_DEVELOPMENT_KEY = 'Software Development';
-export const SOFTWARE_DEVELOPMENT_DESC = 'Full-stack development services to create scalable and innovative software applications.';
+export const SOFTWARE_DEVELOPMENT_DESC = 'We develop software for the needs of your business with customized software solutions. We offer flexible and scalable software projects.';
+
 
 // Social Media Management
 export const SOCIAL_MEDIA_ANALYSIS_KEY = 'Social Media Analysis';

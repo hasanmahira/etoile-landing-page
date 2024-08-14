@@ -6,7 +6,7 @@ export const DREAMS_LIVE = "Hayallerinizi Bizimle Gerçeğe Dönüştürün!";
 export const DREAMS_LIVE_DESC = "Firmanızın pazarlama ve reklam ihtiyaçlarını karşılamak için buradayız. 360 ° Ajans hizmetimizle, tasarımdan sosyal medya yönetimine, reklam çalışmalarından marka yönetimine kadar geniş bir yelpazede çözümler sunuyoruz. Sizin için en iyi stratejileri belirleyerek, markanızı dünyaya duyurmak için buradayız.";
 
 // Service Gallery
-export const WEB_DESIGN = "WEB TASARIM";
+export const WEB_DESIGN = "Web Sitesi Tasarımı";
 export const SOCIAL_MEDIA_MANAGEMENT = "SOSYAL MEDYA YÖNETİMİ";
 export const DIGITAL_MARKETING_BRANDING = "DİJİTAL PAZARLAMA & MARKALAŞMA";
 export const PRODUCTION_SERVICES = "ÜRETİM HİZMETLERİ";
@@ -26,20 +26,32 @@ export const ELEVATE_YOUR_BRAND = "MARKANIZI";
 export const GLOBAL_STANDARDS = "KÜRESEL STANDARTLARA YÜKSELTİN";
 
 // UX/UI Design
-export const UX_UI_WEB_DESIGN_KEY = 'UI-UX Tasarım';
+export const UX_UI_WEB_DESIGN_KEY = 'UX-UI Web Tasarım';
 export const UX_UI_WEB_DESIGN_DESC = 'Kullanıcı dostu ve estetik açıdan çekici arayüzler oluşturuyoruz. Amacımız, kullanıcıların sitenizde keyifli ve verimli bir deneyim yaşamasını sağlamak.';
-export const HTML_WEB_DESIGN_KEY = 'HTML Web Tasarımı';
-export const HTML_WEB_DESIGN_DESC = 'Hızlı ve modern web tasarımları ile yüksek kullanılabilirlik ve erişilebilirlik standartları sağlıyoruz.';
-export const ASP_NET_WEB_DESIGN_KEY = 'ASP.NET Web Tasarımı';
-export const ASP_NET_WEB_DESIGN_DESC = 'Kurumsal uygulamalar için performans ve güvenliği artıran sağlam sunucu tarafı işleme çözümleri.';
-export const LANDING_PAGE_DESIGN_KEY = 'Açılış Sayfası Tasarımı';
-export const LANDING_PAGE_DESIGN_DESC = 'Dönüşüm optimizasyonlu açılış sayfaları ile pazarlama kampanyalarınızı güçlendirir ve etkili bir şekilde müşteri yakalamanızı sağlar.';
-export const CORPORATE_WEB_DESIGN_KEY = 'Kurumsal Web Tasarımı';
-export const CORPORATE_WEB_DESIGN_DESC = 'Marka kimliğinizi yansıtır ve paydaşlarınızla etkili bir şekilde iletişim kurmanızı sağlayan kurumsal web sitesi çözümleri.';
+export const HTML_WEB_DESIGN_KEY = 'HTML Web Tasarım';
+export const HTML_WEB_DESIGN_DESC = 'HTML tabanlı web tasarımı ile hızlı ve etkili çözümler sunuyoruz. Basit ve esnek yapısıyla, ihtiyaçlarınıza uygun özelleştirmeler yapabiliyoruz.';
+export const ASP_NET_WEB_DESIGN_KEY = 'ASP.NET Web Tasarım';
+export const ASP_NET_WEB_DESIGN_DESC = 'Güçlü ve dinamik ASP.Net platformunu kullanarak, performansı yüksek ve güvenilir web siteleri geliştiriyoruz. Büyük ölçekli projeler için ideal çözümler sunuyoruz.';
+export const LANDING_PAGE_DESIGN_KEY = 'Landing Page Tasarımı';
+export const LANDING_PAGE_DESIGN_DESC = 'Dönüşüm odaklı landing page tasarımlarımız ile ziyaretçilerinizi müşteriye dönüştürüyoruz. Hedef kitlenize hitap eden etkili sayfalar oluşturuyoruz.';
+export const CORPORATE_WEB_DESIGN_KEY = 'Kurumsal Web Sitesi Tasarımı';
+export const CORPORATE_WEB_DESIGN_DESC = 'Şirketinizin itibarını ve profesyonelliğini yansıtan kurumsal web siteleri tasarlıyoruz. Markanızı en iyi şekilde temsil eden tasarımlar sunuyoruz.';
 export const ECOMMERCE_WEB_DESIGN_KEY = 'E-Ticaret Web Tasarımı';
-export const ECOMMERCE_WEB_DESIGN_DESC = 'Sorunsuz alışveriş deneyimleri ve kolay yönetim özellikleri sunan kapsamlı e-ticaret çözümleri.';
+export const ECOMMERCE_WEB_DESIGN_DESC = 'Satışlarınızı artıracak e-ticaret web siteleri geliştiriyoruz. Kullanıcı dostu arayüzler ve güvenli ödeme sistemleri ile müşteri memnuniyetini hedefliyoruz.';
+export const ECOOMERCE_SOLUTIONS_KEY = 'E-Ticaret Çözümleri';
+export const ECOOMERCE_SOLUTIONS_DESC = 'İşletmenizin ihtiyaçlarına özel e-ticaret çözümleri sunuyoruz. Entegre sistemler ve kolay yönetim panelleri ile işlerinizi kolaylaştırıyoruz.';
+export const SECURITY_SERVICES_KEY = 'Güvenlik Hizmetleri';
+export const SECURITY_SERVICES_DESC = 'Web sitenizin güvenliğini sağlamak için en son teknolojileri kullanıyoruz. Veri koruma ve güvenlik denetimleri ile sitenizi güvende tutuyoruz.';
+export const SEO_SERVICES_KEY = 'SEO Hizmetleri';
+export const SEO_SERVICES_DESC = 'Arama motorlarında üst sıralarda yer almanızı sağlamak için kapsamlı SEO stratejileri geliştiriyoruz. Trafiğinizi ve görünürlüğünüzü artırıyoruz.';
+export const WEBSITE_ANALYSIS_KEY = 'Web Sitesi Analizi';
+export const WEBSITE_ANALYSIS_DESC = 'Web sitenizin performansını analiz ederek, iyileştirilmesi gereken alanları belirliyoruz. Etkili çözümler ile sitenizin verimliliğini artırıyoruz.';
+export const EMAIL_MARKETING_KEY = 'E-Mail Marketing';
+export const EMAIL_MARKETING_DESC = 'Hedef kitlenize ulaşmanızı sağlayacak etkili e-posta kampanyaları oluşturuyoruz. Kişiselleştirilmiş ve dönüşüm odaklı içerikler sunuyoruz.';
+export const MOBILE_APP_DEVELOPMENT_KEY = 'Mobil Uygulama Geliştirme';
+export const MOBILE_APP_DEVELOPMENT_DESC = 'İhtiyaçlarınıza uygun mobil uygulamalar geliştiriyoruz. Kullanıcı dostu ve performanslı uygulamalar ile mobilde de varlık gösteriyoruz.';
 export const SOFTWARE_DEVELOPMENT_KEY = 'Yazılım Geliştirme';
-export const SOFTWARE_DEVELOPMENT_DESC = 'Ölçeklenebilir ve yenilikçi yazılım uygulamaları oluşturmak için tam yığın geliştirme hizmetleri.';
+export const SOFTWARE_DEVELOPMENT_DESC = 'Özel yazılım çözümleri ile işletmenizin ihtiyaçlarına yönelik yazılımlar geliştiriyoruz. Esnek ve ölçeklenebilir yazılım projeleri sunuyoruz.';
 
 // Social Media Management
 export const SOCIAL_MEDIA_ANALYSIS_KEY = 'Sosyal Medya Analizi';
