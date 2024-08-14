@@ -61,7 +61,7 @@ const IndexPage = () => {
         </section>
 
         <section id="webDesign">
-          <div className="relative overflow-hidden h-full">
+          <div className="relative overflow-hidden h-full py-40">
             <WebServices />
           </div>
         </section>

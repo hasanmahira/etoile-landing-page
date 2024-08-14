@@ -61,7 +61,7 @@ const Navbar = () => {
                   to={item.to} 
                   smooth={true} 
                   duration={500} 
-                  className="text-lg hover:underline py-2 font-bebas"
+                  className="text-md hover:underline py-2 font-bebas"
                 >
                   {language === 'tr' ? item.tr : item.en}
                 </Link>
