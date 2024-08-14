@@ -1,10 +1,10 @@
 import React from 'react';
 import { useTranslation } from '../context/useTranslation';
-import TayfunPhoto from "../images/tayfun_pp_new3.jpg";
-import BerkePhoto from "../images/berke_pp.jpeg";
-import MelisPhoto from "../images/melis_pp_new.jpg";
-import MahirPhoto from "../images/mahir_pp.jpeg";
-import SinaPhoto from "../images/sina_pp.jpeg";
+import TayfunPhoto from "../images/tayfun_pp2.jpg";
+import BerkePhoto from "../images/berke_pp2.jpg";
+import MelisPhoto from "../images/melis_pp2.jpg";
+import MahirPhoto from "../images/mahir_pp2.jpg";
+import SinaPhoto from "../images/sina_pp3.jpg";
 import DefaultPhoto from "../images/default_pp.png";
 import teamMembersData from '../data/TeamMembersList.json';
 import BackgroundImage from "../images/card_bg.png";
