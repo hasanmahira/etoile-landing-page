@@ -18,7 +18,8 @@ const Navbar = () => {
     { to: "homepage", en: "HOMEPAGE", tr: "ANASAYFA" },
     { to: "about-us", en: "ABOUT US", tr: "HAKKIMIZDA" },
     { to: "contact", en: "CONTACT US", tr: "İLETİŞİM" },
-    { to: "team", en: "US", tr: "BİZ KİMİZ?" }
+    { to: "team", en: "US", tr: "BİZ KİMİZ?" },
+    { to: "references", en: "REFERENCES", tr: "REFERANSLARIMIZ" }
   ];
 
   const additionalMenuItems = [
