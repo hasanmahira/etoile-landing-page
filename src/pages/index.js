@@ -103,7 +103,7 @@ const IndexPage = () => {
           <TeamSection />
         </section>
 
-        <section>
+        <section id="references">
           {/* <div className="relative overflow-hidden h-screen py-20"> */}
           <BusinessPortfolio />
           {/* </div> */}
