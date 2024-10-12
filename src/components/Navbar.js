@@ -18,15 +18,15 @@ const Navbar = () => {
     { to: "homepage", en: "HOMEPAGE", tr: "ANASAYFA" },
     { to: "about-us", en: "ABOUT US", tr: "HAKKIMIZDA" },
     { to: "contact", en: "CONTACT US", tr: "İLETİŞİM" },
-    { to: "team", en: "US", tr: "BİZ KİMİZ?" },
-    { to: "references", en: "REFERENCES", tr: "REFERANSLARIMIZ" }
+    { to: "team", en: "US", tr: "BİZ KİMİZ?" }
   ];
 
   const additionalMenuItems = [
     { to: "webDesign", en: "WEB DESIGN", tr: "WEB TASARIM" },
     { to: "socialMediaManagementServices", en: "SOCIAL MEDIA MANAGEMENT", tr: "SOSYAL MEDYA YÖNETİMİ" },
     { to: "digitalMarketingBrandingServices", en: "DIGITAL MARKETING & BRANDING", tr: "DİJİTAL PAZARLAMA & MARKALAŞMA" },
-    { to: "productionServices", en: "PRODUCTION SERVICES", tr: "ÜRETİM HİZMETLERİ" }
+    { to: "productionServices", en: "PRODUCTION SERVICES", tr: "ÜRETİM HİZMETLERİ" },
+    { to: "references", en: "REFERENCES", tr: "REFERANSLARIMIZ" }
   ];
 
   return (
